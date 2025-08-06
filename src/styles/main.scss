@@ -1,42 +1,76 @@
-// Main SCSS file - imports all custom styles
-@use 'variables' as *;
-@use 'components' as *;
+// Import custom variables first
+@import 'variables';
+@import 'buttons';
 
-// Global custom styles
+// Import Bootstrap and Bootstrap Icons
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Custom styles
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
-  font-family: $font-family-sans;
+  font-family: $font-family-serif;
+  line-height: 1.6;
 }
 
-// Utility classes
-.text-gradient {
-  background: linear-gradient(135deg, $primary-color, $accent-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+@import 'responsive_typography';
+
+
+.shadow-soft {
+  box-shadow: $box-shadow;
 }
 
-.container-custom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 $spacing-md;
-  
-  @media (min-width: $breakpoint-lg) {
-    padding: 0 $spacing-xl;
+.shadow-soft-lg {
+  box-shadow: $box-shadow-lg;
+}
+
+// Navigation styles
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+// Card enhancements
+.card {
+  border: none;
+  box-shadow: $box-shadow;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $box-shadow-lg;
   }
 }
 
-// Animation utilities
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+// Button enhancements
+.btn {
+  font-weight: 500;
+  text-transform: none;
+  transition: all 0.2s ease;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+@import "gradients";
+// Hero section
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  @extend .gradient-lime-reverse
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+// Portfolio grid
+.portfolio-grid {
+  .portfolio-item {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

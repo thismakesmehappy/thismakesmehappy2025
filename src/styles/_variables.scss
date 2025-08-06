@@ -1,0 +1,341 @@
+// Custom Bootstrap Variable Overrides
+
+// ========================================
+// CUSTOM COLOR SCALES
+// ========================================
+
+/* Shade/Tint */
+$navy: #04294D;
+$light: #FEFFFC;
+
+/* Shade/Tint */
+$green-vogue: #04294D;
+$romance: #FEFFFC;
+
+/* Primary Colors */
+$purple: #CD64EB;
+$orange: #FF9728;
+$coral: #FF5F56;
+$blue: #1F40DB;
+$yellow: #FFD920;
+$aqua: #38D1CB;
+$lime: #A9CE28;
+$green: #01875D;
+$pink: #E1186F;
+$red: #DC251D;
+$teal: #108197;
+
+/* Neutral */
+$neutral-50: #F2F4F3;
+$neutral-100: #E5EAEB;
+$neutral-200: #CCD4D9;
+$neutral-300: #B3BFC8;
+$neutral-400: #9AA9B6;
+$neutral-500: #8194A5;
+$neutral-600: #687F93;
+$neutral-700: #4F6982;
+$neutral-800: #365470;
+$neutral-900: #1D3E5F;
+$neutral-950: #113456;
+
+/* purple */
+$purple-50: #F9F0FA;
+$purple-100: #F4E0F9;
+$purple-200: #EAC1F5;
+$purple-300: #E1A2F2;
+$purple-400: #D783EE;
+$purple-500: #CD64EB;
+$purple-600: #A558CB;
+$purple-700: #7D4CAC;
+$purple-800: #54418C;
+$purple-900: #2C356D;
+$purple-950: #182F5D;
+
+/* orange */
+$orange-50: #FEF5E7;
+$orange-100: #FEEAD2;
+$orange-200: #FED5A7;
+$orange-300: #FFC17D;
+$orange-400: #FFAC52;
+$orange-500: #FF9728;
+$orange-600: #CD812F;
+$orange-700: #9B6B37;
+$orange-800: #68553E;
+$orange-900: #363F46;
+$orange-950: #1D3449;
+
+/* coral */
+$coral-50: #FEEFEB;
+$coral-100: #FEDFDB;
+$coral-200: #FEBFBA;
+$coral-300: #FF9F98;
+$coral-400: #FF7F77;
+$coral-500: #FF5F56;
+$coral-600: #CD5454;
+$coral-700: #9B4952;
+$coral-800: #683F51;
+$coral-900: #36344F;
+$coral-950: #1D2E4E;
+
+/* blue */
+$blue-50: #E8ECF9;
+$blue-100: #D1D9F5;
+$blue-200: #A5B3EF;
+$blue-300: #788CE8;
+$blue-400: #4C66E2;
+$blue-500: #1F40DB;
+$blue-600: #1A3BBF;
+$blue-700: #1437A2;
+$blue-800: #0F3286;
+$blue-900: #092E69;
+$blue-950: #072B5B;
+
+/* yellow */
+$yellow-50: #FEFBE6;
+$yellow-100: #FEF7D0;
+$yellow-200: #FEF0A4;
+$yellow-300: #FFE878;
+$yellow-400: #FFE14C;
+$yellow-500: #FFD920;
+$yellow-600: #CDB629;
+$yellow-700: #9B9332;
+$yellow-800: #686F3B;
+$yellow-900: #364C44;
+$yellow-950: #1D3B49;
+
+/* aqua */
+$aqua-50: #EAFAF7;
+$aqua-100: #D6F6F2;
+$aqua-200: #AFEDE8;
+$aqua-300: #87E3DF;
+$aqua-400: #60DAD5;
+$aqua-500: #38D1CB;
+$aqua-600: #2EAFB2;
+$aqua-700: #238E99;
+$aqua-800: #196C7F;
+$aqua-900: #0E4B66;
+$aqua-950: #093A5A;
+
+/* lime */
+$lime-50: #F6FAE7;
+$lime-100: #EDF5D2;
+$lime-200: #DCEBA7;
+$lime-300: #CBE27D;
+$lime-400: #BAD852;
+$lime-500: #A9CE28;
+$lime-600: #88AD2F;
+$lime-700: #678C37;
+$lime-800: #466B3E;
+$lime-900: #254A46;
+$lime-950: #153A49;
+
+/* green */
+$green-50: #E5F3EC;
+$green-100: #CBE7DC;
+$green-200: #99CFBC;
+$green-300: #66B79D;
+$green-400: #349F7D;
+$green-500: #01875D;
+$green-600: #02745A;
+$green-700: #026157;
+$green-800: #034F53;
+$green-900: #033C50;
+$green-950: #04324F;
+
+/* pink */
+$pink-50: #FBE8EE;
+$pink-100: #F8D1E0;
+$pink-200: #F2A3C4;
+$pink-300: #ED74A7;
+$pink-400: #E7468B;
+$pink-500: #E1186F;
+$pink-600: #B51B68;
+$pink-700: #891F61;
+$pink-800: #5C225B;
+$pink-900: #302654;
+$pink-950: #1A2750;
+
+/* red */
+$red-50: #FBE9E6;
+$red-100: #F7D3CF;
+$red-200: #F0A8A3;
+$red-300: #EA7C76;
+$red-400: #E3514A;
+$red-500: #DC251D;
+$red-600: #B12627;
+$red-700: #862730;
+$red-800: #5A273A;
+$red-900: #2F2843;
+$red-950: #1A2948;
+
+/* teal */
+$teal-50: #E6F2F2;
+$teal-100: #CEE6E8;
+$teal-200: #9FCDD4;
+$teal-300: #6FB3BF;
+$teal-400: #409AAB;
+$teal-500: #108197;
+$teal-600: #0E6F88;
+$teal-700: #0B5E79;
+$teal-800: #094C6B;
+$teal-900: #063B5C;
+$teal-950: #053254;
+
+
+
+// ========================================
+// BOOTSTRAP COLOR SYSTEM OVERRIDES
+// ========================================
+$primary:       $pink-500 !default;
+$secondary:     $green-500 !default;
+$success:       $green-500 !default;
+$info:          $teal-500 !default;
+$warning:       $yellow-500 !default;
+$danger:        $red-500 !default;
+$light:         $light !default;
+$dark:          $navy !default;
+
+// Custom theme colors
+$custom-colors: (
+  "purple": $purple-500,
+  "coral": $coral-500,
+  "yellow": $yellow-500,
+  "lime": $lime-500,
+  "aqua": $aqua-500,
+  "orange": $orange-500,
+) !default;
+
+// Merge custom colors with Bootstrap's theme colors
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $custom-colors) !default;
+
+// Body
+$body-bg:       $light !default;
+$body-color:    $navy !default;
+
+// ========================================
+// TYPOGRAPHY SYSTEM
+// ========================================
+
+// Font Families
+$font-family-sans-serif: "Dela Gothic One", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !default;
+$font-family-serif: "Zilla Slab", Georgia, serif !default;
+
+// Font Sizes
+$font-size-root:         null !default; // Respects browser/user preferences
+$font-size-base:         1rem !default;
+$font-size-sm:           0.875rem !default;
+$font-size-lg:           1.125rem !default;
+
+// Font Weights
+$font-weight-lighter:    lighter !default;
+$font-weight-light:      300 !default;
+$font-weight-normal:     400 !default;
+$font-weight-medium:     500 !default;
+$font-weight-semibold:   600 !default;
+$font-weight-bold:       700 !default;
+$font-weight-bolder:     bolder !default;
+$font-weight-base:       $font-weight-normal !default;
+
+// Line Heights
+$line-height-base:       1.6 !default;   // Increased from Bootstrap's 1.5 for better readability
+$line-height-sm:         1.25 !default;
+$line-height-lg:         1.8 !default;   // Reduced from Bootstrap's 2 for better proportion
+
+// Body Text
+$body-text-align:        null !default;
+$paragraph-margin-bottom: 1.25rem !default; // Increased from Bootstrap's 1rem
+
+// Heading Sizes (mobile-first, more conservative)
+$h1-font-size:           2rem !default;    // Reduced from 2.5rem
+$h2-font-size:           1.75rem !default; // Reduced from 2rem
+$h3-font-size:           1.5rem !default;  // Reduced from 1.75rem
+$h4-font-size:           1.35rem !default; // Reduced from 1.5rem
+$h5-font-size:           1.2rem !default;  // Reduced from 1.25rem
+$h6-font-size:           1rem !default;
+
+// Heading Properties
+$headings-margin-bottom: 0.75rem !default; // Increased from Bootstrap's 0.5rem
+$headings-font-family:   null !default;    // Inherits from body
+$headings-font-style:    null !default;
+$headings-font-weight:   $font-weight-semibold !default; // Increased from 500
+$headings-line-height:   1.3 !default;     // Increased from 1.2 for better readability
+$headings-color:         inherit !default;
+
+// Display Typography (for hero sections, etc.)
+$display-font-family:    null !default;
+$display-font-style:     null !default;
+$display-font-weight:    $font-weight-light !default;
+$display-line-height:    $headings-line-height !default;
+
+// Special Text Elements
+$lead-font-size:         1.25rem !default;
+$lead-font-weight:       $font-weight-light !default;
+$small-font-size:        0.875em !default;
+$sub-sup-font-size:      0.75em !default;
+$text-muted:             $neutral-400 !default;
+$initialism-font-size:   $small-font-size !default;
+
+// Blockquotes
+$blockquote-font-size:        1.25rem !default;
+$blockquote-footer-font-size: $small-font-size !default;
+
+// Code & Pre
+$code-font-size:         $small-font-size !default;
+$kbd-font-size:          $code-font-size !default;
+
+// Links & Emphasis
+$link-decoration:        underline !default;
+$link-hover-decoration:  null !default;
+
+// List & Definition Lists
+$dt-font-weight:         $font-weight-bold !default;
+
+// Figure Captions
+$figure-caption-font-size: $small-font-size !default;
+
+// Grid
+$grid-gutter-width:      2rem !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6
+) !default;
+
+// Border radius
+
+$border-radius:          0.5rem !default;
+$border-radius-sm:       0.25rem !default;
+$border-radius-lg:       0.75rem !default;
+$border-radius-xl:       1rem !default;
+
+// Shadows
+$box-shadow:             0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
+$box-shadow-sm:          0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
+$box-shadow-lg:          0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
+$box-shadow-xl:          0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
