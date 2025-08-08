@@ -1,12 +1,96 @@
-// Import custom variables first
+// ========================================
+// BOOTSTRAP CUSTOMIZATION (Option B)
+// Following Bootstrap's recommended approach for customization
+// https://getbootstrap.com/docs/5.0/customize/sass/
+// ========================================
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
 @import 'variables';
 
-// Import Bootstrap and Bootstrap Icons
-@import 'bootstrap/scss/bootstrap';
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+// 🎯 OVERRIDE LOCATION: Add custom map overrides here
+// Example: $theme-colors: map-merge($theme-colors, ("custom": #900));
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+// 🎯 COMPONENT IMPORTS: Import only the Bootstrap components you need
+// Remove unused components to reduce bundle size, add missing ones as needed
+// Available components: https://github.com/twbs/bootstrap/tree/main/scss
+
+// Core components (recommended to keep)
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+// Form components
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/button-group";
+
+// Navigation components
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+
+// Content components
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+
+// Interactive components
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+
+// 🎯 ADD MORE COMPONENTS: Uncomment or add additional Bootstrap components here as needed
+// @import "../../node_modules/bootstrap/scss/collapse";
+// @import "../../node_modules/bootstrap/scss/scrollspy";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// Import Bootstrap Icons
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-// Custom styles
+// ========================================
+// CUSTOM STYLES & COMPONENT OVERRIDES
+// ========================================
+
+// Custom font imports
 @import 'fonts';
+
+// 🎯 BOOTSTRAP COMPONENT OVERRIDES: Add Bootstrap component customizations here
+// These overrides will apply to Bootstrap components after they've been imported
+// Example: .btn { border-radius: 0; }
+
+// 🎯 CUSTOM UTILITY CLASSES: Add your own utility classes here
+// Example: .text-brand { color: $primary; }
 
 body {
   font-family: $font-family-serif;
@@ -59,3 +143,45 @@ body {
 }
 
 @import "portfolio_grid";
+
+// ========================================
+// ADDITIONAL CUSTOM IMPORTS
+// ========================================
+
+// 🎯 CUSTOM COMPONENT IMPORTS: Add your custom component stylesheets here
+// @import "custom_components/hero";
+// @import "custom_components/testimonials";
+
+// 🎯 PAGE-SPECIFIC STYLES: Add page-specific stylesheets here
+// @import "pages/home";
+// @import "pages/about";
+
+// ========================================
+// OVERRIDE LOCATIONS SUMMARY
+// ========================================
+/*
+🎯 Variable Overrides: 
+   - Edit _variables.scss to override Bootstrap variables
+   - Variables must be defined BEFORE Bootstrap's variables are imported
+
+🎯 Map Overrides (line 17-18): 
+   - Add custom theme color maps
+   - Override utility maps
+   - Example: $theme-colors: map-merge($theme-colors, ("brand": #custom));
+
+🎯 Bootstrap Component Overrides (line 87-88):
+   - Override Bootstrap component styles after they're imported
+   - Example: .btn { border-radius: 0; }
+
+🎯 Custom Utility Classes (line 90-91):
+   - Add your own utility classes
+   - Example: .text-brand { color: $primary; }
+
+🎯 Component Imports (line 25-72):
+   - Add/remove Bootstrap components as needed
+   - Organized by category for easy management
+
+🎯 Custom Component Imports (line 149-156):
+   - Add your custom component stylesheets
+   - Add page-specific styles
+*/

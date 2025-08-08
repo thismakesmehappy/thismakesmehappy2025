@@ -66,6 +66,7 @@ const Home = () => {
                                                           image={`${baseImageLocation}/${project.image}`} color={color}
                                                           key={`standard-project-${index}`}
                                                           rotateRight={(numberOfFeaturedProjects + index) % 2 == 1}
+                                                          xs={12} md={6}
                             />
                         })}
                     </Row>

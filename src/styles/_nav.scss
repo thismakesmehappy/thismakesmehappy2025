@@ -22,7 +22,12 @@
                   $light 66.67%, // Solid color for top 2/3
                   rgba($light, 0) 100% // Transparent at bottom
   ) !important;
-  padding-bottom: map-get($spacers, 5);
-  margin-bottom: -1 * map-get($spacers, 5);
+  // Removed padding-bottom and negative margin-bottom that interfered with sticky positioning
 
+  // Ensure sticky positioning works properly
+  &.sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1020 !important;
+  }
 }

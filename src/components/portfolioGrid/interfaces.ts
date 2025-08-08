@@ -18,6 +18,15 @@ export interface PortfolioGridImageProps {
 export interface PortfolioGridItemProps extends PortfolioGridTitleProps, PortfolioGridImageProps {
 }
 
+export interface PortfolioGridItemsColsProps extends PortfolioGridTitleProps, PortfolioGridImageProps {
+    xs?: number;
+    sm?: number;
+    md?: number;
+    lg?: number;
+    xl?: number;
+    xxl?: number;
+}
+
 export interface PortfolioGridItemFeaturedProps extends PortfolioGridItemProps {
     reverse?: boolean;
 }

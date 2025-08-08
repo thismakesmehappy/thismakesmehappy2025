@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Test</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .test-navbar {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(to bottom, #f8f9fa 66.67%, rgba(248, 249, 250, 0) 100%);
+            padding: 1rem;
+            border-bottom: 1px solid #dee2e6;
+            z-index: 1020;
+        }
+        .content {
+            height: 200vh;
+            padding: 2rem;
+            background: linear-gradient(to bottom, #ffffff, #e9ecef);
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="test-navbar">
+        <h2>Test Sticky Navigation</h2>
+        <p>This navbar should stick to the top when you scroll down</p>
+    </nav>
+    
+    <div class="content">
+        <div class="section">
+            <h3>Section 1</h3>
+            <p>Scroll down to test if the navigation stays at the top of the page.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Section 2</h3>
+            <p>The navigation should remain visible as you scroll through this content.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Section 3</h3>
+            <p>If the navigation disappears when scrolling, there's still an issue with the sticky positioning.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Section 4</h3>
+            <p>This is a long page to test the sticky behavior thoroughly.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Section 5</h3>
+            <p>Keep scrolling to make sure the sticky navigation works consistently.</p>
+        </div>
+    </div>
+</body>
+</html>
