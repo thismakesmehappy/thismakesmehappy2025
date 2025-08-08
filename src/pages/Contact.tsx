@@ -24,7 +24,7 @@ const Contact = () => {
         
         <Row>
           <Col lg={8} className="mx-auto">
-            <Card className="shadow-soft">
+            <Card>
               <Card.Body className="p-4">
                 <Form onSubmit={handleSubmit}>
                   <Row>
@@ -63,7 +63,7 @@ const Contact = () => {
                   </Form.Group>
                   
                   <div className="d-grid">
-                    <Button type="submit" variant="primary" size="lg" className="shadow-soft">
+                    <Button type="submit" variant="primary" size="lg">
                       Send Message
                     </Button>
                   </div>
@@ -75,7 +75,7 @@ const Contact = () => {
         
         <Row className="mt-5">
           <Col lg={4} className="text-center mb-4">
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <div className="mb-3">
                   <i className="bi bi-envelope fs-2 text-primary"></i>
@@ -86,7 +86,7 @@ const Contact = () => {
             </Card>
           </Col>
           <Col lg={4} className="text-center mb-4">
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <div className="mb-3">
                   <i className="bi bi-linkedin fs-2 text-primary"></i>
@@ -97,7 +97,7 @@ const Contact = () => {
             </Card>
           </Col>
           <Col lg={4} className="text-center mb-4">
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <div className="mb-3">
                   <i className="bi bi-github fs-2 text-primary"></i>

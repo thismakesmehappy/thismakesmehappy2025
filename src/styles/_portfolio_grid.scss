@@ -1,0 +1,82 @@
+@import 'variables';
+
+img.rotate-right:hover {
+  transform: rotate(3deg);
+  transition: all 0.1s ease-in-out;
+}
+
+img.rotate-left:hover {
+  transform: rotate(-3deg);
+  transition: all 0.1s ease-in-out;
+}
+
+.grid-caption {
+  transition: all 0.3s ease;
+  font-family: $font-family-sans-serif;
+  color: $secondary;
+
+  .title {
+    padding-bottom: .375rem;
+    transition: all 0.3s ease;
+
+
+    .pre {
+      margin: 0;
+      padding: 0.5rem 0 0 0;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 1.375rem;
+      line-height: 1.56rem;
+      text-transform: uppercase;
+      padding: 0 0 .25rem 0;
+      border-bottom-style: solid;
+      border-bottom-width: .375rem;
+      border-bottom-color: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.grid-caption:hover {
+  .title {
+    padding-bottom: 0;
+
+    .pre {
+    }
+
+    .name {
+      padding: 0 0 .625rem 0;
+    }
+  }
+}
+
+@each $color-name, $color-value in $custom-colors {
+  .grid-caption.#{$color-name} {
+    .title {
+      .name {
+        border-bottom-color: $color-value;
+      }
+    }
+  }
+}
+
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .grid-caption {
+    .title {
+      .pre {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+      }
+
+      .name {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+      }
+    }
+  }
+}

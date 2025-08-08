@@ -21,9 +21,9 @@ function App() {
             <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
           </Routes>
         </main>
-        <footer className="bg-dark text-light py-4 mt-5">
+        <footer className="gradient-orange-reverse py-6 mt-5">
           <div className="container text-center">
-            <p className="mb-0">&copy; 2025 Bernardo Margulis.</p>
+            <p className="h4 mb-0 text-dark">&copy; 2025 Bernardo Margulis.</p>
           </div>
         </footer>
       </div>

@@ -1,101 +1,78 @@
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import {Container, Row, Button, Image} from 'react-bootstrap';
+import ButtonWrapper from "../components/ButtonWrapper.tsx";
+import HandleAssets from "../helpers/HandleAssets.ts";
+import {PortfolioItemFeatured} from "../components/portfolioGrid/PortfolioItemFeatured.tsx";
+import portfolioGrid from "../data/portfolioGrid.json";
+import {type accentColors, listOfAccentColors} from "../helpers/constants.ts";
+import {PortfolioItemStandard} from "../components/portfolioGrid/PortfolioItemStandard.tsx";
 
 const Home = () => {
-  return (
-    <div>
-      {/* Hero Section */}
-      <section className="hero-section">
-        <Container>
-          <Row className="align-items-center">
-            <Col lg={8}>
-              <h1 className="display-4 fw-bold mb-4">
-                Welcome to My <span>Portfolio</span>
-              </h1>
-              <p className="lead mb-4 text-muted">
-                I'm a passionate developer creating amazing digital experiences. 
-                Explore my work and discover what I can bring to your next project.
-              </p>
-              <div className="d-flex gap-3">
-                <Link to="/portfolio">
-                  <Button variant="primary" size="lg" className="shadow-soft">
-                    View My Work
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline-primary" size="lg">
-                    Get In Touch
-                  </Button>
-                </Link>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+    const featuredProjects = portfolioGrid.projects.featured;
+    const standardProjects = portfolioGrid.projects.standard;
+    const baseImageLocation = portfolioGrid.baseThumbnailDirectory;
+    const numberOfColors = listOfAccentColors.length;
+    const numberOfFeaturedProjects = featuredProjects.length;
+    return (
+        <div>
+            {/* Hero Section */}
+            <section className="hero-section gradient-lime" id="home-hero-section">
+                <Container>
+                    <Row className="py-6">
+                        <h1 className="hero">
+                            Strategic creative leader and software engineer
+                        </h1>
+                        <p className="hero-sub">
+                            I've designed for <Image src={HandleAssets.getAsset('homepage/nickelodeon_splat.png')}
+                                                     className="inline-image inline-image-height" /> Nickelodeon Brand and Events, worked with clients and agencies through my design practice, led the creative team for <Image
+                            src={HandleAssets.getAsset('homepage/logo_dragon_7548.png')}
+                            className="inline-image inline-image-height" /> Drexel University Institutional Advancement, and shipped production code for <Image
+                            src={HandleAssets.getAsset('homepage/amazon_smile.png')}
+                            className="inline-image inline-image-width" /> Amazon.</p>
+                        <p className="hero-sub text-secondary">
+                            I'm currently exploring new opportunities where my hybrid background creates impact.
+                        </p>
+                        <div className="d-flex justify-content-center gap-3">
+                            <ButtonWrapper href="mailto:bernardo+portfolio@thismakesmehappy.co" variant="primary">
+                                email me
+                            </ButtonWrapper>
+                            <Button href="/contact" variant="primary">
+                                Download my résumé
+                            </Button>
+                        </div>
+                    </Row>
+                </Container>
+            </section>
 
-      {/* Featured Work */}
-      <section className="py-5">
-        <Container>
-          <Row>
-            <Col lg={12} className="text-center mb-5">
-              <h2 className="h1 fw-bold">Featured Projects</h2>
-              <p className="text-muted">A showcase of my best work</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={4} className="mb-4">
-              <Card className="h-100">
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title>Project One</Card.Title>
-                  <Card.Text className="flex-grow-1">
-                    A brief description of your first featured project. 
-                    This could be your most impressive work.
-                  </Card.Text>
-                  <Link to="/portfolio/project-1">
-                    <Button variant="primary" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100">
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title>Project Two</Card.Title>
-                  <Card.Text className="flex-grow-1">
-                    A brief description of your second featured project. 
-                    Highlight the key technologies or achievements.
-                  </Card.Text>
-                  <Link to="/portfolio/project-2">
-                    <Button variant="primary" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="h-100">
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title>Project Three</Card.Title>
-                  <Card.Text className="flex-grow-1">
-                    A brief description of your third featured project. 
-                    Showcase the impact and results achieved.
-                  </Card.Text>
-                  <Link to="/portfolio/project-3">
-                    <Button variant="primary" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </div>
-  );
+            {/* Featured Work */}
+            <section className="py-5" id="home-portfolio-grid">
+                <Container>
+                    <Row>
+                        {featuredProjects.map((project, index) => {
+                            const color = listOfAccentColors[index % numberOfColors] as accentColors;
+                            return (
+                                <PortfolioItemFeatured name={project.title} pre={project.pre}
+                                                       image={`${baseImageLocation}/${project.image}`}
+                                                       reverse={index % 2 == 1}
+                                                       color={color}
+                                                       key={`featured-project-${index}`}
+                                />
+                            );
+                        })}
+                    </Row>
+                    <Row>
+                        {standardProjects.map((project, index) => {
+                            const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as accentColors;
+                            return <PortfolioItemStandard name={project.title} pre={project.pre}
+                                                          image={`${baseImageLocation}/${project.image}`} color={color}
+                                                          key={`standard-project-${index}`}
+                                                          rotateRight={(numberOfFeaturedProjects + index) % 2 == 1}
+                            />
+                        })}
+                    </Row>
+                </Container>
+            </section>
+        </div>
+    );
 };
 
 export default Home;

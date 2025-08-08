@@ -17,7 +17,7 @@ const About = () => {
         
         <Row className="mb-5">
           <Col lg={6}>
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <h3 className="h4 mb-3">My Story</h3>
                 <p className="mb-3">
@@ -38,7 +38,7 @@ const About = () => {
             </Card>
           </Col>
           <Col lg={6}>
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <h3 className="h4 mb-3">Skills & Technologies</h3>
                 <div className="mb-4">
@@ -72,7 +72,7 @@ const About = () => {
 
         <Row>
           <Col lg={8} className="mx-auto">
-            <Card className="shadow-soft">
+            <Card>
               <Card.Body className="p-4 text-center">
                 <h3 className="h4 mb-3">Let's Work Together</h3>
                 <p className="mb-0">

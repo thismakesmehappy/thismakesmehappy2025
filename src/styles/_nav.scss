@@ -1,0 +1,28 @@
+@import "variables";
+
+.custom-navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  // On larger screens, arrange horizontally
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+// Navigation styles
+.navbar {
+  //backdrop-filter: blur(10px);
+  background: linear-gradient(
+                  to bottom,
+                  $light 66.67%, // Solid color for top 2/3
+                  rgba($light, 0) 100% // Transparent at bottom
+  ) !important;
+  padding-bottom: map-get($spacers, 5);
+  margin-bottom: -1 * map-get($spacers, 5);
+
+}

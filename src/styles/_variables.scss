@@ -8,10 +8,6 @@
 $navy: #04294D;
 $light: #FEFFFC;
 
-/* Shade/Tint */
-$green-vogue: #04294D;
-$romance: #FEFFFC;
-
 /* Primary Colors */
 $purple: #CD64EB;
 $orange: #FF9728;
@@ -21,165 +17,262 @@ $yellow: #FFD920;
 $aqua: #38D1CB;
 $lime: #A9CE28;
 $green: #01875D;
+$teal: #108197;
 $pink: #E1186F;
 $red: #DC251D;
-$teal: #108197;
 
-/* Neutral */
+/* neutral */
 $neutral-50: #F2F4F3;
 $neutral-100: #E5EAEB;
+$neutral-150: #D9DFE2;
 $neutral-200: #CCD4D9;
+$neutral-250: #C0CAD0;
 $neutral-300: #B3BFC8;
+$neutral-350: #A7B4BF;
 $neutral-400: #9AA9B6;
+$neutral-450: #8E9FAD;
 $neutral-500: #8194A5;
+$neutral-550: #75899C;
 $neutral-600: #687F93;
+$neutral-650: #5C748A;
 $neutral-700: #4F6982;
+$neutral-750: #435F79;
 $neutral-800: #365470;
+$neutral-850: #2A4967;
 $neutral-900: #1D3E5F;
 $neutral-950: #113456;
 
 /* purple */
 $purple-50: #F9F0FA;
 $purple-100: #F4E0F9;
+$purple-150: #EFD1F7;
 $purple-200: #EAC1F5;
+$purple-250: #E6B2F4;
 $purple-300: #E1A2F2;
+$purple-350: #DC93F0;
 $purple-400: #D783EE;
+$purple-450: #D274ED;
 $purple-500: #CD64EB;
+$purple-550: #B95EDB;
 $purple-600: #A558CB;
+$purple-650: #9152BC;
 $purple-700: #7D4CAC;
+$purple-750: #69479C;
 $purple-800: #54418C;
+$purple-850: #403B7C;
 $purple-900: #2C356D;
 $purple-950: #182F5D;
 
 /* orange */
 $orange-50: #FEF5E7;
 $orange-100: #FEEAD2;
+$orange-150: #FEE0BC;
 $orange-200: #FED5A7;
+$orange-250: #FFCB92;
 $orange-300: #FFC17D;
+$orange-350: #FFB668;
 $orange-400: #FFAC52;
+$orange-450: #FFA13D;
 $orange-500: #FF9728;
+$orange-550: #E68C2C;
 $orange-600: #CD812F;
+$orange-650: #B47633;
 $orange-700: #9B6B37;
+$orange-750: #82603B;
 $orange-800: #68553E;
+$orange-850: #4F4A42;
 $orange-900: #363F46;
 $orange-950: #1D3449;
 
 /* coral */
 $coral-50: #FEEFEB;
 $coral-100: #FEDFDB;
+$coral-150: #FECFCA;
 $coral-200: #FEBFBA;
+$coral-250: #FFAFA9;
 $coral-300: #FF9F98;
+$coral-350: #FF8F88;
 $coral-400: #FF7F77;
+$coral-450: #FF6F67;
 $coral-500: #FF5F56;
+$coral-550: #E65A55;
 $coral-600: #CD5454;
+$coral-650: #B44F53;
 $coral-700: #9B4952;
+$coral-750: #824452;
 $coral-800: #683F51;
+$coral-850: #4F3950;
 $coral-900: #36344F;
 $coral-950: #1D2E4E;
 
 /* blue */
 $blue-50: #E8ECF9;
 $blue-100: #D1D9F5;
+$blue-150: #BBC6F2;
 $blue-200: #A5B3EF;
+$blue-250: #8FA0EC;
 $blue-300: #788CE8;
+$blue-350: #6279E5;
 $blue-400: #4C66E2;
+$blue-450: #3553DE;
 $blue-500: #1F40DB;
+$blue-550: #1C3ECD;
 $blue-600: #1A3BBF;
+$blue-650: #1739B0;
 $blue-700: #1437A2;
+$blue-750: #123594;
 $blue-800: #0F3286;
+$blue-850: #0C3078;
 $blue-900: #092E69;
 $blue-950: #072B5B;
 
 /* yellow */
 $yellow-50: #FEFBE6;
 $yellow-100: #FEF7D0;
+$yellow-150: #FEF4BA;
 $yellow-200: #FEF0A4;
+$yellow-250: #FFEC8E;
 $yellow-300: #FFE878;
+$yellow-350: #FFE462;
 $yellow-400: #FFE14C;
+$yellow-450: #FFDD36;
 $yellow-500: #FFD920;
+$yellow-550: #E6C725;
 $yellow-600: #CDB629;
+$yellow-650: #B4A42E;
 $yellow-700: #9B9332;
+$yellow-750: #828137;
 $yellow-800: #686F3B;
+$yellow-850: #4F5E40;
 $yellow-900: #364C44;
 $yellow-950: #1D3B49;
 
 /* aqua */
 $aqua-50: #EAFAF7;
 $aqua-100: #D6F6F2;
+$aqua-150: #C3F1ED;
 $aqua-200: #AFEDE8;
+$aqua-250: #9BE8E4;
 $aqua-300: #87E3DF;
+$aqua-350: #73DFDA;
 $aqua-400: #60DAD5;
+$aqua-450: #4CD6D0;
 $aqua-500: #38D1CB;
+$aqua-550: #33C0BE;
 $aqua-600: #2EAFB2;
+$aqua-650: #289FA5;
 $aqua-700: #238E99;
+$aqua-750: #1E7D8C;
 $aqua-800: #196C7F;
+$aqua-850: #145B73;
 $aqua-900: #0E4B66;
 $aqua-950: #093A5A;
 
 /* lime */
 $lime-50: #F6FAE7;
 $lime-100: #EDF5D2;
+$lime-150: #E5F0BC;
 $lime-200: #DCEBA7;
+$lime-250: #D4E792;
 $lime-300: #CBE27D;
+$lime-350: #C3DD68;
 $lime-400: #BAD852;
+$lime-450: #B2D33D;
 $lime-500: #A9CE28;
+$lime-550: #99BE2C;
 $lime-600: #88AD2F;
+$lime-650: #789D33;
 $lime-700: #678C37;
+$lime-750: #577C3B;
 $lime-800: #466B3E;
+$lime-850: #365B42;
 $lime-900: #254A46;
 $lime-950: #153A49;
 
 /* green */
 $green-50: #E5F3EC;
 $green-100: #CBE7DC;
+$green-150: #B2DBCC;
 $green-200: #99CFBC;
+$green-250: #80C3AD;
 $green-300: #66B79D;
+$green-350: #4DAB8D;
 $green-400: #349F7D;
+$green-450: #1A936D;
 $green-500: #01875D;
+$green-550: #017E5B;
 $green-600: #02745A;
+$green-650: #026B58;
 $green-700: #026157;
+$green-750: #035855;
 $green-800: #034F53;
+$green-850: #034552;
 $green-900: #033C50;
 $green-950: #04324F;
+
+/* teal */
+$teal-50: #E6F2F2;
+$teal-100: #CEE6E8;
+$teal-150: #B7D9DE;
+$teal-200: #9FCDD4;
+$teal-250: #87C0CA;
+$teal-300: #6FB3BF;
+$teal-350: #57A7B5;
+$teal-400: #409AAB;
+$teal-450: #288EA1;
+$teal-500: #108197;
+$teal-550: #0F7890;
+$teal-600: #0E6F88;
+$teal-650: #0C6781;
+$teal-700: #0B5E79;
+$teal-750: #0A5572;
+$teal-800: #094C6B;
+$teal-850: #084363;
+$teal-900: #063B5C;
+$teal-950: #053254;
 
 /* pink */
 $pink-50: #FBE8EE;
 $pink-100: #F8D1E0;
+$pink-150: #F5BAD2;
 $pink-200: #F2A3C4;
+$pink-250: #F08CB6;
 $pink-300: #ED74A7;
+$pink-350: #EA5D99;
 $pink-400: #E7468B;
+$pink-450: #E42F7D;
 $pink-500: #E1186F;
+$pink-550: #CB1A6C;
 $pink-600: #B51B68;
+$pink-650: #9F1D65;
 $pink-700: #891F61;
+$pink-750: #73215E;
 $pink-800: #5C225B;
+$pink-850: #462457;
 $pink-900: #302654;
 $pink-950: #1A2750;
 
 /* red */
 $red-50: #FBE9E6;
 $red-100: #F7D3CF;
+$red-150: #F4BEB9;
 $red-200: #F0A8A3;
+$red-250: #ED928D;
 $red-300: #EA7C76;
+$red-350: #E66660;
 $red-400: #E3514A;
+$red-450: #DF3B33;
 $red-500: #DC251D;
+$red-550: #C62522;
 $red-600: #B12627;
+$red-650: #9B262B;
 $red-700: #862730;
+$red-750: #702735;
 $red-800: #5A273A;
+$red-850: #45283F;
 $red-900: #2F2843;
 $red-950: #1A2948;
 
-/* teal */
-$teal-50: #E6F2F2;
-$teal-100: #CEE6E8;
-$teal-200: #9FCDD4;
-$teal-300: #6FB3BF;
-$teal-400: #409AAB;
-$teal-500: #108197;
-$teal-600: #0E6F88;
-$teal-700: #0B5E79;
-$teal-800: #094C6B;
-$teal-900: #063B5C;
-$teal-950: #053254;
 
 
 
@@ -231,9 +324,9 @@ $font-family-serif: "Zilla Slab", Georgia, serif !default;
 
 // Font Sizes
 $font-size-root:         null !default; // Respects browser/user preferences
-$font-size-base:         1rem !default;
-$font-size-sm:           0.875rem !default;
-$font-size-lg:           1.125rem !default;
+$font-size-base:         1.125rem !default;
+$font-size-sm:           1rem !default;
+$font-size-lg:           1.25rem !default;
 
 // Font Weights
 $font-weight-lighter:    lighter !default;
@@ -246,32 +339,32 @@ $font-weight-bolder:     bolder !default;
 $font-weight-base:       $font-weight-normal !default;
 
 // Line Heights
-$line-height-base:       1.6 !default;   // Increased from Bootstrap's 1.5 for better readability
-$line-height-sm:         1.25 !default;
-$line-height-lg:         1.8 !default;   // Reduced from Bootstrap's 2 for better proportion
+$line-height-base:       1.75 !default;   // Increased from Bootstrap's 1.5 for better readability
+$line-height-sm:         1.5 !default;
+$line-height-lg:         1.875 !default;   // Reduced from Bootstrap's 2 for better proportion
 
 // Body Text
 $body-text-align:        null !default;
-$paragraph-margin-bottom: 1.25rem !default; // Increased from Bootstrap's 1rem
+$paragraph-margin-bottom: 0.875rem !default; // Increased from Bootstrap's 1rem
 
 // Heading Sizes (mobile-first, more conservative)
-$h1-font-size:           2rem !default;    // Reduced from 2.5rem
-$h2-font-size:           1.75rem !default; // Reduced from 2rem
-$h3-font-size:           1.5rem !default;  // Reduced from 1.75rem
-$h4-font-size:           1.35rem !default; // Reduced from 1.5rem
-$h5-font-size:           1.2rem !default;  // Reduced from 1.25rem
-$h6-font-size:           1rem !default;
+$h1-font-size:           2.375rem !default;    // Reduced from 2.5rem
+$h2-font-size:           2rem !default; // Reduced from 2rem
+$h3-font-size:           1.75rem !default;  // Reduced from 1.75rem
+$h4-font-size:           1.5rem !default; // Reduced from 1.5rem
+$h5-font-size:           1.25rem !default;  // Reduced from 1.25rem
+$h6-font-size:           1.125rem !default;
 
 // Heading Properties
 $headings-margin-bottom: 0.75rem !default; // Increased from Bootstrap's 0.5rem
-$headings-font-family:   null !default;    // Inherits from body
+$headings-font-family:   $font-family-sans-serif !default;    // Inherits from body
 $headings-font-style:    null !default;
 $headings-font-weight:   $font-weight-semibold !default; // Increased from 500
 $headings-line-height:   1.3 !default;     // Increased from 1.2 for better readability
-$headings-color:         inherit !default;
+$headings-color:         $secondary !default;
 
 // Display Typography (for hero sections, etc.)
-$display-font-family:    null !default;
+$display-font-family:    $font-family-sans-serif !default;
 $display-font-style:     null !default;
 $display-font-weight:    $font-weight-light !default;
 $display-line-height:    $headings-line-height !default;

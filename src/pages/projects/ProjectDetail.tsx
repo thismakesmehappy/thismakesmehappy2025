@@ -139,7 +139,7 @@ const ProjectDetail = () => {
         
         <Row className="mb-5">
           <Col lg={10} className="mx-auto">
-            <Card className="shadow-soft">
+            <Card>
               <Card.Img 
                 variant="top" 
                 src={project.image} 
@@ -152,7 +152,7 @@ const ProjectDetail = () => {
         
         <Row className="mb-5">
           <Col lg={8} className="mx-auto">
-            <Card className="shadow-soft">
+            <Card>
               <Card.Body className="p-4">
                 <h3 className="h4 mb-3">About This Project</h3>
                 <p className="mb-4">{project.longDescription}</p>
@@ -178,7 +178,7 @@ const ProjectDetail = () => {
         
         <Row>
           <Col lg={6} className="mb-4">
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <h4 className="h5 mb-3">Challenges</h4>
                 <ul className="list-unstyled">
@@ -193,7 +193,7 @@ const ProjectDetail = () => {
             </Card>
           </Col>
           <Col lg={6} className="mb-4">
-            <Card className="shadow-soft h-100">
+            <Card className="h-100">
               <Card.Body className="p-4">
                 <h4 className="h5 mb-3">Key Learnings</h4>
                 <ul className="list-unstyled">

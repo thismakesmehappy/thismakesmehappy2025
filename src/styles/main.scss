@@ -1,14 +1,12 @@
 // Import custom variables first
 @import 'variables';
-@import 'buttons';
 
 // Import Bootstrap and Bootstrap Icons
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Custom styles
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'fonts';
 
 body {
   font-family: $font-family-serif;
@@ -16,22 +14,11 @@ body {
 }
 
 @import 'responsive_typography';
+@import 'buttons';
 
+@import 'nav';
+@import 'gradients';
 
-.shadow-soft {
-  box-shadow: $box-shadow;
-}
-
-.shadow-soft-lg {
-  box-shadow: $box-shadow-lg;
-}
-
-// Navigation styles
-.navbar {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 // Card enhancements
 .card {
@@ -45,25 +32,6 @@ body {
   }
 }
 
-// Button enhancements
-.btn {
-  font-weight: 500;
-  text-transform: none;
-  transition: all 0.2s ease;
-
-  &:focus {
-    box-shadow: none;
-  }
-}
-@import "gradients";
-// Hero section
-.hero-section {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  @extend .gradient-lime-reverse
-}
-
 // Portfolio grid
 .portfolio-grid {
   .portfolio-item {
@@ -74,3 +42,20 @@ body {
     }
   }
 }
+
+.inline-image-height {
+  height: 1.25em;
+}
+
+.inline-image-width {
+  width: 1.75em;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .grid-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@import "portfolio_grid";
