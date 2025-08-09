@@ -5,7 +5,7 @@ import type {PortfolioGridImageProps} from "./interfaces.ts";
 export const PortfolioGridImageInner = ({image, rotateRight}: PortfolioGridImageProps) => {
     return (
         <Row className="justify-content-center">
-            <Col xs={6} sm={6} md={12}>
+            <Col xs={8} md={12}>
                 <Image
                     src={HandleAssets.getAsset(image)}
                     className={`grid-image img-fluid ${rotateRight ? "rotate-right" : "rotate-left"}`} />

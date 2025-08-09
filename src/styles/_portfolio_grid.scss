@@ -1,13 +1,15 @@
 @import 'variables';
 
+img.rotate-left, img.rotate-right {
+  transition: all 0.1s ease-in-out;
+}
+
 img.rotate-right:hover {
   transform: rotate(3deg);
-  transition: all 0.1s ease-in-out;
 }
 
 img.rotate-left:hover {
   transform: rotate(-3deg);
-  transition: all 0.1s ease-in-out;
 }
 
 .grid-caption {

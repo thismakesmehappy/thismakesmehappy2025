@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section className="hero-section gradient-lime" id="home-hero-section">
+            <section className="hero-section gradient-purple" id="home-hero-section">
                 <Container>
                     <Row className="py-6">
                         <h1 className="hero">
@@ -35,7 +35,8 @@ const Home = () => {
                             <ButtonWrapper href="mailto:bernardo+portfolio@thismakesmehappy.co" variant="primary">
                                 email me
                             </ButtonWrapper>
-                            <Button href="/contact" variant="primary">
+                            <Button href={HandleAssets.getAsset("resume/resume_bernardo_margulis.pdf")}
+                                    variant="primary">
                                 Download my résumé
                             </Button>
                         </div>

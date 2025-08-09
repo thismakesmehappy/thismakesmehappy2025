@@ -1,5 +1,9 @@
-#contact-hand {
-  img {
-    transform: rotate(-35deg);
-  }
+#contact-hero-section #contact-image-hand {
+  transform: rotate(-35deg);
+  transition: all .5s ease-in-out;
 }
+
+#contact-hero-section:hover #contact-image-hand {
+  transform: rotate(20deg);
+}
+

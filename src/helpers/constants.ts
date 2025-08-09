@@ -34,7 +34,13 @@ export const listOfBrandColorNames = [pink, green, navy, light];
 export const listOfStatusColors = [primary, success, info, warning, danger];
 export const listOfStatusColorNames = [pink, green, teal, yellow, red];
 
-
+export const memojis = [
+    "me-cereal.png",
+    "me-coffee.png",
+    "me-heard.png",
+    "me-unicotn.png",
+    "me-waving.png",
+]
 export const gridBreakpoints = {
     xs: 0,
     sm: 576,

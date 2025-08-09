@@ -50,7 +50,7 @@
   color: $pink-500;
 }
 
-.btn-tertiary, .link {
+.btn-tertiary, .link, .btn-tertiary:active, .link:active, .btn-tertiary:focus, .link:focus, .btn-tertiary:active {
   color: $pink-500;
   text-decoration: underline;
   text-underline-offset: $spacer * .25 !important;
