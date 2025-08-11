@@ -61,8 +61,8 @@ h6, .h6 {
 // Tablet and up: Scale up headings for more expressive typography
 @media (min-width: map-get($grid-breakpoints, md)) {
   h1, .h1 {
-    font-size: 3.375rem;
-    line-height: 3.375rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
     margin-bottom: 0;
 
     :before {
@@ -71,8 +71,8 @@ h6, .h6 {
   }
 
   .link .big, h2, .h2 {
-    font-size: 2.8125rem;
-    line-height: 2.8125rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
     margin-bottom: 1rem;
   }
 
@@ -98,26 +98,14 @@ h6, .h6 {
   }
 
   .hero {
-    font-size: 2rem;
-    line-height: 2.375rem;
-    padding-bottom: 1.1875rem;
-  }
-
-  .hero-sub {
-    font-size: 1.125rem;
-    line-height: 1.6785rem;
-    padding-bottom: 0.85rem;
-  }
-
-  .hero {
-    font-size: 3.375rem;
+    font-size: 2.75rem;
     line-height: 4.25rem;
     padding-bottom: 2.125rem;
   }
 
   .hero-sub {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
+    font-size: 2rem;
+    line-height: 3.125rem;
     padding-bottom: 1.875rem;
   }
 

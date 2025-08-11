@@ -5,17 +5,19 @@ import {Link} from "react-router-dom";
 const Contact = () => {
     return (
         <div>
-            <section className="about-hero gradient-aqua" id="contact-hero-section">
-                <Container>
-                    <Row className="py-6">
-                        <Col id={"contact-image"} md={4} xs={8} className="offset-2 offset-md-0 mb-3 mb-md-0">
+            <section className="gradient-aqua" id="contact-hero-section">
+                <Container className="py-6">
+                    <Row id="contact-hero">
+                        <Col id={"contact-image"} md={2} xs={8} className="offset-2 offset-md-0 mb-3 mb-md-0">
                             <Image src={HandleAssets.getAsset("contact/hand.png")}
                                    id="contact-image-hand" className={"img-fluid"} />
                         </Col>
-                        <Col id={"about-hero"} md={8}>
+                        <Col md={10}>
                             <h1 className="hero mb-0 pb-0">
                                 Let’s connect—I love teaming up with creatives, technologists, and curious minds</h1>
                         </Col>
+                    </Row>
+                    <Row>
                         <Col xs={12}>
                             <p className="hero-sub">
                                 Available for remote, hybrid, or in-person in Philadelphia, New York City, and New Jersey

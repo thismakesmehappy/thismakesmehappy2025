@@ -1,9 +1,31 @@
-#contact-hero-section #contact-image-hand {
+#contact-hero #contact-image-hand {
   transform: rotate(-35deg);
-  transition: all .5s ease-in-out;
 }
 
-#contact-hero-section:hover #contact-image-hand {
-  transform: rotate(20deg);
+#contact-hero:hover #contact-image-hand {
+  animation-name: hand-wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes hand-wave {
+  0% {
+    transform: rotate(-35deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  45% {
+    transform: rotate(-35deg);
+  }
+
+  55% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(-35deg);
+  }
+}

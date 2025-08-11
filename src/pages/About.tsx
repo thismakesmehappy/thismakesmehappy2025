@@ -1,14 +1,15 @@
-import {Container, Row, Col, Card, Form, Button, Image} from 'react-bootstrap';
+import {Container, Row, Col, Button, Image} from 'react-bootstrap';
 import HandleAssets from "../helpers/HandleAssets.ts";
 import {Link} from "react-router-dom";
 import ButtonWrapper from "../components/ButtonWrapper.tsx";
 
 const About = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted');
-    };
+
+    const gridSpacing = "gy-6 gy-md-0 g-lg-6 g-md-4 g-5 ";
+    const gridColumnsLeft = {xs: 12, md: 6, lg: 5}
+    const gridColumnsRight = {xs: 12, md: 6, lg: 7}
+    const logosWhereColumns = {xs: 12, md: 6, lg: 6};
+    const logosWhoColumns = {xs: 12, md: 6, lg: 4};
 
     return (
         <div>
@@ -47,38 +48,74 @@ const About = () => {
                     </Row>
                 </Container>
             </section>
-            {/*delete from here down*/}
             <section className="about-details" id="about-details-section">
                 <Container>
-                    <Row className="py-5">
-                        <Col xs={12} md={6} lg={4}>
-                            <h2>Where I've worked</h2>
-                            <div className="d-flex justify-content-center gap-3 flex-wrap">
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Penn Medicine</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Amazon</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Drexel University</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">This Makes Me Happy</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Nickelodeon</div>
-                            </div>
+                    <Row className="py-5 gx-lg-8 gx-md-5 gx-1">
+                        <Col xs={gridColumnsLeft.xs} md={gridColumnsLeft.md} lg={gridColumnsLeft.lg}>
+                            <h2 className={"mb-4"}>Where I've worked</h2>
+                            <Row className={gridSpacing}>
+                                <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/PennMedicine_color_rgb.png")}
+                                           className={"img-fluid"} alt={"Penn Medicine"} />
+                                </Col>
+                                <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/amazon-logo-rgb.png")}
+                                           className={"img-fluid"} alt={"Amazon"} />
+                                </Col>
+                                <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/Drexel_horiz_294.png")}
+                                           className={"img-fluid"} alt={"Drexel University"} />
+                                </Col>
 
+                                {/*<Image src={HandleAssets.getAsset("about/logo_this_makes_me_happy.png")}
+                                className={"img-fluid"} alt={"This Makes Me Happy"} />*/}
+                                <Col md={6} className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/logo_nickelodeon.png")}
+                                           className={"img-fluid"} alt={"Nickelodeon"} />
+                                </Col>
+                            </Row>
                         </Col>
-                        <Col xs={12} md={6} lg={8} className={"mt-4 mt-md-0"}>
+                        <Col xs={gridColumnsRight.xs} md={gridColumnsLeft.md} lg={gridColumnsRight.lg}
+                             className={"mt-6 mt-md-0"}>
 
                             <h2>Who I’ve created for</h2>
-                            <p>As clients, through freelance, or volunteering</p>
-                            <div className="d-flex justify-content-center gap-3 flex-wrap">
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Temple Alumni</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Longwood Gardens</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Karma</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">AIGA Philadelphia</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Glamazon</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">DesignPhiladelphia</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">JumpStart MD</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">University of the Arts</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">FMC</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Johnson and Johnson</div>
-                                <div className="bg-orange p-3 rounded-2 fw-bold">Museo Sefardí de Venezuela</div>
-                            </div>
+                            <p>A select list of organizations I've done work for, whether as direct clients, through freelance, or by volunteering</p>
+                            <Row className={gridSpacing}>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image
+                                        src={HandleAssets.getAsset("about/TempleAlumniAssociation_Formal_Red_Black.png")}
+                                        className={"img-fluid"} alt={"Temple Alumni Association"} />
+                                </Col>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/LWG_Logotype.png")}
+                                           className={"img-fluid"} alt={"Longwood Gardens"} />
+                                </Col>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/logo_aiga_philadelphia.png")}
+                                           className={"img-fluid"} alt={"AIGA Philadelphia"} />
+                                </Col>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/glam_global_RGB_logo-1_dark_lg.png")}
+                                           className={"img-fluid"} alt={"Glamazon"} />
+                                </Col>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"text-center align-content-center"}>
+                                    <Image src={HandleAssets.getAsset("about/designphiladelphia.png")}
+                                           className={"img-fluid w-50"} alt={"DesignPhiladelphia"} />
+                                </Col>
+                                <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                     className={"align-content-center img-fluid "}>
+                                    <Image src={HandleAssets.getAsset("about/logo_museo_sefardi.jpg")}
+                                           className={"img-fluid"} alt={"Museo Sefardí de Caracas"} />
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                     <Row>

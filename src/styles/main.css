@@ -248,11 +248,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.3625rem + 1.35vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.375rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -8682,7 +8682,7 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.3625rem + 1.35vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
@@ -13160,7 +13160,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.375rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -13227,8 +13227,8 @@ body {
 /* pink */
 /* red */
 h1, .h1 {
-  font-size: 2.375rem;
-  line-height: 2.375rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin-bottom: 0;
 }
 h2, .h2 {
@@ -13278,13 +13278,13 @@ h6, .h6 {
 
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 3.375rem;
-    line-height: 3.375rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
     margin-bottom: 0;
   }
   .link .big, h2, .h2 {
-    font-size: 2.8125rem;
-    line-height: 2.8125rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
     margin-bottom: 1rem;
   }
   h3, .h3 {
@@ -13304,23 +13304,13 @@ h6, .h6 {
     font-family: "Dela Gothic One", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   }
   .hero {
-    font-size: 2rem;
-    line-height: 2.375rem;
-    padding-bottom: 1.1875rem;
-  }
-  .hero-sub {
-    font-size: 1.125rem;
-    line-height: 1.6785rem;
-    padding-bottom: 0.85rem;
-  }
-  .hero {
-    font-size: 3.375rem;
+    font-size: 2.75rem;
     line-height: 4.25rem;
     padding-bottom: 2.125rem;
   }
   .hero-sub {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
+    font-size: 2rem;
+    line-height: 3.125rem;
     padding-bottom: 1.875rem;
   }
 }
@@ -13419,18 +13409,6 @@ h6, .h6 {
 /* teal */
 /* pink */
 /* red */
-.custom-navbar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 992px) {
-  .custom-navbar-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
 .navbar {
   background: linear-gradient(to bottom, #FEFFFC 66.67%, rgba(254, 255, 252, 0) 100%) !important;
   margin-bottom: -3rem;
@@ -13446,6 +13424,13 @@ h6, .h6 {
   height: 6rem;
 }
 #memoji-top img {
+  height: 100%;
+}
+
+#memoji-bottom {
+  height: 8rem;
+}
+#memoji-bottom img {
   height: 100%;
 }
 
@@ -13527,15 +13512,33 @@ h6, .h6 {
   background: linear-gradient(315deg, #b2dbcc 0%, #fefffc 100%);
 }
 
-#contact-hero-section #contact-image-hand {
+#contact-hero #contact-image-hand {
   transform: rotate(-35deg);
-  transition: all 0.5s ease-in-out;
 }
 
-#contact-hero-section:hover #contact-image-hand {
-  transform: rotate(20deg);
+#contact-hero:hover #contact-image-hand {
+  animation-name: hand-wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes hand-wave {
+  0% {
+    transform: rotate(-35deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  45% {
+    transform: rotate(-35deg);
+  }
+  55% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(-35deg);
+  }
+}
 .card {
   border: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

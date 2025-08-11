@@ -5,6 +5,8 @@ import Contact from './pages/Contact.tsx';
 import About from './pages/About.tsx';
 import Portfolio from './pages/Portfolio';
 import ProjectDetail from './pages/projects/ProjectDetail';
+import {Footer} from "./components/Footer.tsx";
+
 
 function App() {
     return (
@@ -20,10 +22,8 @@ function App() {
                         <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
                     </Routes>
                 </main>
-                <footer className="gradient-orange-reverse py-6 mt-5">
-                    <div className="container text-center">
-                        <p className="h4 mb-0 text-dark">&copy; 2025 Bernardo Margulis.</p>
-                    </div>
+                <footer>
+                    <Footer />
                 </footer>
             </div>
         </Router>
