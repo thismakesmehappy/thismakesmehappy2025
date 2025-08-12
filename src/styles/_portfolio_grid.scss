@@ -20,6 +20,7 @@ img.rotate-left:hover {
   .title {
     padding-bottom: .375rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 
 
     .pre {
@@ -34,6 +35,9 @@ img.rotate-left:hover {
       font-size: 1.375rem;
       line-height: 1.56rem;
       text-transform: uppercase;
+    }
+
+    .rule-bottom {
       padding: 0 0 .25rem 0;
       border-bottom-style: solid;
       border-bottom-width: .375rem;
@@ -47,10 +51,7 @@ img.rotate-left:hover {
   .title {
     padding-bottom: 0;
 
-    .pre {
-    }
-
-    .name {
+    .rule-bottom {
       padding: 0 0 .625rem 0;
     }
   }
@@ -59,7 +60,7 @@ img.rotate-left:hover {
 @each $color-name, $color-value in $custom-colors {
   .grid-caption.#{$color-name} {
     .title {
-      .name {
+      .rule-bottom {
         border-bottom-color: $color-value;
       }
     }
@@ -81,4 +82,12 @@ img.rotate-left:hover {
       }
     }
   }
+}
+
+#home-portfolio-grid a {
+  text-decoration: none;
+}
+
+.portfolio-grid a {
+  text-decoration: none;
 }

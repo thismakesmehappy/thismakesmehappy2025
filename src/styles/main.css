@@ -13590,6 +13590,7 @@ img.rotate-left:hover {
 .grid-caption .title {
   padding-bottom: 0.375rem;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .grid-caption .title .pre {
   margin: 0;
@@ -13602,6 +13603,8 @@ img.rotate-left:hover {
   font-size: 1.375rem;
   line-height: 1.56rem;
   text-transform: uppercase;
+}
+.grid-caption .title .rule-bottom {
   padding: 0 0 0.25rem 0;
   border-bottom-style: solid;
   border-bottom-width: 0.375rem;
@@ -13612,31 +13615,31 @@ img.rotate-left:hover {
 .grid-caption:hover .title {
   padding-bottom: 0;
 }
-.grid-caption:hover .title .name {
+.grid-caption:hover .title .rule-bottom {
   padding: 0 0 0.625rem 0;
 }
 
-.grid-caption.purple .title .name {
+.grid-caption.purple .title .rule-bottom {
   border-bottom-color: #CD64EB;
 }
 
-.grid-caption.coral .title .name {
+.grid-caption.coral .title .rule-bottom {
   border-bottom-color: #FF5F56;
 }
 
-.grid-caption.yellow .title .name {
+.grid-caption.yellow .title .rule-bottom {
   border-bottom-color: #FFD920;
 }
 
-.grid-caption.lime .title .name {
+.grid-caption.lime .title .rule-bottom {
   border-bottom-color: #A9CE28;
 }
 
-.grid-caption.aqua .title .name {
+.grid-caption.aqua .title .rule-bottom {
   border-bottom-color: #38D1CB;
 }
 
-.grid-caption.orange .title .name {
+.grid-caption.orange .title .rule-bottom {
   border-bottom-color: #FF9728;
 }
 
@@ -13650,6 +13653,14 @@ img.rotate-left:hover {
     line-height: 1.875rem;
   }
 }
+#home-portfolio-grid a {
+  text-decoration: none;
+}
+
+.portfolio-grid a {
+  text-decoration: none;
+}
+
 #memoji-top {
   height: 6rem;
 }

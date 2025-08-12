@@ -5,6 +5,7 @@
       {
         "pre": "API design and back-end engineering at Amazon",
         "title": "Frequency Groups API",
+        "short": "Design and implement Frequency Groups API at Amazon",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""
@@ -12,6 +13,7 @@
       {
         "pre": "UX strategy & Figma plug-in development",
         "title": "Happy Color Blender",
+        "short": "Happy Color Blender, Figma pluigin design and development",
         "image": "placeholder_swatches.png",
         "linkTo": "",
         "accentColor": ""
@@ -19,6 +21,7 @@
       {
         "pre": "Design leadership & innovation planning for AIGA Philadelphia",
         "title": "Strategic Chapter Plan",
+        "short": "Strategic Chapter Plan for AIGA Philadelphia",
         "image": "placeholder_postits.png",
         "linkTo": "",
         "accentColor": ""
@@ -26,6 +29,7 @@
       {
         "pre": "Creative direction & brand activation",
         "title": "Drexel Alumni Weekend Campaign",
+        "short": "Drexel Alumni Weekend creative direction",
         "image": "placeholder_aw22.png",
         "linkTo": "",
         "accentColor": ""
@@ -35,6 +39,7 @@
       {
         "pre": "Creative strategy & brand transition for health merger",
         "title": "Penn Medicine Doylestown Health Brand Integration",
+        "short": "Penn Medicine Doylestown Health Brand Integration",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""
@@ -42,6 +47,7 @@
       {
         "pre": "Visual identity & editorial design for city-wide festival",
         "title": "Design–Philadelphia Branding",
+        "short": "Design–Philadelphia festival branding",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""
@@ -49,6 +55,7 @@
       {
         "pre": "Design leadership for donor campaign & collateral",
         "title": "Drexel Fundraising Campaign",
+        "short": "Design leadership for Drexel Fundraising Campaign",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""
@@ -56,6 +63,7 @@
       {
         "pre": "Visual development for entertainment brand events",
         "title": "Nickelodeon Branding",
+        "short": "Visual development for Nickelodeon branding",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""

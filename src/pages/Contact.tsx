@@ -1,6 +1,7 @@
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import HandleAssets from "../helpers/HandleAssets.ts";
 import {Link} from "react-router-dom";
+import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
 
 const Contact = () => {
     return (
@@ -39,6 +40,7 @@ const Contact = () => {
                     </Row>
                 </Container>
             </section>
+            <PortfolioGrid />
         </div>
     );
 };

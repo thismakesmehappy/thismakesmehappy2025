@@ -2,6 +2,8 @@ import {Container, Row, Col, Button, Image} from 'react-bootstrap';
 import HandleAssets from "../helpers/HandleAssets.ts";
 import {Link} from "react-router-dom";
 import ButtonWrapper from "../components/ButtonWrapper.tsx";
+import {Footer} from "../components/Footer.tsx";
+import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
 
 const About = () => {
 
@@ -159,6 +161,7 @@ const About = () => {
                     </Row>
                 </Container>
             </section>
+            <PortfolioGrid />
         </div>
     );
 };

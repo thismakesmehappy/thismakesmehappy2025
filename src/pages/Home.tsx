@@ -68,6 +68,7 @@ const Home = () => {
                                                           key={`standard-project-${index}`}
                                                           rotateRight={(numberOfFeaturedProjects + index) % 2 == 1}
                                                           xs={12} md={6}
+                                                          link={project.linkTo}
                             />
                         })}
                     </Row>
