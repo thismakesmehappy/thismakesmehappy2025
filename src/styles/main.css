@@ -13420,20 +13420,6 @@ h6, .h6 {
   z-index: 1020 !important;
 }
 
-#memoji-top {
-  height: 6rem;
-}
-#memoji-top img {
-  height: 100%;
-}
-
-#memoji-bottom {
-  height: 8rem;
-}
-#memoji-bottom img {
-  height: 100%;
-}
-
 /* Shade/Tint */
 /* Primary Colors */
 /* neutral */
@@ -13662,6 +13648,39 @@ img.rotate-left:hover {
   .grid-caption .title .name {
     font-size: 1.5rem;
     line-height: 1.875rem;
+  }
+}
+#memoji-top {
+  height: 6rem;
+}
+#memoji-top img {
+  height: 100%;
+}
+
+#memoji-bottom {
+  height: 10rem;
+}
+#memoji-bottom img {
+  height: 100%;
+}
+
+#memoji-bottom, #memoji-top {
+  padding: 0.25em;
+}
+
+#memoji-bottom:hover, #memoji-top:hover {
+  animation: memoji-pulse 0.5s forwards ease-in-out;
+}
+
+@keyframes memoji-pulse {
+  0% {
+    padding: 0.25em;
+  }
+  50% {
+    padding: 0;
+  }
+  100% {
+    padding: 0.25em;
   }
 }
 /*

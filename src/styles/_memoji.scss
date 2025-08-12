@@ -1,0 +1,38 @@
+#memoji-top {
+  height: 6rem;
+
+  img {
+    height: 100%;
+  }
+}
+
+#memoji-bottom {
+  height: 10rem;
+
+  img {
+    height: 100%;
+  }
+}
+
+#memoji-bottom, #memoji-top {
+  padding: 0.25em;
+}
+
+#memoji-bottom:hover, #memoji-top:hover {
+  animation: memoji-pulse 0.5s forwards ease-in-out;
+}
+
+@keyframes memoji-pulse {
+  0% {
+    padding: 0.25em;
+  }
+
+  50% {
+    padding: 0;
+  }
+
+  100% {
+    padding: 0.25em;
+  }
+
+}

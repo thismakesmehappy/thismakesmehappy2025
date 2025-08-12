@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <div className="gradient-orange-reverse py-6 mt-5 container text-center">
             {memojiPlacementFlag == "bottom" &&
-                <RandomMemoji id={"memoji-bottom memoji"} className="mb-1 d-md-inline-block" />}
+                <RandomMemoji id="memoji-bottom" className="mb-1 d-md-inline-block" backgroundColor={true} />}
             <p className="h4 mb-0 text-dark">&copy; 2025 Bernardo Margulis.</p>
         </div>
     );

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Fix Test</title>
+    <link href="src/styles/main.css" rel="stylesheet">
+    <style>
+        /* Visual debugging to show baseline alignment */
+        .test-container {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .baseline-guide {
+            position: relative;
+        }
+        .baseline-guide::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: red;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1>Button Alignment Fix Test</h1>
+        
+        <div class="test-container">
+            <h3>Contact Page Structure (with fix applied)</h3>
+            <p>This simulates the exact structure from Contact.tsx:</p>
+            <ul class="hero-sub baseline-guide">
+                <li>Email: <a href="mailto:bernardo+website@thismakesmehappy.co">bernardo@thismakesmehappy.co</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/thismakesmehappy">linkedin.com/in/thissmakesmehappy</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Download Resume</a></li>
+            </ul>
+        </div>
+        
+        <div class="test-container">
+            <h3>Inline Test for Comparison</h3>
+            <p>All elements should align on the same baseline:</p>
+            <div class="hero-sub baseline-guide">
+                <span>Email: <a href="mailto:test@example.com">test@example.com</a></span> | 
+                <span>LinkedIn: <a href="#">linkedin.com/profile</a></span> | 
+                <span><a href="#" target="_blank">Download Resume</a></span>
+            </div>
+        </div>
+        
+        <div class="test-container">
+            <h3>Visual Alignment Check</h3>
+            <p>The red line below should touch the baseline of all text elements:</p>
+            <ul class="hero-sub" style="position: relative;">
+                <li style="position: relative;">
+                    Email: <a href="mailto:test@example.com">test@example.com</a>
+                    <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: red; opacity: 0.7;"></span>
+                </li>
+                <li style="position: relative;">
+                    LinkedIn: <a href="#">linkedin.com/profile</a>
+                    <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: red; opacity: 0.7;"></span>
+                </li>
+                <li style="position: relative;">
+                    <a href="#" target="_blank">Download Resume</a>
+                    <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: red; opacity: 0.7;"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
