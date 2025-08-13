@@ -2,16 +2,15 @@ import {Container, Row, Col, Button, Image} from 'react-bootstrap';
 import HandleAssets from "../helpers/HandleAssets.ts";
 import {Link} from "react-router-dom";
 import ButtonWrapper from "../components/ButtonWrapper.tsx";
-import {Footer} from "../components/Footer.tsx";
 import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
 
 const About = () => {
 
-    const gridSpacing = "gy-6 gy-md-0 g-lg-6 g-md-4 g-5 ";
-    const gridColumnsLeft = {xs: 12, md: 6, lg: 5}
-    const gridColumnsRight = {xs: 12, md: 6, lg: 7}
-    const logosWhereColumns = {xs: 12, md: 6, lg: 6};
-    const logosWhoColumns = {xs: 12, md: 6, lg: 4};
+    const gridSpacing = "g-lg-4 gy-lg-5 g-md-3 g-6";
+    const gridColumnsLeft = {xs: 12, md: 4, lg: 4, xl: 4};
+    const gridColumnsRight = {xs: 12, md: 8, lg: 8, xl: 8}
+    const logosWhereColumns = {xs: 12, md: 12, lg: 12};
+    const logosWhoColumns = {xs: 12, md: 6, lg: 6};
 
     return (
         <div>
@@ -53,7 +52,8 @@ const About = () => {
             <section className="about-details" id="about-details-section">
                 <Container>
                     <Row className="py-5 gx-lg-8 gx-md-5 gx-1">
-                        <Col xs={gridColumnsLeft.xs} md={gridColumnsLeft.md} lg={gridColumnsLeft.lg}>
+                        <Col xs={gridColumnsLeft.xs} md={gridColumnsLeft.md} lg={gridColumnsLeft.lg}
+                             xl={gridColumnsLeft.xl}>
                             <h2 className={"mb-4"}>Where I've worked</h2>
                             <Row className={gridSpacing}>
                                 <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
@@ -74,13 +74,15 @@ const About = () => {
 
                                 {/*<Image src={HandleAssets.getAsset("about/logo_this_makes_me_happy.png")}
                                 className={"img-fluid"} alt={"This Makes Me Happy"} />*/}
-                                <Col md={6} className={"align-content-center img-fluid "}>
+                                <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                     className={"align-content-center img-fluid "}>
                                     <Image src={HandleAssets.getAsset("about/logo_nickelodeon.png")}
                                            className={"img-fluid"} alt={"Nickelodeon"} />
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={gridColumnsRight.xs} md={gridColumnsLeft.md} lg={gridColumnsRight.lg}
+                        <Col xs={gridColumnsRight.xs} md={gridColumnsRight.md} lg={gridColumnsRight.lg}
+                             xl={gridColumnsRight.xl}
                              className={"mt-6 mt-md-0"}>
 
                             <h2>Who I’ve created for</h2>
