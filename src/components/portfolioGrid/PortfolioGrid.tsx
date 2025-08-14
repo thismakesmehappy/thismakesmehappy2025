@@ -1,5 +1,5 @@
 import portfolioGrid from "../../data/portfolioGrid.json";
-import {type accentColors, listOfAccentColors} from "../../helpers/constants.ts";
+import {type AccentColors, listOfAccentColors} from "../../helpers/constants.ts";
 import PortfolioItemStandard from "./PortfolioItemStandard.tsx";
 import {Container, Row} from "react-bootstrap";
 import PortfolioItemFeatured from "./PortfolioItemFeatured.tsx";
@@ -24,7 +24,7 @@ export const PortfolioGrid = () => {
                 <h2 className="mb-4">Featured Work</h2>
                 <Row>
                     {featuredProjects.map((project, index) => {
-                        const color = listOfAccentColors[index % numberOfColors] as accentColors;
+                        const color = listOfAccentColors[index % numberOfColors] as AccentColors;
                         return (
                             <PortfolioItemFeatured name={project.title}
                                                    pre={project.pre}
@@ -34,6 +34,8 @@ export const PortfolioGrid = () => {
                                                    rotateRight={(index) % 2 == 1}
                                                    key={`featured-project-${index}`}
                                                    reducedThumbnail={true}
+                                                   link={project.linkTo}
+                                                   tags={project.tags}
                             />
                         );
                     })}
@@ -45,7 +47,7 @@ export const PortfolioGrid = () => {
                 </h2>
                 <Row className={`additional-projects ${expandAdditional ? 'closed' : 'opened'}`}>
                     {standardProjects.map((project, index) => {
-                        const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as accentColors;
+                        const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as AccentColors;
                         return <PortfolioItemStandard
                             pre={project.pre}
                             image={`${baseImageLocation}/${project.image}`}
@@ -55,6 +57,7 @@ export const PortfolioGrid = () => {
                             xs={12} md={6} lg={4}
                             link={project.linkTo}
                             reducedThumbnail={false}
+                            tags={project.tags}
                         />
                     })}
                 </Row>

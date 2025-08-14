@@ -23,7 +23,7 @@ const PortfolioItemStandard = ({
         <Col xs={xs} sm={sm} md={md} lg={lg} xl={xl} xxl={xxl} className={spacingBottom}>
             <div className="portfolio-grid-container">
                 <Link to={`${link}`}>
-                    <Row className={"g-4 d-flex align-items-center"}>
+                    <Row className={"g-3 d-flex align-items-center"}>
                         <Col xs={12} sm={5} md={6}>
                             <PortfolioGridImageInner image={image} rotateRight={rotateRight}
                                                      reducedThumbnail={reducedThumbnail} />

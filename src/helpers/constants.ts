@@ -20,15 +20,15 @@ export const danger = "danger";
 export const info = "info";
 
 // Color group types
-export type accentColors = "purple" | "coral" | "yellow" | "lime" | "aqua" | "orange";
-export type brandColors = "primary" | "secondary" | "dark" | "light";
-export type brandColorNames = "pink" | "green" | "navy" | "light";
-export type status = "primary" | "success" | "info" | "warning" | "danger";
-export type statusColorNames = "green" | "teal" | "yellow" | "red"
-export type extendedColors = "green" | "pink" | "navy" | "bright" | "teal" | "red";
-export type anyColor = accentColors | brandColors | status | extendedColors | brandColorNames | statusColorNames;
-export type allBrandColors = accentColors | brandColors | status;
-export type allBrandColorNames = accentColors | brandColorNames | statusColorNames;
+export type AccentColors = "purple" | "coral" | "yellow" | "lime" | "aqua" | "orange";
+export type BrandColors = "primary" | "secondary" | "dark" | "light";
+export type BrandColorNames = "pink" | "green" | "navy" | "light";
+export type Status = "primary" | "success" | "info" | "warning" | "danger";
+export type StatusColorNames = "green" | "teal" | "yellow" | "red"
+export type ExtendedColors = "green" | "pink" | "navy" | "bright" | "teal" | "red";
+export type AnyColor = AccentColors | BrandColors | Status | ExtendedColors | BrandColorNames | StatusColorNames;
+export type AllBrandColors = AccentColors | BrandColors | Status;
+export type AllBrandColorNames = AccentColors | BrandColorNames | StatusColorNames;
 
 // Color group names
 export const listOfAccentColors = [purple, coral, yellow, lime, aqua, orange];

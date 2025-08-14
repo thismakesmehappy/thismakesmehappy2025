@@ -3,11 +3,16 @@
   "projects": {
     "featured": [
       {
-        "pre": "Designing and developing scalable APIs to reduce ad fatigue and streamline campaign control",
+        "pre": "Designing and developing scalable APIs for frequency management",
         "title": "Amazon Frequency Groups API",
-        "short": "Scalable APIs for campaign-level control at Amazon",
+        "short": "Scalable APIs for campaign-level frequency control at Amazon",
         "image": "placeholder.png",
-        "linkTo": "",
+        "linkTo": "/projects/frequency-group-apis",
+        "tags": [
+          "engineering",
+          "product design",
+          "product development"
+        ],
         "accentColor": ""
       },
       {
@@ -16,6 +21,12 @@
         "short": "Happy Color Blender, Figma pluigin design and development",
         "image": "placeholder_swatches.png",
         "linkTo": "",
+        "tags": [
+          "engineering",
+          "design",
+          "product design",
+          "figma"
+        ],
         "accentColor": ""
       },
       {
@@ -24,6 +35,12 @@
         "short": "Drexel Alumni Weekend creative direction",
         "image": "placeholder_aw22.png",
         "linkTo": "",
+        "tags": [
+          "design",
+          "creative direction",
+          "leadership",
+          "event branding"
+        ],
         "accentColor": ""
       }
     ],
@@ -34,6 +51,11 @@
         "short": "Penn Medicine Doylestown Health Brand Integration",
         "image": "placeholder.png",
         "linkTo": "",
+        "tags": [
+          "branding",
+          "leadership",
+          "strategy"
+        ],
         "accentColor": ""
       },
       {
@@ -42,6 +64,12 @@
         "short": "Design–Philadelphia festival branding",
         "image": "placeholder.png",
         "linkTo": "",
+        "tags": [
+          "design",
+          "branding",
+          "editorial",
+          "creative direction"
+        ],
         "accentColor": ""
       },
       {
@@ -50,6 +78,13 @@
         "short": "Design leadership for Drexel Fundraising Campaign",
         "image": "placeholder.png",
         "linkTo": "",
+        "tags": [
+          "design",
+          "creative direction",
+          "leadership",
+          "strategy",
+          "fundraising"
+        ],
         "accentColor": ""
       },
       {
@@ -58,6 +93,11 @@
         "short": "Visual development for Nickelodeon branding",
         "image": "placeholder.png",
         "linkTo": "",
+        "tags": [
+          "design",
+          "branding",
+          "entertainment"
+        ],
         "accentColor": ""
       },
       {
@@ -66,6 +106,11 @@
         "short": "Strategic Chapter Plan for AIGA Philadelphia",
         "image": "placeholder_postits.png",
         "linkTo": "",
+        "tags": [
+          "leadership",
+          "strategy",
+          "operations"
+        ],
         "accentColor": ""
       }
     ]

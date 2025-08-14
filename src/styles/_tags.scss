@@ -1,0 +1,22 @@
+@import "variables";
+
+.tag {
+  color: $navy !important;
+  display: inline-block;
+  font-family: $font-family-serif;
+  text-transform: capitalize;
+  padding: map-get($spacers, 1);
+  border-radius: map-get($spacers, 1);
+  font-size: $small-font-size;
+  margin-bottom: map-get($spacers, 2);
+
+  &:not(:last-child) {
+    margin-right: map-get($spacers, 2);
+  }
+
+  @each $color-name, $color-value in $custom-colors-faded {
+    &.#{$color-name} {
+      background-color: $color-value !important; //$color-value !important;
+    }
+  }
+}

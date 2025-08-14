@@ -4,6 +4,7 @@ import PortfolioGridImageInner from "./PortfolioGridImageInner.tsx";
 import PortfolioGridTitleInner from "./PortfolioGridTitleInner.tsx";
 import {Link} from "react-router-dom";
 
+
 const PortfolioItemFeatured = ({
                                    image,
                                    name,

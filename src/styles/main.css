@@ -13283,12 +13283,12 @@ h6, .h6 {
     margin-bottom: 0;
   }
   .link .big, h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.125rem;
     line-height: 2.25rem;
     margin-bottom: 1rem;
   }
   h3, .h3 {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
   h4, .h4 {
     font-size: 1.5rem;
@@ -13749,6 +13749,58 @@ img.rotate-left, img.rotate-right {
     padding: 0.25em;
   }
 }
+/* Shade/Tint */
+/* Primary Colors */
+/* neutral */
+/* purple */
+/* orange */
+/* coral */
+/* blue */
+/* yellow */
+/* aqua */
+/* lime */
+/* green */
+/* teal */
+/* pink */
+/* red */
+.tag {
+  color: #04294D !important;
+  display: inline-block;
+  font-family: "Zilla Slab", Georgia, serif;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  margin-bottom: 0.5rem;
+}
+.tag:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.tag.purple {
+  background-color: #EFD1F7 !important;
+}
+.tag.coral {
+  background-color: #FECFCA !important;
+}
+.tag.yellow {
+  background-color: #FEF0A4 !important;
+}
+.tag.lime {
+  background-color: #E5F0BC !important;
+}
+.tag.aqua {
+  background-color: #C3F1ED !important;
+}
+.tag.orange {
+  background-color: #FEE0BC !important;
+}
+.tag.pink {
+  background-color: #F8D1E0 !important;
+}
+.tag.green {
+  background-color: #B2DBCC !important;
+}
+
 /*
 🎯 Variable Overrides: 
    - Edit _variables.scss to override Bootstrap variables

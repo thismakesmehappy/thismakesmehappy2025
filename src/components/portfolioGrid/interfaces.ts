@@ -1,11 +1,11 @@
-import type {accentColors} from "../../helpers/constants.ts";
+import type {AccentColors} from "../../helpers/constants.ts";
 
 export const spacingBottom = "mb-xl-6 mb-5";
 
 export interface PortfolioGridTitleProps {
     name?: string;
     pre: string;
-    color?: accentColors;
+    color?: AccentColors;
     className?: string;
 }
 
@@ -27,6 +27,7 @@ export interface PortfolioGridItemsColsProps extends PortfolioGridTitleProps, Po
     xl?: number;
     xxl?: number;
     link?: string;
+    tags?: string[];
 }
 
 export interface PortfolioGridItemFeaturedProps extends PortfolioGridItemProps {

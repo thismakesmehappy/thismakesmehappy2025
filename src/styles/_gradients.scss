@@ -1,18 +1,7 @@
 @import "variables";
 
-$colors: (
-        "purple": $purple-150,
-        "coral": $coral-150,
-        "yellow": $yellow-200,
-        "lime": $lime-150,
-        "aqua": $aqua-150,
-        "orange": $orange-150,
-        "pink": $pink-100,
-        "green": $green-150,
-);
-
 // Generate gradient classes for each color in $custom-colors
-@each $color-name, $color-value in $colors {
+@each $color-name, $color-value in $custom-colors-faded {
   .gradient-#{$color-name} {
     background: linear-gradient(135deg, rgba($color-value, 1) 0%, rgba($light, 1) 100%);
   }

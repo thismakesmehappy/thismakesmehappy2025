@@ -274,45 +274,63 @@ $red-900: #2F2843;
 $red-950: #1A2948;
 
 
-
-
 // ========================================
 // BOOTSTRAP COLOR SYSTEM OVERRIDES
 // ========================================
-$primary:       $pink-500 !default;
-$secondary:     $green-500 !default;
-$success:       $green-500 !default;
-$info:          $teal-500 !default;
-$warning:       $yellow-500 !default;
-$danger:        $red-500 !default;
-$light:         $light !default;
-$dark:          $navy !default;
+$primary: $pink-500 !default;
+$secondary: $green-500 !default;
+$success: $green-500 !default;
+$info: $teal-500 !default;
+$warning: $yellow-500 !default;
+$danger: $red-500 !default;
+$light: $light !default;
+$dark: $navy !default;
 
 // Custom theme colors
 $custom-colors: (
-  "purple": $purple-500,
-  "coral": $coral-500,
-  "yellow": $yellow-500,
-  "lime": $lime-500,
-  "aqua": $aqua-500,
-  "orange": $orange-500,
+        "purple": $purple-500,
+        "coral": $coral-500,
+        "yellow": $yellow-500,
+        "lime": $lime-500,
+        "aqua": $aqua-500,
+        "orange": $orange-500,
 ) !default;
+
+$custom-colors-light: (
+        "purple": $purple-300,
+        "coral": $coral-300,
+        "yellow": $yellow-300,
+        "lime": $lime-300,
+        "aqua": $aqua-300,
+        "orange": $orange-300,
+) !default;
+
+$custom-colors-faded: (
+        "purple": $purple-150,
+        "coral": $coral-150,
+        "yellow": $yellow-200,
+        "lime": $lime-150,
+        "aqua": $aqua-150,
+        "orange": $orange-150,
+        "pink": $pink-100,
+        "green": $green-150,
+);
 
 // Merge custom colors with Bootstrap's theme colors
 $theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
 ), $custom-colors) !default;
 
 // Body
-$body-bg:       $light !default;
-$body-color:    $navy !default;
+$body-bg: $light !default;
+$body-color: $navy !default;
 
 // ========================================
 // TYPOGRAPHY SYSTEM
@@ -323,112 +341,112 @@ $font-family-sans-serif: "Dela Gothic One", system-ui, -apple-system, "Segoe UI"
 $font-family-serif: "Zilla Slab", Georgia, serif !default;
 
 // Font Sizes
-$font-size-root:         null !default; // Respects browser/user preferences
-$font-size-base:         1.125rem !default;
-$font-size-sm:           1rem !default;
-$font-size-lg:           1.25rem !default;
+$font-size-root: null !default; // Respects browser/user preferences
+$font-size-base: 1.125rem !default;
+$font-size-sm: 1rem !default;
+$font-size-lg: 1.25rem !default;
 
 // Font Weights
-$font-weight-lighter:    lighter !default;
-$font-weight-light:      300 !default;
-$font-weight-normal:     400 !default;
-$font-weight-medium:     500 !default;
-$font-weight-semibold:   600 !default;
-$font-weight-bold:       700 !default;
-$font-weight-bolder:     bolder !default;
-$font-weight-base:       $font-weight-normal !default;
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+$font-weight-base: $font-weight-normal !default;
 
 // Line Heights
-$line-height-base:       1.75 !default;   // Increased from Bootstrap's 1.5 for better readability
-$line-height-sm:         1.5 !default;
-$line-height-lg:         1.875 !default;   // Reduced from Bootstrap's 2 for better proportion
+$line-height-base: 1.75 !default; // Increased from Bootstrap's 1.5 for better readability
+$line-height-sm: 1.5 !default;
+$line-height-lg: 1.875 !default; // Reduced from Bootstrap's 2 for better proportion
 
 // Body Text
-$body-text-align:        null !default;
+$body-text-align: null !default;
 $paragraph-margin-bottom: 0.875rem !default; // Increased from Bootstrap's 1rem
 
 // Heading Sizes (mobile-first, more conservative)
-$h1-font-size:           2.5rem !default;    // Reduced from 2.5rem
-$h2-font-size:           2rem !default; // Reduced from 2rem
-$h3-font-size:           1.75rem !default;  // Reduced from 1.75rem
-$h4-font-size:           1.5rem !default; // Reduced from 1.5rem
-$h5-font-size:           1.25rem !default;  // Reduced from 1.25rem
-$h6-font-size:           1.125rem !default;
+$h1-font-size: 2.5rem !default; // Reduced from 2.5rem
+$h2-font-size: 2rem !default; // Reduced from 2rem
+$h3-font-size: 1.75rem !default; // Reduced from 1.75rem
+$h4-font-size: 1.5rem !default; // Reduced from 1.5rem
+$h5-font-size: 1.25rem !default; // Reduced from 1.25rem
+$h6-font-size: 1.125rem !default;
 
 // Heading Properties
 $headings-margin-bottom: 0.75rem !default; // Increased from Bootstrap's 0.5rem
-$headings-font-family:   $font-family-sans-serif !default;    // Inherits from body
-$headings-font-style:    null !default;
-$headings-font-weight:   $font-weight-semibold !default; // Increased from 500
-$headings-line-height:   1.3 !default;     // Increased from 1.2 for better readability
-$headings-color:         $secondary !default;
+$headings-font-family: $font-family-sans-serif !default; // Inherits from body
+$headings-font-style: null !default;
+$headings-font-weight: $font-weight-semibold !default; // Increased from 500
+$headings-line-height: 1.3 !default; // Increased from 1.2 for better readability
+$headings-color: $secondary !default;
 
 // Display Typography (for hero sections, etc.)
-$display-font-family:    $font-family-sans-serif !default;
-$display-font-style:     null !default;
-$display-font-weight:    $font-weight-light !default;
-$display-line-height:    $headings-line-height !default;
+$display-font-family: $font-family-sans-serif !default;
+$display-font-style: null !default;
+$display-font-weight: $font-weight-light !default;
+$display-line-height: $headings-line-height !default;
 
 // Special Text Elements
-$lead-font-size:         1.25rem !default;
-$lead-font-weight:       $font-weight-light !default;
-$small-font-size:        0.875em !default;
-$sub-sup-font-size:      0.75em !default;
-$text-muted:             $neutral-400 !default;
-$initialism-font-size:   $small-font-size !default;
+$lead-font-size: 1.25rem !default;
+$lead-font-weight: $font-weight-light !default;
+$small-font-size: 0.875em !default;
+$sub-sup-font-size: 0.75em !default;
+$text-muted: $neutral-400 !default;
+$initialism-font-size: $small-font-size !default;
 
 // Blockquotes
-$blockquote-font-size:        1.25rem !default;
+$blockquote-font-size: 1.25rem !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 // Code & Pre
-$code-font-size:         $small-font-size !default;
-$kbd-font-size:          $code-font-size !default;
+$code-font-size: $small-font-size !default;
+$kbd-font-size: $code-font-size !default;
 
 // Links & Emphasis
-$link-decoration:        underline !default;
-$link-hover-decoration:  null !default;
+$link-decoration: underline !default;
+$link-hover-decoration: null !default;
 
 // List & Definition Lists
-$dt-font-weight:         $font-weight-bold !default;
+$dt-font-weight: $font-weight-bold !default;
 
 // Figure Captions
 $figure-caption-font-size: $small-font-size !default;
 
 // Grid
-$grid-gutter-width:      2rem !default;
+$grid-gutter-width: 2rem !default;
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
 ) !default;
 
 // Spacing
 $spacer: 1rem !default;
 $spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5,
-  8: $spacer * 6
+        0: 0,
+        1: $spacer * 0.25,
+        2: $spacer * 0.5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        6: $spacer * 4,
+        7: $spacer * 5,
+        8: $spacer * 6
 ) !default;
 
 // Border radius
 
-$border-radius:          0.5rem !default;
-$border-radius-sm:       0.25rem !default;
-$border-radius-lg:       0.75rem !default;
-$border-radius-xl:       1rem !default;
+$border-radius: 0.5rem !default;
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.75rem !default;
+$border-radius-xl: 1rem !default;
 
 // Shadows
-$box-shadow:             0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
-$box-shadow-sm:          0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
-$box-shadow-lg:          0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
-$box-shadow-xl:          0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
+$box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
+$box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
+$box-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
