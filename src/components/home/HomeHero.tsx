@@ -1,15 +1,22 @@
-import {Button, Col, Container, Image} from "react-bootstrap";
-import ButtonWrapper from "../helpers/ButtonWrapper.tsx";
+import {Col, Container, Image} from "react-bootstrap";
+import {useState} from "react";
+import CallToAction from "../helpers/CallToAction.tsx";
 
 const HomeHero = () => {
+    const [isHovering, setIsHovering] = useState(false);
+
     return (
         <section className="contact-hero gradient-lime hero-section" id="home-hero-section">
             <Container>
                 <div className={"d-block d-md-flex gx-6"}>
                     <div id={"headshot"}>
-                        <Image src="about/bernardo_square.png"
-                               className={"img-fluid img rounded-circle me-3"}
-                               id="headshot" />
+                        <Image
+                            src={isHovering ? "about/bernardo_square_wink.png" : "about/bernardo_square.png"}
+                            className={"img-fluid img rounded-circle me-3"}
+                            id="headshot"
+                            onMouseEnter={() => setIsHovering(true)}
+                            onMouseLeave={() => setIsHovering(false)}
+                        />
                     </div>
                     <div id={"about-hero"}>
                         <h1 className="hero mb-0 pb-0">
@@ -31,23 +38,7 @@ const HomeHero = () => {
                         src='homepage/seal_penn_med.png'
                         className="inline-image inline-image-height" /> Penn Medicine Doylestown Health merger.
                     </p>
-                    <div className="d-block text-center d-md-flex justify-content-center gap-3">
-                        <ButtonWrapper href="mailto:bernardo+portfolio@thismakesmehappy.co" variant="primary"
-                                       className={"mb-3 mb-md-0"}>
-                            <i className="bi bi-envelope"></i> email
-                        </ButtonWrapper>
-                        <ButtonWrapper href="https://www.linkedin.com/in/thismakesmehappy/" target="_blank"
-                                       variant="primary" className={"mb-3 mb-md-0"}>
-                            <i className="bi bi-linkedin"></i> LinkedIn
-                        </ButtonWrapper>
-                        <ButtonWrapper href="https://github.com/thismakesmehappy" target="_blank"
-                                       variant="primary" className={"mb-3 mb-md-0"}>
-                            <i className="bi bi-github"></i> Github
-                        </ButtonWrapper>
-                        <Button href="/public/resume/resume_bernardo_margulis.pdf" variant="primary">
-                            <i className="bi bi-file-earmark-arrow-down"></i> Résumé (PDF ~100KB)
-                        </Button>
-                    </div>
+                    <CallToAction />
                 </Col>
             </Container>
         </section>

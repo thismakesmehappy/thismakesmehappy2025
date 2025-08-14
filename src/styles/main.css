@@ -13269,7 +13269,7 @@ h6, .h6 {
   font-family: "Dela Gothic One", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-.hero-sub, #wall-of-terms {
+.hero-sub, #quick-wins strong, #wall-of-terms {
   font-size: 1.125rem;
   line-height: 1.6785rem;
   padding-bottom: 0.85rem;
@@ -13308,7 +13308,7 @@ h6, .h6 {
     line-height: 4.25rem;
     padding-bottom: 2.125rem;
   }
-  .hero-sub, #wall-of-terms {
+  .hero-sub, #quick-wins strong, #wall-of-terms {
     font-size: 2rem;
     line-height: 3.125rem;
     padding-bottom: 1.875rem;
@@ -13589,6 +13589,24 @@ h6, .h6 {
 }
 #wall-of-terms li:nth-child(odd) {
   color: #C0CAD0;
+}
+
+#quick-wins {
+  border: #01875D 0.25rem solid;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  border-radius: 1rem;
+}
+#quick-wins li {
+  display: block;
+  margin: 0;
+}
+#quick-wins strong {
+  display: block;
+  padding-bottom: 0;
+  color: #01875D;
 }
 
 /* Shade/Tint */
