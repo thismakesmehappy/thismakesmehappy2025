@@ -1,15 +1,16 @@
 import {Col, Image, Row} from "react-bootstrap";
-import HandleAssets from "../../helpers/HandleAssets.ts";
 import type {PortfolioGridImageProps} from "./interfaces.ts";
 
-export const PortfolioGridImageInner = ({image, rotateRight}: PortfolioGridImageProps) => {
+const PortfolioGridImageInner = ({image, rotateRight, reducedThumbnail = true}: PortfolioGridImageProps) => {
     return (
         <Row className="justify-content-center">
-            <Col xs={8} md={12}>
+            <Col xs={reducedThumbnail ? 8 : 12} md={12}>
                 <Image
-                    src={HandleAssets.getAsset(image)}
+                    src={image}
                     className={`grid-image img-fluid ${rotateRight ? "rotate-right" : "rotate-left"}`} />
             </Col>
         </Row>
     );
 };
+
+export default PortfolioGridImageInner;

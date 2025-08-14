@@ -1,7 +1,7 @@
 import {memojiPlacementFlag} from "../helpers/constants.ts";
-import {RandomMemoji} from "./RandomMemoji.tsx";
+import {RandomMemoji} from "./helpers/RandomMemoji.tsx";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <div className="gradient-orange-reverse py-6 mt-5 container-fluid text-center">
             {memojiPlacementFlag == "bottom" &&
@@ -10,3 +10,5 @@ export const Footer = () => {
         </div>
     );
 };
+
+export default Footer;

@@ -1,0 +1,85 @@
+import {Col, Container, Image, Row} from "react-bootstrap";
+import HandleAssets from "../../helpers/HandleAssets.ts";
+
+const WhereAndWho = () => {
+    const gridSpacing = "g-lg-5 gy-lg-5 g-md-5 g-6";
+    const logosWhereColumns = {xs: 12, md: 6, lg: 3};
+    const logosWhoColumns = {xs: 12, md: 6, lg: 3};
+    return (
+        <div id="where-and-who">
+            <Container>
+                <Row className="py-5">
+                    <Col xs={12}>
+                        <h2 className={"mb-4"}>Where I've worked</h2>
+                        <Row className={gridSpacing}>
+                            <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={HandleAssets.getAsset("about/PennMedicine_color_rgb.png")}
+                                       className={"img-fluid"} alt={"Penn Medicine"} />
+                            </Col>
+                            <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={HandleAssets.getAsset("about/amazon-logo-rgb.png")}
+                                       className={"img-fluid"} alt={"Amazon"} />
+                            </Col>
+                            <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={HandleAssets.getAsset("about/Drexel_horiz_294.png")}
+                                       className={"img-fluid"} alt={"Drexel University"} />
+                            </Col>
+
+                            {/*<Image src={HandleAssets.getAsset("about/logo_this_makes_me_happy.png")}
+                                className={"img-fluid"} alt={"This Makes Me Happy"} />*/}
+                            <Col xs={logosWhereColumns.xs} md={logosWhereColumns.md} lg={logosWhereColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={HandleAssets.getAsset("about/logo_nickelodeon.png")}
+                                       className={"img-fluid"} alt={"Nickelodeon"} />
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col xs={12}
+                         className={"mt-5 d-flex-justify-content-center"}>
+
+                        <h2>Who I’ve created for</h2>
+                        <p>A select list of organizations I've done work for, whether as direct clients, through freelance, or by volunteering</p>
+                        <Row className={gridSpacing}>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image
+                                    src={"about/TempleAlumniAssociation_Formal_Red_Black.png"}
+                                    className={"img-fluid"} alt={"Temple Alumni Association"} />
+                            </Col>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={"about/LWG_Logotype.png"}
+                                       className={"img-fluid"} alt={"Longwood Gardens"} />
+                            </Col>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={"about/logo_aiga_philadelphia.png"}
+                                       className={"img-fluid"} alt={"AIGA Philadelphia"} />
+                            </Col>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={"about/glam_global_RGB_logo-1_dark_lg.png"}
+                                       className={"img-fluid"} alt={"Glamazon"} />
+                            </Col>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"text-center align-content-center"}>
+                                <Image src={"about/designphiladelphia.png"}
+                                       className={"img-fluid w-50"} alt={"DesignPhiladelphia"} />
+                            </Col>
+                            <Col xs={logosWhoColumns.xs} md={logosWhoColumns.md} lg={logosWhoColumns.lg}
+                                 className={"align-content-center img-fluid "}>
+                                <Image src={"about/logo_museo_sefardi.jpg"}
+                                       className={"img-fluid"} alt={"Museo Sefardí de Caracas"} />
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
+};
+
+export default WhereAndWho;

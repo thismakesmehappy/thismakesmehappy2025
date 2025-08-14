@@ -142,6 +142,46 @@ body {
   }
 }
 
+.hero-section {
+  @extend .pt-6;
+  @extend .pb-4;
+}
+
+#headshot {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    width: unset;
+    max-width: 12rem;
+    margin-right: map-get($spacers, 4);
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    width: unset;
+    max-width: 15rem;
+    margin-right: map-get($spacers, 5);
+  }
+
+  @extend .h5;
+
+}
+
+#wall-of-terms {
+  @extend .hero-sub;
+  color: $neutral-400;
+
+  li {
+    display: inline-block;
+    @extend .me-3;
+  }
+
+  li:nth-child(odd) {
+    color: $neutral-250;
+  }
+}
+
 @import "portfolio_grid";
 @import "memoji";
 

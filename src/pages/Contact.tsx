@@ -33,7 +33,7 @@ const Contact = () => {
                                 <li><a
                                     href={HandleAssets.getAsset("resume/resume_bernardo_margulis.pdf")}
                                     target="_blank"
-                                    rel="noopener noreferrer">Download Resume</a>
+                                    rel="noopener noreferrer">Resume</a>
                                 </li>
                             </ul>
                         </Col>

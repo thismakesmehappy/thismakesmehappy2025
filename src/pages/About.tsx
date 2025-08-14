@@ -1,7 +1,7 @@
 import {Container, Row, Col, Button, Image} from 'react-bootstrap';
 import HandleAssets from "../helpers/HandleAssets.ts";
 import {Link} from "react-router-dom";
-import ButtonWrapper from "../components/ButtonWrapper.tsx";
+import ButtonWrapper from "../components/helpers/ButtonWrapper.tsx";
 import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
 
 const About = () => {

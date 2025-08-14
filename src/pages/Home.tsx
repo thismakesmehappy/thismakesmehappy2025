@@ -1,10 +1,10 @@
 import {Container, Row, Button, Image} from 'react-bootstrap';
-import ButtonWrapper from "../components/ButtonWrapper.tsx";
+import ButtonWrapper from "../components/helpers/ButtonWrapper.tsx";
 import HandleAssets from "../helpers/HandleAssets.ts";
-import {PortfolioItemFeatured} from "../components/portfolioGrid/PortfolioItemFeatured.tsx";
+import PortfolioItemFeatured from "../components/portfolioGrid/PortfolioItemFeatured.tsx";
+import PortfolioItemStandard from "../components/portfolioGrid/PortfolioItemStandard.tsx";
 import portfolioGrid from "../data/portfolioGrid.json";
 import {type accentColors, listOfAccentColors} from "../helpers/constants.ts";
-import {PortfolioItemStandard} from "../components/portfolioGrid/PortfolioItemStandard.tsx";
 
 const Home = () => {
     const featuredProjects = portfolioGrid.projects.featured;
@@ -53,7 +53,7 @@ const Home = () => {
                             return (
                                 <PortfolioItemFeatured name={project.title} pre={project.pre}
                                                        image={`${baseImageLocation}/${project.image}`}
-                                                       reverse={index % 2 == 1}
+                                                       rotateRight={index % 2 == 1}
                                                        color={color}
                                                        key={`featured-project-${index}`}
                                 />
@@ -64,7 +64,8 @@ const Home = () => {
                         {standardProjects.map((project, index) => {
                             const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as accentColors;
                             return <PortfolioItemStandard name={project.title} pre={project.pre}
-                                                          image={`${baseImageLocation}/${project.image}`} color={color}
+                                                          image={`${baseImageLocation}/${project.image}`}
+                                                          color={color}
                                                           key={`standard-project-${index}`}
                                                           rotateRight={(numberOfFeaturedProjects + index) % 2 == 1}
                                                           xs={12} md={6}

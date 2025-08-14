@@ -3,9 +3,9 @@
   "projects": {
     "featured": [
       {
-        "pre": "API design and back-end engineering at Amazon",
-        "title": "Frequency Groups API",
-        "short": "Design and implement Frequency Groups API at Amazon",
+        "pre": "Designing and developing scalable APIs to reduce ad fatigue and streamline campaign control",
+        "title": "Amazon Frequency Groups API",
+        "short": "Scalable APIs for campaign-level control at Amazon",
         "image": "placeholder.png",
         "linkTo": "",
         "accentColor": ""
@@ -15,14 +15,6 @@
         "title": "Happy Color Blender",
         "short": "Happy Color Blender, Figma pluigin design and development",
         "image": "placeholder_swatches.png",
-        "linkTo": "",
-        "accentColor": ""
-      },
-      {
-        "pre": "Design leadership & innovation planning for AIGA Philadelphia",
-        "title": "Strategic Chapter Plan",
-        "short": "Strategic Chapter Plan for AIGA Philadelphia",
-        "image": "placeholder_postits.png",
         "linkTo": "",
         "accentColor": ""
       },
@@ -65,6 +57,14 @@
         "title": "Nickelodeon Branding",
         "short": "Visual development for Nickelodeon branding",
         "image": "placeholder.png",
+        "linkTo": "",
+        "accentColor": ""
+      },
+      {
+        "pre": "Design leadership & innovation planning for AIGA Philadelphia",
+        "title": "Strategic Chapter Plan",
+        "short": "Strategic Chapter Plan for AIGA Philadelphia",
+        "image": "placeholder_postits.png",
         "linkTo": "",
         "accentColor": ""
       }

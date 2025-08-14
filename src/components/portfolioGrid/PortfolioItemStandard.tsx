@@ -1,30 +1,41 @@
-import {Col} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {type PortfolioGridItemsColsProps, spacingBottom} from "./interfaces.ts";
-import {PortfolioGridImageInner} from "./PortfolioGridImageInner.tsx";
-import {PortfolioGridTitleInner} from "./PortfolioGridTitleInner.tsx";
+import PortfolioGridImageInner from "./PortfolioGridImageInner.tsx";
+import PortfolioGridTitleInnerShort from "./PortfolioGridTitleInnerShort.tsx";
 import {Link} from "react-router-dom";
 
-export const PortfolioItemStandard = ({
-                                          image,
-                                          name,
-                                          pre,
-                                          color,
-                                          rotateRight,
-                                          xs,
-                                          sm,
-                                          md,
-                                          lg,
-                                          xl,
-                                          xxl,
-                                          link,
-                                          short = false
-                                      }: PortfolioGridItemsColsProps) => {
+const PortfolioItemStandard = ({
+                                   image,
+                                   name,
+                                   pre,
+                                   color,
+                                   rotateRight,
+                                   xs,
+                                   sm,
+                                   md,
+                                   lg,
+                                   xl,
+                                   xxl,
+                                   link,
+                                   reducedThumbnail = false,
+                               }: PortfolioGridItemsColsProps) => {
     return (
         <Col xs={xs} sm={sm} md={md} lg={lg} xl={xl} xxl={xxl} className={spacingBottom}>
-            <Link to={`${link}`}>
-                <PortfolioGridImageInner image={image} rotateRight={rotateRight} />
-                <PortfolioGridTitleInner name={name} pre={pre} color={color} short={short} />
-            </Link>
+            <div className="portfolio-grid-container">
+                <Link to={`${link}`}>
+                    <Row className={"g-4 d-flex align-items-center"}>
+                        <Col xs={12} sm={5} md={6}>
+                            <PortfolioGridImageInner image={image} rotateRight={rotateRight}
+                                                     reducedThumbnail={reducedThumbnail} />
+                        </Col>
+                        <Col xs={12} sm={7} md={6}>
+                            <PortfolioGridTitleInnerShort name={name} pre={pre} color={color} />
+                        </Col>
+                    </Row>
+                </Link>
+            </div>
         </Col>
     );
 };
+
+export default PortfolioItemStandard;

@@ -7,13 +7,13 @@ export interface PortfolioGridTitleProps {
     pre: string;
     color?: accentColors;
     className?: string;
-    short?: boolean
 }
 
 export interface PortfolioGridImageProps {
     image: string;
     className?: string;
     rotateRight?: boolean;
+    reducedThumbnail?: boolean;
 }
 
 export interface PortfolioGridItemProps extends PortfolioGridTitleProps, PortfolioGridImageProps {

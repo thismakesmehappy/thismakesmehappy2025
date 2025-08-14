@@ -1,6 +1,6 @@
 import {Col} from "react-bootstrap";
 import type {PortfolioGridTitleProps} from "./interfaces.ts";
-import {PortfolioGridTitleInner} from "./PortfolioGridTitleInner.tsx";
+import PortfolioGridTitleInner from "./PortfolioGridTitleInner.tsx";
 
 export const PortfolioGridTitleFeatured = ({color, pre, name, className}: PortfolioGridTitleProps) => {
     return (

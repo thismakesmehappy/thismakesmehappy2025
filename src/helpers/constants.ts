@@ -50,7 +50,9 @@ export const memojis = [
 export type MemojiPlacement = 'top' | 'bottom' | 'none';
 export const memojiPlacementFlag: MemojiPlacement = 'bottom';
 
+export const includeNavMenu = false;
 // Grid breakpoints
+
 export const gridBreakpoints = {
     xs: 0,
     sm: 576,
