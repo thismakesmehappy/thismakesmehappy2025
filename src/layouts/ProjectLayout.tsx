@@ -4,6 +4,7 @@ import {useProjectHeader} from "../hooks/useProjectHeader.ts";
 import WallOfTerms from "../components/home/WallOfTerms.tsx";
 import ButtonWrapper from "../components/ui/ButtonWrapper.tsx";
 import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
+import {asset} from "../helpers/assetPath.ts";
 
 const ProjectLayout = () => {
     const {headerData} = useProjectHeader();
@@ -14,7 +15,7 @@ const ProjectLayout = () => {
                 <section className={`gradient-${headerData.color} hero-section`}
                          id="frequency-group-hero-section">
                     <Container>
-                        <ButtonWrapper href="/" variant={"link"}><i className={"bi bi-arrow-left"}></i> Home
+                        <ButtonWrapper href={asset("/")} variant={"link"}><i className={"bi bi-arrow-left"}></i> Home
                         </ButtonWrapper>
                         {headerData.title && <h1 className={"hero mb-0 pb-0"}>{headerData.title}</h1>}
                         {headerData.subtitle &&

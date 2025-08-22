@@ -1,6 +1,6 @@
 import portfolioGrid from "../../data/portfolioGrid.json";
 import {type AccentColors, listOfAccentColors} from "../../helpers/constants.ts";
-import {showAdditionalProjects} from "../../helpers/featureFlags.ts";
+import {showAdditionalProjects, showAllFeaturedProjects} from "../../helpers/featureFlags.ts";
 import PortfolioItemStandard from "./PortfolioItemStandard.tsx";
 import {Container, Row} from "react-bootstrap";
 import PortfolioItemFeatured from "./PortfolioItemFeatured.tsx";
@@ -26,7 +26,7 @@ export const PortfolioGrid = () => {
                 <h2 className="mb-4">Featured Work</h2>
                 <Row>
                     {featuredProjects.map((project, index) => {
-                        if (project.show === false) {
+                        if (showAllFeaturedProjects || project.show === false) {
                             return;
                         }
                         const color = project.accentColor ? project.accentColor as AccentColors : listOfAccentColors[index % numberOfColors] as AccentColors;

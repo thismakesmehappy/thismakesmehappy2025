@@ -3,6 +3,7 @@ import {type PortfolioGridItemsColsProps, spacingBottom} from "./interfaces.ts";
 import PortfolioGridImageInner from "./PortfolioGridImageInner.tsx";
 import PortfolioGridTitleInnerShort from "./PortfolioGridTitleInnerShort.tsx";
 import {Link} from "react-router-dom";
+import {asset} from "../../helpers/assetPath.ts";
 
 const PortfolioItemStandard = ({
                                    image,
@@ -25,7 +26,7 @@ const PortfolioItemStandard = ({
                 <Link to={`${link}`}>
                     <Row className={"g-3 d-flex align-items-center"}>
                         <Col xs={12} sm={5} md={6}>
-                            <PortfolioGridImageInner image={image} rotateRight={rotateRight}
+                            <PortfolioGridImageInner image={asset(image)} rotateRight={rotateRight}
                                                      reducedThumbnail={reducedThumbnail} />
                         </Col>
                         <Col xs={12} sm={7} md={6}>

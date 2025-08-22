@@ -1,5 +1,5 @@
 import {Col, Row} from "react-bootstrap";
-import ProjectContainer from "../../../components/helpers/ProjectContainer.tsx";
+import ProjectContainer from "../../components/helpers/ProjectContainer.tsx";
 
 export const BusinessImpactHighlights = () => {
     return (

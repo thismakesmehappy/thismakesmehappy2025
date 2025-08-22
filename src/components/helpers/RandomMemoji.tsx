@@ -1,23 +1,30 @@
 import {Image} from "react-bootstrap";
-import HandleAssets from "../../helpers/HandleAssets.ts";
 import {listOfAccentColors, memojis} from "../../helpers/constants.ts";
+import {asset} from "../../helpers/assetPath.ts";
 
 interface RandomMemojiProps {
     id?: string,
     className?: string,
     backgroundColor?: boolean,
+    backgroundColorVariant?: "light" | "dark" | "faded" | ""
 }
 
-export const RandomMemoji = ({id, className, backgroundColor = false}: RandomMemojiProps) => {
+export const RandomMemoji = ({
+                                 id,
+                                 className,
+                                 backgroundColor = false,
+                                 backgroundColorVariant = ""
+                             }: RandomMemojiProps) => {
     const memojiSelect = Math.floor(Math.random() * (memojis.length));
     const memoji = memojis[memojiSelect];
     const colorSelect = Math.floor(Math.random() * (listOfAccentColors.length));
     const color = listOfAccentColors[colorSelect];
-    const bgColor = backgroundColor ? `bg-${color}}` : ''
+    const variant = backgroundColorVariant == "" ? "" : `-${backgroundColorVariant}`;
+    const bgColor = backgroundColor ? `bg-${color}${variant}` : ''
     return (
         <>
             <div id={id} className={className}>
-                <Image src={HandleAssets.getAsset(`me/${memoji}`)}
+                <Image src={asset(`me/${memoji}`)}
                        className={`rounded-circle ${bgColor}`} />
             </div>
         </>

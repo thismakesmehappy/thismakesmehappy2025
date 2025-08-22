@@ -1,5 +1,5 @@
 {
-  "baseThumbnailDirectory": "/grid",
+  "baseThumbnailDirectory": "grid",
   "projects": {
     "featured": {
       "frequencyGroups": {

@@ -1,5 +1,6 @@
 import ButtonWrapper from "../ui/ButtonWrapper.tsx";
 import {Button} from "react-bootstrap";
+import {asset} from "../../helpers/assetPath.ts";
 
 const CallToAction = () => {
     return (
@@ -16,7 +17,7 @@ const CallToAction = () => {
                            variant="primary" className={"mb-3 mb-md-0"}>
                 <i className="bi bi-github"></i> Github
             </ButtonWrapper>
-            <Button href="/public/resume/resume_bernardo_margulis.pdf" variant="primary">
+            <Button href={asset("/resume/resume_bernardo_margulis.pdf")} variant="primary">
                 <i className="bi bi-file-earmark-arrow-down"></i> Résumé (PDF ~100KB)
             </Button>
         </div>

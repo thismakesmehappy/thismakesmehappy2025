@@ -1,7 +1,7 @@
 class HandleAssets {
 
     static getAsset(asset: string): string {
-        return `/${asset}`;
+        return `${asset}`;
     }
 }
 

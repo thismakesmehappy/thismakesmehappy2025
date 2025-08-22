@@ -1,4 +1,4 @@
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 import Home from './pages/Home';
 import FrequencyGroupApis from './pages/projects/FrequencyGroupApis';
@@ -7,11 +7,15 @@ import ProjectLayout from './layouts/ProjectLayout';
 import Footer from "./components/layout/Footer.tsx";
 import {ProjectProvider} from "./context/ProjectContext.tsx";
 import ProjectIndex from "./pages/projects/ProjectIndex.tsx";
+import ScrollToTop from './components/helpers/ScrollToTop.tsx';
 
+// Get the base path from Vite's base configuration
+const basename = import.meta.env.BASE_URL;
 
 function App() {
     return (
-        <Router>
+        <Router basename={basename}>
+            <ScrollToTop />
             <div className="App">
                 <Navigation />
                 <main>

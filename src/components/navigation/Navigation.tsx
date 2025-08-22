@@ -1,11 +1,12 @@
 import {Container, Navbar} from 'react-bootstrap';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link, useNavigate, useLocation} from 'react-router-dom';
 import {RandomMemoji} from "../helpers/RandomMemoji.tsx";
 import {includeNavMenu, memojiPlacementFlag} from "../../helpers/featureFlags.ts";
 import NavMenu from "./NavMenu.tsx";
 
 const Navigation = () => {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleWorkClick = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -41,11 +42,11 @@ const Navigation = () => {
             <Container fluid={true} className="custom-navbar-container">
                 <div
                     className="d-flex flex-column flex-lg-row align-items-center w-100 gap-lg-3 justify-content-lg-between">
-                    {memojiPlacementFlag == "top" && <RandomMemoji id={"memoji-top"} className="mb-1 d-md-none" />}
+                    {memojiPlacementFlag == "top" && <RandomMemoji key={`${location.pathname}-mobile`} id={"memoji-top"} className="mb-1 d-md-none" />}
                     <Navbar.Brand as={Link} to="/" onClick={handleScrollToTop}
                                   className="custom-brand p-0 m-0 d-md-flex align-items-md-center">
                         {memojiPlacementFlag == "top" &&
-                            <RandomMemoji id={"memoji-top"} className="mb-1 d-none d-md-inline" />}
+                            <RandomMemoji key={`${location.pathname}-desktop`} id={"memoji-top"} className="mb-1 d-none d-md-inline" />}
                         <p className={"mb-0"}>Bernardo Margulis</p>
                     </Navbar.Brand>
                     {includeNavMenu && <NavMenu onClick={handleWorkClick} onClick1={handleScrollToTop} />}

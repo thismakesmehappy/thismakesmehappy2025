@@ -4,3 +4,4 @@ export const memojiPlacementFlag: MemojiPlacement = 'bottom';
 
 export const includeNavMenu = false;
 export const showAdditionalProjects = false;
+export const showAllFeaturedProjects = false;

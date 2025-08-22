@@ -1,6 +1,7 @@
 import {Col, Container, Image} from "react-bootstrap";
 import {useState} from "react";
 import CallToAction from "../helpers/CallToAction.tsx";
+import { asset } from "../../helpers/assetPath.ts";
 
 const HomeHero = () => {
     const [isHovering, setIsHovering] = useState(false);
@@ -11,7 +12,7 @@ const HomeHero = () => {
                 <div className={"d-block d-md-flex gx-6"}>
                     <div id={"headshot"}>
                         <Image
-                            src={isHovering ? "about/bernardo_square_wink.png" : "about/bernardo_square.png"}
+                            src={isHovering ? asset("about/bernardo_square_wink.png") : asset("about/bernardo_square.png")}
                             className={"img-fluid img rounded-circle me-3"}
                             id="headshot"
                             onMouseEnter={() => setIsHovering(true)}
@@ -29,13 +30,13 @@ const HomeHero = () => {
                     </p>
                     <p>
                         I've designed brand and events at <Image
-                        src='homepage/nickelodeon_splat.png'
+                        src={asset('homepage/nickelodeon_splat.png')}
                         className="inline-image inline-image-height" /> Nickelodeon, worked with clients and agencies through my design practice, led the creative team for <Image
-                        src='homepage/logo_dragon_7548.png'
+                        src={asset('homepage/logo_dragon_7548.png')}
                         className="inline-image inline-image-height" /> Drexel University Institutional Advancement, shipped production code for <Image
-                        src='homepage/amazon_smile.png'
+                        src={asset('homepage/amazon_smile.png')}
                         className="inline-image inline-image-width" /> Amazon, and provided creative leadership during the <Image
-                        src='homepage/seal_penn_med.png'
+                        src={asset('homepage/seal_penn_med.png')}
                         className="inline-image inline-image-height" /> Penn Medicine Doylestown Health merger.
                     </p>
                     <CallToAction />
