@@ -4,32 +4,11 @@ import Highlights from "../components/home/Highlights.tsx";
 import WhereAndWho from "../components/home/WhereAndWho.tsx";
 import LookingFor from "../components/home/LookingFor.tsx";
 import WallOfTerms from "../components/home/WallOfTerms.tsx";
+import {homeListOfTerms} from "../data/homeListOfTerms.ts";
+
 
 const Home = () => {
-    const listOfTerms = [
-        "Creative Leadership & Strategy",
-        "Team Building & Mentorship",
-        "Brand Development",
-        "Art Direction",
-        "Design Thinking",
-        "Cross-functional Collaboration",
-        "Project Management",
-        "UX/UI Design",
-        "Business Development",
-        "Bilingual in Spanish and English",
-        "Adobe Photoshop",
-        " Adobe Illustrator",
-        "InDesign",
-        "Figma",
-        "HTML",
-        "CSS",
-        "TypeScript",
-        "JavaScript",
-        "React",
-        "Java",
-        "Python",
-        "API design and development",
-    ];
+
     return (
         <div>
             <HomeHero />
@@ -37,7 +16,7 @@ const Home = () => {
             <LookingFor />
             <WhereAndWho />
             <Highlights />
-            <WallOfTerms terms={listOfTerms} />
+            <WallOfTerms className={"hero-section"} terms={homeListOfTerms} />
         </div>
 
     );

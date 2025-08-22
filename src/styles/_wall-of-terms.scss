@@ -1,0 +1,18 @@
+// ========================================
+// WALL OF TERMS COMPONENT STYLES
+// ========================================
+// Styles specific to the WallOfTerms component
+
+#wall-of-terms {
+  @extend .hero-sub;
+  color: $neutral-400;
+
+  li {
+    display: inline-block;
+    @extend .me-3;
+  }
+
+  li:nth-child(odd) {
+    color: $neutral-250;
+  }
+}

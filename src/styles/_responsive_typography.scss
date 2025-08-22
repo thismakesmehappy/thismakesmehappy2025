@@ -58,6 +58,13 @@ h6, .h6 {
   font-family: $font-family-sans-serif;
 }
 
+.hero-sub-med {
+  font-size: 1.0625rem;
+  line-height: 1.35rem;
+  padding-bottom: 0.85rem;
+  font-family: $font-family-sans-serif;
+}
+
 // Tablet and up: Scale up headings for more expressive typography
 @media (min-width: map-get($grid-breakpoints, md)) {
   h1, .h1 {
@@ -115,6 +122,14 @@ h6, .h6 {
     padding-bottom: 1.375rem;
   }
 
+}
+
+.font-display, .font-sans {
+  font-family: $font-family-sans-serif;
+}
+
+.font-text, .font-serif {
+  font-family: $font-family-serif;
 }
 
 //// Desktop and up: Even more expressive for large screens

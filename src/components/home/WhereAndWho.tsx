@@ -74,6 +74,7 @@ const WhereAndWho = () => {
                                 <Image src={"about/logo_museo_sefardi.jpg"}
                                        className={"img-fluid"} alt={"Museo Sefardí de Caracas"} />
                             </Col>
+                            {/*    TODO: Add a couple more */}
                         </Row>
                     </Col>
                 </Row>

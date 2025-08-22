@@ -1,0 +1,15 @@
+// ========================================
+// ANIMATION & TRANSITION EFFECTS
+// ========================================
+// Reusable animations and hover effects
+
+// Portfolio grid hover effects
+.portfolio-grid {
+  .portfolio-item {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

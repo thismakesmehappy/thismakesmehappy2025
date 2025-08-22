@@ -21,14 +21,33 @@ export const info = "info";
 
 // Color group types
 export type AccentColors = "purple" | "coral" | "yellow" | "lime" | "aqua" | "orange";
+export type AccentColorsDark = "purple-dark" | "coral-dark" | "yellow-dark" | "lime-dark" | "aqua-dark" | "orange-dark";
+export type AccentColorsLight =
+    "purple-light"
+    | "coral-light"
+    | "yellow-light"
+    | "lime-light"
+    | "aqua-light"
+export type AccentColorsFaded =
+    "purple-faded"
+    | "coral-faded"
+    | "yellow-faded"
+    | "lime-faded"
+    | "aqua-faded"
 export type BrandColors = "primary" | "secondary" | "dark" | "light";
 export type BrandColorNames = "pink" | "green" | "navy" | "light";
 export type Status = "primary" | "success" | "info" | "warning" | "danger";
 export type StatusColorNames = "green" | "teal" | "yellow" | "red"
 export type ExtendedColors = "green" | "pink" | "navy" | "bright" | "teal" | "red";
-export type AnyColor = AccentColors | BrandColors | Status | ExtendedColors | BrandColorNames | StatusColorNames;
-export type AllBrandColors = AccentColors | BrandColors | Status;
-export type AllBrandColorNames = AccentColors | BrandColorNames | StatusColorNames;
+export type AllColors =
+    AccentColors
+    | AccentColorsDark
+    | AccentColorsLight
+    | AccentColorsFaded
+    | BrandColors
+    | BrandColorNames
+    | StatusColorNames
+    | Status;
 
 // Color group names
 export const listOfAccentColors = [purple, coral, yellow, lime, aqua, orange];
@@ -45,12 +64,6 @@ export const memojis = [
     "me-unicorn.png",
     "me-waving.png",
 ]
-
-// Position for Memoji
-export type MemojiPlacement = 'top' | 'bottom' | 'none';
-export const memojiPlacementFlag: MemojiPlacement = 'bottom';
-
-export const includeNavMenu = false;
 // Grid breakpoints
 
 export const gridBreakpoints = {

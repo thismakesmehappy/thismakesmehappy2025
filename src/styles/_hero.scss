@@ -1,0 +1,9 @@
+// ========================================
+// HERO SECTION STYLES
+// ========================================
+// General hero section styling used across multiple pages
+
+.hero-section {
+  @extend .pt-6;
+  @extend .pb-4;
+}

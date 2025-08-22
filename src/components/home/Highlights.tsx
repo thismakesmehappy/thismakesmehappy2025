@@ -1,32 +1,58 @@
 import {Col, Container, Row} from "react-bootstrap";
 import CallToAction from "../helpers/CallToAction.tsx";
+import KeyHighlights from "../helpers/KeyHighlights.tsx";
+import KeyHighlight from "../helpers/KeyHighlight.tsx";
+import KeyHighlightCallout from "../helpers/KeyHighlightCallout.tsx";
 
 const Highlights = () => {
     return (
         <section className="about-details gradient-aqua hero-section" id="about-details-section">
             <Container>
                 <Row>
-                    <h2>Highlights</h2>
-                    <Col xs={12}>
-                        <section id="quick-wins">
-                            <div className="quick-wins-list d-flex flex-wrap gap-3">
-                                <Row xs={1} md={3} lg={6}>
-                                    <Col><strong>+6%</strong> unique ad reach supported through API development at Amazon</Col>
-                                    <Col><strong>+25%</strong> team productivity optimized at Drexel
-                                    </Col>
-                                    <Col>
-                                        <strong>12%%</strong> increase in event registration at Drexel
-                                    </Col>
-                                    <Col><strong>$100M</strong> annual fundraising supported by campaign creative at Drexel
-                                    </Col>
-                                    <Col><strong>$50K</strong> sponsorship revenue generated from $0 in two years at AIGA
-                                    </Col>
-                                    <Col><strong>100%</strong> new business via referrals at This Makes Me Happy studio
-                                    </Col>
-                                </Row>
-                            </div>
-                        </section>
-                    </Col>
+                    <KeyHighlights subtitle={"Highlights"} color={"aqua"} className={"highlights-home"}>
+                        <KeyHighlight>
+                            <i className={'bi bi-broadcast text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                6%
+                            </KeyHighlightCallout>
+                            unique ad reach supported through API development at Amazon
+                        </KeyHighlight>
+                        <KeyHighlight>
+                            <i className={'bi bi-people text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                +25%
+                            </KeyHighlightCallout>
+                            team productivity optimized at Drexel
+                        </KeyHighlight>
+                        <KeyHighlight>
+                            <i className={'bi bi-calendar text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                12%
+                            </KeyHighlightCallout>
+                            increase in event registration at Drexel
+                        </KeyHighlight>
+                        <KeyHighlight>
+                            <i className={'bi bi-currency-dollar text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                $100M
+                            </KeyHighlightCallout>
+                            annual fundraising supported by campaign creative at Drexel
+                        </KeyHighlight>
+                        <KeyHighlight>
+                            <i className={'bi bi-cash-stack text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                $50K
+                            </KeyHighlightCallout>
+                            sponsorship revenue generated from $0 in two years at AIGA
+                        </KeyHighlight>
+                        <KeyHighlight>
+                            <i className={'bi bi-megaphone text-aqua-dark'}></i>
+                            <KeyHighlightCallout>
+                                100%
+                            </KeyHighlightCallout>
+                            new business via referrals at This Makes Me Happy studio
+                        </KeyHighlight>
+                    </KeyHighlights>
                     <Col xs={12} md={4}>
                         <h3>Design Leadership & Strategy</h3>
                         <ul>

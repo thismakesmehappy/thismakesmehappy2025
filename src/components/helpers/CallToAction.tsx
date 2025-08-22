@@ -1,4 +1,4 @@
-import ButtonWrapper from "./ButtonWrapper.tsx";
+import ButtonWrapper from "../ui/ButtonWrapper.tsx";
 import {Button} from "react-bootstrap";
 
 const CallToAction = () => {

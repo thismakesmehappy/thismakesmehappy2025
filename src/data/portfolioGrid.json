@@ -1,24 +1,57 @@
 {
-  "baseThumbnailDirectory": "grid",
+  "baseThumbnailDirectory": "/grid",
   "projects": {
-    "featured": [
-      {
-        "pre": "Designing and developing scalable APIs for frequency management",
+    "featured": {
+      "frequencyGroups": {
+        "pre": "Technical Development with Design Methodology",
         "title": "Amazon Frequency Groups API",
-        "short": "Scalable APIs for campaign-level frequency control at Amazon",
-        "image": "placeholder.png",
+        "subtitle": "Design Approach Meets Technical Execution",
+        "short": "Designing APIs for Frequency Groups at Amazon",
+        "summary": "I spent 18 months as a dedicated developer on Amazon’s Frequency Groups API. I approached the problem by applying design principles to backend engineering to deliver production APIs serving millions of requests.",
+        "image": "grid_frequency_group_api.png",
         "linkTo": "/projects/frequency-group-apis",
         "tags": [
           "engineering",
           "product design",
           "product development"
         ],
-        "accentColor": ""
+        "accentColor": "purple",
+        "project": "Frequency Groups API: Technical Development with Design Methodology",
+        "timeline": "June 2023 - January 2025  (18 months)",
+        "role": "Software Development Engineer, Amazon Advertising",
+        "challenge": "Deliver scalable backend systems while integrating product design principles into technical implementation",
+        "wordCloud": [
+          "API Design",
+          "User-Centric Engineering",
+          "Design-Driven Problem Solving",
+          "Scalable Systems",
+          "Experience-Driven Leadership",
+          "Cross-Functional Collaboration",
+          "Advertiser Experience",
+          "Backend Architecture",
+          "Product Impact",
+          "Failure Mitigation",
+          "Trade-Off Decisions",
+          "User-First Approach",
+          "Problem Investigation",
+          "Onboarding & Mentorship",
+          "Technical Rigor",
+          "Product Clarity",
+          "Sustainable Documentation",
+          "Business Impact",
+          "Workflow Integration",
+          "Leadership Without Title"
+        ],
+        "wordCount": 667,
+        "readingTime": 3,
+        "show": true
       },
-      {
+      "figmaPlugin": {
         "pre": "UX strategy & Figma plug-in development",
         "title": "Happy Color Blender",
+        "subtitle": "",
         "short": "Happy Color Blender, Figma pluigin design and development",
+        "summary": "",
         "image": "placeholder_swatches.png",
         "linkTo": "",
         "tags": [
@@ -27,12 +60,22 @@
           "product design",
           "figma"
         ],
-        "accentColor": ""
+        "accentColor": "coral",
+        "project": "",
+        "timeline": "",
+        "role": "",
+        "challenge": "",
+        "wordCloud": [],
+        "wordCount": 0,
+        "readingTime": 0,
+        "show": false
       },
-      {
+      "drexelAlumniWeekend": {
         "pre": "Creative direction & brand activation",
         "title": "Drexel Alumni Weekend Campaign",
+        "subtitle": "",
         "short": "Drexel Alumni Weekend creative direction",
+        "summary": "",
         "image": "placeholder_aw22.png",
         "linkTo": "",
         "tags": [
@@ -41,11 +84,19 @@
           "leadership",
           "event branding"
         ],
-        "accentColor": ""
+        "accentColor": "coral",
+        "project": "",
+        "timeline": "",
+        "role": "",
+        "challenge": "",
+        "wordCloud": [],
+        "wordCount": 0,
+        "readingTime": 0,
+        "show": false
       }
-    ],
-    "standard": [
-      {
+    },
+    "standard": {
+      "pennMedicine": {
         "pre": "Creative strategy & brand transition for health merger",
         "title": "Penn Medicine Doylestown Health Brand Integration",
         "short": "Penn Medicine Doylestown Health Brand Integration",
@@ -58,7 +109,7 @@
         ],
         "accentColor": ""
       },
-      {
+      "designPhiladelphia": {
         "pre": "Visual identity & editorial design for city-wide festival",
         "title": "Design–Philadelphia Branding",
         "short": "Design–Philadelphia festival branding",
@@ -70,9 +121,9 @@
           "editorial",
           "creative direction"
         ],
-        "accentColor": ""
+        "accentColor": "yellow"
       },
-      {
+      "drexelFundraising": {
         "pre": "Design leadership for donor campaign & collateral",
         "title": "Drexel Fundraising Campaign",
         "short": "Design leadership for Drexel Fundraising Campaign",
@@ -87,7 +138,7 @@
         ],
         "accentColor": ""
       },
-      {
+      "nickelodeon": {
         "pre": "Visual development for entertainment brand events",
         "title": "Nickelodeon Branding",
         "short": "Visual development for Nickelodeon branding",
@@ -100,7 +151,7 @@
         ],
         "accentColor": ""
       },
-      {
+      "aigaPhiladelphia": {
         "pre": "Design leadership & innovation planning for AIGA Philadelphia",
         "title": "Strategic Chapter Plan",
         "short": "Strategic Chapter Plan for AIGA Philadelphia",
@@ -113,6 +164,6 @@
         ],
         "accentColor": ""
       }
-    ]
+    }
   }
 }

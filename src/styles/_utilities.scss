@@ -1,0 +1,21 @@
+// ========================================
+// UTILITY CLASSES
+// ========================================
+// Reusable utility classes for common styling patterns
+
+// Inline image utilities for text integration
+.inline-image-height {
+  height: 1.25em;
+}
+
+.inline-image-width {
+  width: 1.75em;
+}
+
+// Responsive grid image utilities
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .grid-image {
+    width: 100%;
+    height: auto;
+  }
+}

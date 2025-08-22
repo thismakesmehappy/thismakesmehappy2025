@@ -1,0 +1,39 @@
+// ========================================
+// HOME HERO COMPONENT STYLES
+// ========================================
+// Styles specific to the HomeHero component, including headshot
+@import "variables";
+
+#headshot {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    width: unset;
+    max-width: 12rem;
+    margin-right: map-get($spacers, 4);
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    width: unset;
+    max-width: 15rem;
+    margin-right: map-get($spacers, 5);
+  }
+
+  @extend .h5;
+}
+
+.highlights-home {
+  div {
+    text-align: center;
+  }
+
+  i {
+    color: $aqua;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    padding-bottom: map-get($spacers, 3);
+  }
+}

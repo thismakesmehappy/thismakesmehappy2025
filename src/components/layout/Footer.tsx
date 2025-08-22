@@ -1,5 +1,5 @@
-import {memojiPlacementFlag} from "../helpers/constants.ts";
-import {RandomMemoji} from "./helpers/RandomMemoji.tsx";
+import {memojiPlacementFlag} from "../../helpers/featureFlags.ts";
+import {RandomMemoji} from "../helpers/RandomMemoji.tsx";
 
 const Footer = () => {
     return (

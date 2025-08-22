@@ -1,14 +1,16 @@
 import portfolioGrid from "../../data/portfolioGrid.json";
 import {type AccentColors, listOfAccentColors} from "../../helpers/constants.ts";
+import {showAdditionalProjects} from "../../helpers/featureFlags.ts";
 import PortfolioItemStandard from "./PortfolioItemStandard.tsx";
 import {Container, Row} from "react-bootstrap";
 import PortfolioItemFeatured from "./PortfolioItemFeatured.tsx";
 import TogglePlusMinus from "../helpers/TogglePlusMinus.tsx";
 import {useState} from "react";
+import ButtonWrapper from "../ui/ButtonWrapper.tsx";
 
 export const PortfolioGrid = () => {
-    const featuredProjects = portfolioGrid.projects.featured;
-    const standardProjects = portfolioGrid.projects.standard;
+    const featuredProjects = Object.values(portfolioGrid.projects.featured);
+    const standardProjects = Object.entries(portfolioGrid.projects.standard);
     const baseImageLocation = portfolioGrid.baseThumbnailDirectory;
     const numberOfColors = listOfAccentColors.length;
     const numberOfFeaturedProjects = featuredProjects.length;
@@ -24,7 +26,10 @@ export const PortfolioGrid = () => {
                 <h2 className="mb-4">Featured Work</h2>
                 <Row>
                     {featuredProjects.map((project, index) => {
-                        const color = listOfAccentColors[index % numberOfColors] as AccentColors;
+                        if (project.show === false) {
+                            return;
+                        }
+                        const color = project.accentColor ? project.accentColor as AccentColors : listOfAccentColors[index % numberOfColors] as AccentColors;
                         return (
                             <PortfolioItemFeatured name={project.title}
                                                    pre={project.pre}
@@ -40,13 +45,14 @@ export const PortfolioGrid = () => {
                         );
                     })}
                 </Row>
-                <h2 className="mb-4" onClick={toggleExpandAdditional}>Additional Projects <TogglePlusMinus
-                    plus={expandAdditional}
-                    className={"text-primary"}
-                />
-                </h2>
+                {showAdditionalProjects &&
+                    <ButtonWrapper className="mb-4" onClick={toggleExpandAdditional}
+                                   variant="link">{expandAdditional ? "Show" : "Hide"} Additional Projects <TogglePlusMinus
+                        plus={expandAdditional}
+                    />
+                    </ButtonWrapper>}
                 <Row className={`additional-projects ${expandAdditional ? 'closed' : 'opened'}`}>
-                    {standardProjects.map((project, index) => {
+                    {standardProjects.map(([_, project], index) => {
                         const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as AccentColors;
                         return <PortfolioItemStandard
                             pre={project.pre}

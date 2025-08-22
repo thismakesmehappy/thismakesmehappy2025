@@ -2,11 +2,12 @@ import {Container} from "react-bootstrap";
 
 interface WallOfTermsProps {
     terms: string[];
+    className?: string;
 }
 
-const WallOfTerms = ({terms}: WallOfTermsProps) => {
+const WallOfTerms = ({terms, className = ""}: WallOfTermsProps) => {
     return (
-        <div className="hero-section" id="wall-of-terms">
+        <div className={className} id="wall-of-terms">
             <Container>
                 <ul>
                     {terms.map((term, index) => (

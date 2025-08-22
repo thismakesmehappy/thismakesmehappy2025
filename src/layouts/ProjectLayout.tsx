@@ -1,49 +1,51 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link, Outlet } from 'react-router-dom';
-
-// This will be passed from individual project pages via Outlet context
-export interface ProjectContextData {
-  title: string;
-  subtitle?: string;
-  tags?: string[];
-  liveUrl?: string;
-  githubUrl?: string;
-  headerImage?: string;
-  headerImageAlt?: string;
-}
+import {Container, Badge} from 'react-bootstrap';
+import {Outlet} from 'react-router-dom';
+import {useProjectHeader} from "../hooks/useProjectHeader.ts";
+import WallOfTerms from "../components/home/WallOfTerms.tsx";
+import ButtonWrapper from "../components/ui/ButtonWrapper.tsx";
+import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
 
 const ProjectLayout = () => {
-  return (
-    <div className="project-layout">
-      {/* Project content will be rendered here via Outlet */}
-      <Outlet />
-      
-      {/* Shared Project Footer */}
-      <section className="project-footer py-4 border-top mt-5">
-        <Container>
-          <Row className="align-items-center">
-            <Col md={6}>
-              <div className="d-flex align-items-center">
-                <Link to="/portfolio" className="text-decoration-none me-4">
-                  <i className="bi bi-arrow-left me-2"></i>
-                  Back to Portfolio
-                </Link>
-                <Link to="/contact" className="text-decoration-none">
-                  <i className="bi bi-envelope me-2"></i>
-                  Get in Touch
-                </Link>
-              </div>
-            </Col>
-            <Col md={6} className="text-md-end mt-3 mt-md-0">
-              <p className="text-muted mb-0 small">
-                © 2025 Your Portfolio. All rights reserved.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </div>
-  );
+    const {headerData} = useProjectHeader();
+
+    return (
+        <div className="project-layout">
+            {headerData &&
+                <section className={`gradient-${headerData.color} hero-section`}
+                         id="frequency-group-hero-section">
+                    <Container>
+                        <ButtonWrapper href="/" variant={"link"}><i className={"bi bi-arrow-left"}></i> Home
+                        </ButtonWrapper>
+                        {headerData.title && <h1 className={"hero mb-0 pb-0"}>{headerData.title}</h1>}
+                        {headerData.subtitle &&
+                            <p className={'hero-sub text-secondary mb-0 pb-0'}>{headerData.subtitle}</p>}
+                        {headerData.wordCount &&
+                            <Badge bg={headerData.color} className="me-2">~{headerData.wordCount} words</Badge>}
+                        {headerData.readingTime &&
+                            <Badge bg={headerData.color}>~{headerData.readingTime} minute read</Badge>}
+                        {headerData.summary && <p className={"hero-body"}>{headerData.summary}</p>}
+                        {(headerData.role || headerData.timeline || headerData.challenge) &&
+                            <ul>
+                                {headerData.role && <li><strong>Role:</strong> {headerData.role}</li>}
+                                {headerData.timeline && <li><strong>Timeline:</strong> {headerData.timeline}</li>}
+                                {headerData.challenge &&
+                                    <li><strong>Challenge:</strong> {headerData.challenge}</li>}
+                            </ul>
+                        }
+                    </Container>
+                </section>
+            }
+
+            {/* Project content will be rendered here via Outlet */}
+            <Outlet />
+
+            {/* Shared Project Footer */}
+            {headerData && headerData.wordCloud &&
+                <WallOfTerms terms={headerData.wordCloud} />
+            }
+            <PortfolioGrid />
+        </div>
+    );
 };
 
 export default ProjectLayout;

@@ -1,0 +1,151 @@
+@import "variables";
+
+.offset {
+  padding: map-get($spacers, 4);
+  margin-left: map-get($spacers, 4) * -1;
+  margin-right: map-get($spacers, 4) * -1;
+  border-radius: map-get($spacers, 4);
+}
+
+.timeline {
+  font-family: $display-font-family;
+  color: map-get($custom-colors-dark, "purple");
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.timeline-item {
+  background-color: map-get($custom-colors-faded, "purple");
+  padding: map-get($spacers, 2);
+  border-radius: map-get($spacers, 2);
+  display: inline-block;
+}
+
+.timeline-separator {
+  color: $purple;
+}
+
+.callout-section {
+
+
+  .bi {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: map-get($custom-colors-dark, "purple");
+  }
+}
+
+.fcap, .impression {
+  background-color: map-get($custom-colors-faded, "purple");
+  padding: map-get($spacers, 2);
+  border-radius: map-get($spacers, 2);
+  display: inline-block;
+  font-family: $display-font-family;
+  font-size: 0.75rem;
+  margin: map-get($spacers, 1);
+
+  &.fg {
+    background-color: map-get($custom-colors-dark, "purple");
+    color: $light;
+  }
+
+  &.c1 {
+    background-color: map-get($custom-colors-faded, "purple");
+    color: map-get($custom-colors-dark, "purple");
+  }
+
+  &.c2 {
+    background-color: map-get($custom-colors-light, "purple");
+    color: map-get($custom-colors-dark, "purple");
+  }
+}
+
+.impression {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: map-get($spacers, 0) map-get($spacers, 2);
+}
+
+.separate {
+  border-bottom: 1px dashed map-get($custom-colors-dark, "purple");
+
+  &.hide-small {
+    @media (max-width: map-get($grid-breakpoints, "md")) {
+      border-bottom: 0;
+    }
+  }
+}
+
+.association-group {
+  color: map-get($custom-colors-dark, "purple");
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.association-request {
+  display: flex;
+  padding: 0 map-get($spacers, 2);
+}
+
+.association-call {
+  border: 1px dashed map-get($custom-colors-dark, "purple");
+  padding: map-get($spacers, 1);
+  border-radius: map-get($spacers, 2);
+  display: inline-block;
+  margin: map-get($spacers, 1) 0;
+}
+
+.association-step {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  & .dash {
+    width: 1em;
+    display: inline-block;
+    height: 1px;
+    background-color: map-get($custom-colors-dark, "purple");
+  }
+
+  i {
+    margin: 0;
+  }
+
+
+}
+
+.step {
+  display: inline-block;
+  padding: 0 map-get($spacers, 1);
+}
+
+.association-separator {
+  border-bottom: 1px dashed map-get($custom-colors-dark, "purple");
+  margin: map-get($spacers, 1) 0;
+  display: block;
+}
+
+.user-first, .engineering-first {
+  color: map-get($custom-colors-dark, "purple");
+  font-size: 10vw;
+}
+
+.duplicates {
+  font-size: 1.5em;
+  color: map-get($custom-colors-dark, "purple");
+
+  .ghost {
+    color: map-get($custom-colors-light, "purple");
+
+    .dash {
+      background-color: map-get($custom-colors-light, "purple");
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { Container, Row, Col, Card, Alert } from 'react-bootstrap';
-import ProjectHeader from '../../components/ProjectHeader';
+import ProjectHeader from '../../components/layout/ProjectHeader';
 
 const DrexelAlumniWeekend = () => {
   // Project metadata
@@ -84,7 +84,7 @@ const DrexelAlumniWeekend = () => {
               </Card.Body>
             </Card>
           </Col>
-          
+
           <Col lg={6} className="mb-4">
             <Card className="shadow-soft h-100">
               <Card.Body className="p-4">
@@ -236,7 +236,7 @@ const DrexelAlumniWeekend = () => {
               </Card.Body>
             </Card>
           </Col>
-          
+
           <Col lg={6} className="mb-4">
             <Card className="shadow-soft h-100">
               <Card.Body className="p-4">
