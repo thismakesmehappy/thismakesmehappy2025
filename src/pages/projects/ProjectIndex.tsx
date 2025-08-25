@@ -1,8 +1,8 @@
 // pages/ProjectIndex.tsx
 import React from 'react';
-import {useProjectHeader} from "../../hooks/useProjectHeader.ts";
-import {PortfolioGrid} from "../../components/portfolioGrid/PortfolioGrid.tsx";
-import {homeListOfTerms} from "../../data/homeListOfTerms.ts";
+import {useProjectHeader} from "src/hooks/useProjectHeader.ts";
+import {PortfolioGrid} from "src/components/portfolioGrid/PortfolioGrid.tsx";
+import {homeListOfTerms} from "src/data/homeListOfTerms.ts";
 
 const ProjectIndex = () => {
     const {setHeaderData} = useProjectHeader();

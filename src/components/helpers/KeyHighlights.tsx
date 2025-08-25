@@ -1,5 +1,5 @@
 import {Row} from "react-bootstrap";
-import type {AccentColors, AccentColorsDark, AccentColorsLight} from "../../helpers/constants.ts";
+import type {AccentColors, AccentColorsDark, AccentColorsLight} from "src/helpers/constants.ts";
 import React from "react";
 import ProjectContainer from "./ProjectContainer.tsx";
 

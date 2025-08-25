@@ -1,12 +1,12 @@
-import portfolioGrid from "../../data/portfolioGrid.json";
-import {type AccentColors, listOfAccentColors} from "../../helpers/constants.ts";
-import {showAdditionalProjects, showAllFeaturedProjects} from "../../helpers/featureFlags.ts";
+import portfolioGrid from "src/data/portfolioGrid.json";
+import {type AccentColors, listOfAccentColors} from "src/helpers/constants.ts";
+import {hideProjects, showAdditionalProjects} from "src/helpers/featureFlags.ts";
 import PortfolioItemStandard from "./PortfolioItemStandard.tsx";
 import {Container, Row} from "react-bootstrap";
 import PortfolioItemFeatured from "./PortfolioItemFeatured.tsx";
-import TogglePlusMinus from "../helpers/TogglePlusMinus.tsx";
+import TogglePlusMinus from "src/components/helpers/TogglePlusMinus.tsx";
 import {useState} from "react";
-import ButtonWrapper from "../ui/ButtonWrapper.tsx";
+import ButtonWrapper from "src/components/ui/ButtonWrapper.tsx";
 
 export const PortfolioGrid = () => {
     const featuredProjects = Object.values(portfolioGrid.projects.featured);
@@ -26,7 +26,7 @@ export const PortfolioGrid = () => {
                 <h2 className="mb-4">Featured Work</h2>
                 <Row>
                     {featuredProjects.map((project, index) => {
-                        if (showAllFeaturedProjects || project.show === false) {
+                        if (hideProjects && project.show === false) {
                             return;
                         }
                         const color = project.accentColor ? project.accentColor as AccentColors : listOfAccentColors[index % numberOfColors] as AccentColors;

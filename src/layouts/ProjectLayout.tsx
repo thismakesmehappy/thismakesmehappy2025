@@ -1,10 +1,10 @@
 import {Container, Badge} from 'react-bootstrap';
 import {Outlet} from 'react-router-dom';
-import {useProjectHeader} from "../hooks/useProjectHeader.ts";
-import WallOfTerms from "../components/home/WallOfTerms.tsx";
-import ButtonWrapper from "../components/ui/ButtonWrapper.tsx";
-import {PortfolioGrid} from "../components/portfolioGrid/PortfolioGrid.tsx";
-import {asset} from "../helpers/assetPath.ts";
+import {useProjectHeader} from "src/hooks/useProjectHeader.ts";
+import WallOfTerms from "src/components/home/WallOfTerms.tsx";
+import ButtonWrapper from "src/components/ui/ButtonWrapper.tsx";
+import {PortfolioGrid} from "src/components/portfolioGrid/PortfolioGrid.tsx";
+import {asset} from "src/helpers/assetPath.ts";
 
 const ProjectLayout = () => {
     const {headerData} = useProjectHeader();
@@ -21,9 +21,11 @@ const ProjectLayout = () => {
                         {headerData.subtitle &&
                             <p className={'hero-sub text-secondary mb-0 pb-0'}>{headerData.subtitle}</p>}
                         {headerData.wordCount &&
-                            <Badge bg={headerData.color} className="me-2">~{headerData.wordCount} words</Badge>}
+                            <Badge bg={`${headerData.color}-light`}
+                                   className="text-dark me-2">~{headerData.wordCount} words</Badge>}
                         {headerData.readingTime &&
-                            <Badge bg={headerData.color}>~{headerData.readingTime} minute read</Badge>}
+                            <Badge bg={`${headerData.color}-light`}
+                                   className="text-dark">~{headerData.readingTime} minute read</Badge>}
                         {headerData.summary && <p className={"hero-body"}>{headerData.summary}</p>}
                         {(headerData.role || headerData.timeline || headerData.challenge) &&
                             <ul>

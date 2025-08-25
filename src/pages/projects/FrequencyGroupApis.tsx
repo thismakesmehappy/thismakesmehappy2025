@@ -1,20 +1,20 @@
 import {Col, Container, Figure, FigureCaption, Row} from 'react-bootstrap';
-import portfolioGrid from "../../data/portfolioGrid.json";
-import KeyHighlights from "../../components/helpers/KeyHighlights.tsx";
-import KeyHighlightCallout from "../../components/helpers/KeyHighlightCallout.tsx";
-import KeyHighlight from "../../components/helpers/KeyHighlight.tsx";
-import "../../styles/_frequency-groups.scss"
+import portfolioGrid from "src/data/portfolioGrid.json";
+import KeyHighlights from "src/components/helpers/KeyHighlights.tsx";
+import KeyHighlightCallout from "src/components/helpers/KeyHighlightCallout.tsx";
+import KeyHighlight from "src/components/helpers/KeyHighlight.tsx";
+import "src/styles/_frequency-groups.scss"
 import {useEffect} from "react";
-import {useProjectHeader} from "../../hooks/useProjectHeader.ts";
-import {SimulatedFrequencyGroupScreen} from "../../components/frequencyGroups/SimulatedFrequencyGroupScreen.tsx";
-import {CappingBeforeAndAfter} from "../../components/frequencyGroups/CappingBeforeAndAfter.tsx";
-import ProjectContainer from "../../components/helpers/ProjectContainer.tsx";
-import {BusinessImpactHighlights} from "../../components/frequencyGroups/BusinessImpactHighlights.tsx";
-import UpdateAssociations from "../../components/frequencyGroups/UpdateAssociations.tsx";
-import type {AccentColors} from "../../helpers/constants.ts";
-import DuplicateAssociations from "../../components/frequencyGroups/DuplicateAssociations.tsx";
-import EngineeringFirst from "../../components/frequencyGroups/EngineeringFirst.tsx";
-import UserFirst from "../../components/frequencyGroups/UserFirst.tsx";
+import {useProjectHeader} from "src/hooks/useProjectHeader.ts";
+import {SimulatedFrequencyGroupScreen} from "src/components/frequencyGroups/SimulatedFrequencyGroupScreen.tsx";
+import {CappingBeforeAndAfter} from "src/components/frequencyGroups/CappingBeforeAndAfter.tsx";
+import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
+import {BusinessImpactHighlights} from "src/components/frequencyGroups/BusinessImpactHighlights.tsx";
+import UpdateAssociations from "src/components/frequencyGroups/UpdateAssociations.tsx";
+import type {AccentColors} from "src/helpers/constants.ts";
+import DuplicateAssociations from "src/components/frequencyGroups/DuplicateAssociations.tsx";
+import EngineeringFirst from "src/components/frequencyGroups/EngineeringFirst.tsx";
+import UserFirst from "src/components/frequencyGroups/UserFirst.tsx";
 
 const FrequencyGroupApis = () => {
     const projectData = portfolioGrid.projects.featured.frequencyGroups;

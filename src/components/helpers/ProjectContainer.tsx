@@ -1,5 +1,5 @@
 import React from "react";
-import type {AllColors} from "../../helpers/constants.ts";
+import type {AllColors} from "src/helpers/constants.ts";
 
 interface ProjectContainerProps {
     backgroundColor?: AllColors;
@@ -11,6 +11,7 @@ interface ProjectContainerProps {
     expand?: boolean;
     id?: string;
     padding?: boolean;
+    style?: any;
 }
 
 const ProjectContainer = ({
@@ -20,12 +21,14 @@ const ProjectContainer = ({
                               borderRadius = 3,
                               className,
                               children,
+                              style,
                               expand = false,
                               id,
                               padding = true,
                           }: ProjectContainerProps) => {
     return (
         <div id={id}
+             style={style}
              className={
                  `rounded-4 
             overflow-hidden 
@@ -34,7 +37,7 @@ const ProjectContainer = ({
                  `bg-${backgroundColor}`} 
             rounded-${borderRadius}  
             ${className}
-            ${padding && `p-4 ${expand && `ms-n4 me-n4`}`}
+            ${padding && `p-4 ${expand && `ms-md-n4 me-md-n4`}`}
             `
              }>
             {children}

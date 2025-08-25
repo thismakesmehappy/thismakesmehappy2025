@@ -1,6 +1,6 @@
 import {Image} from "react-bootstrap";
-import {listOfAccentColors, memojis} from "../../helpers/constants.ts";
-import {asset} from "../../helpers/assetPath.ts";
+import {listOfAccentColors, memojis} from "src/helpers/constants.ts";
+import {asset} from "src/helpers/assetPath.ts";
 
 interface RandomMemojiProps {
     id?: string,

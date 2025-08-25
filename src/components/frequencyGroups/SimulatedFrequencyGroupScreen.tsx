@@ -1,5 +1,5 @@
 import {Badge} from "react-bootstrap";
-import ProjectContainer from "../../components/helpers/ProjectContainer.tsx";
+import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
 import {useState} from "react";
 
 export const SimulatedFrequencyGroupScreen = () => {

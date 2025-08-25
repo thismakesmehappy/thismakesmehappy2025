@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -8,6 +9,12 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     base: env.VITE_BASE_PATH || '/',
+    resolve: {
+      alias: {
+        // Map src as the base for all absolute imports
+        'src': path.resolve(__dirname, './src'),
+      }
+    },
     build: {
       outDir: 'dist',
       assetsDir: 'assets',

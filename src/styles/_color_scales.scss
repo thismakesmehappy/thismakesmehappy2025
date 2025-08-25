@@ -1,0 +1,185 @@
+@import "variables";
+
+.callout-section {
+  .bi {
+    color: map-get($custom-colors-dark, "aqua");
+  }
+}
+
+.figma-features {
+  height: 5rem;
+  color: map-get($custom-colors-dark, "aqua");
+}
+
+#preview-scales-aqua, #preview-scales-yellow, #preview-scales-pink, #scales-neutral {
+  display: flex;
+  gap: 0.125rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 0.125rem;
+  }
+
+  div {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+#preview-scales-aqua {
+  div:nth-child(1) {
+    background-color: $aqua-50;
+  }
+
+  div:nth-child(2) {
+    background-color: $aqua-250;
+  }
+
+  div:nth-child(3) {
+    background-color: $aqua-500;
+  }
+
+  div:nth-child(4) {
+    background-color: $aqua-750;
+  }
+
+  div:nth-child(5) {
+    background-color: $aqua-900;
+  }
+}
+
+#preview-scales-yellow {
+  div:nth-child(1) {
+    background-color: $yellow-100;
+  }
+
+  div:nth-child(2) {
+    background-color: $yellow-250;
+  }
+
+  div:nth-child(3) {
+    background-color: $yellow-500;
+  }
+
+  div:nth-child(4) {
+    background-color: $yellow-750;
+  }
+
+  div:nth-child(5) {
+    background-color: $yellow-900;
+  }
+}
+
+#preview-scales-pink {
+  div:nth-child(1) {
+    background-color: $pink-100;
+  }
+
+  div:nth-child(2) {
+    background-color: $pink-250;
+  }
+
+  div:nth-child(3) {
+    background-color: $pink-500;
+  }
+
+  div:nth-child(4) {
+    background-color: $pink-750;
+  }
+
+  div:nth-child(5) {
+    background-color: $pink-900;
+  }
+}
+
+#scales-neutral {
+  div:nth-child(1) {
+    background-color: $neutral-100;
+  }
+
+  div:nth-child(2) {
+    background-color: $neutral-250;
+  }
+
+  div:nth-child(3) {
+    background-color: $neutral-500;
+  }
+
+  div:nth-child(4) {
+    background-color: $neutral-750;
+  }
+
+  div:nth-child(5) {
+    background-color: $neutral-900;
+  }
+}
+
+#features-endpoints, #base-colors {
+  div {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+  }
+}
+
+#features-endpoints {
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+#base-colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+#select {
+  font-size: 1.5rem;
+}
+
+#steps {
+  font-size: .9rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+#naming-convention {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.125rem;
+  font-size: 1.25rem;
+  justify-content: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.bg-sand {
+  background-color: $yellow-100;
+}
+
+#features-assets {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.swatch {
+  font-size: 0.65rem;
+  padding: 0.125rem;
+}
+
+#features-css-variables {
+  display: flex;
+  flex-direction: row;
+  overflow: clip;
+}

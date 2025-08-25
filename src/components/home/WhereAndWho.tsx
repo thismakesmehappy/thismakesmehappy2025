@@ -1,5 +1,5 @@
 import {Col, Container, Image, Row} from "react-bootstrap";
-import { asset } from "../../helpers/assetPath.ts";
+import {asset} from "src/helpers/assetPath.ts";
 
 const WhereAndWho = () => {
     const gridSpacing = "g-lg-5 gy-lg-5 g-md-5 g-6";

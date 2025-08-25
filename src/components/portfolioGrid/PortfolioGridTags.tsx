@@ -1,4 +1,4 @@
-import type {AccentColors} from "../../helpers/constants.ts";
+import type {AccentColors} from "src/helpers/constants.ts";
 
 interface PortfolioGridTagsProps {
     tagsData: string[];

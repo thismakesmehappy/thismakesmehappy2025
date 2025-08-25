@@ -1,4 +1,4 @@
-import ProjectContainer from "../helpers/ProjectContainer.tsx";
+import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
 
 const UpdateAssociations = () => {
     return (

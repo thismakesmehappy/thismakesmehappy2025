@@ -3,7 +3,7 @@ import {type PortfolioGridItemsColsProps, spacingBottom} from "./interfaces.ts";
 import PortfolioGridImageInner from "./PortfolioGridImageInner.tsx";
 import PortfolioGridTitleInner from "./PortfolioGridTitleInner.tsx";
 import {Link} from "react-router-dom";
-import {asset} from "../../helpers/assetPath.ts";
+import {asset} from "src/helpers/assetPath.ts";
 
 
 const PortfolioItemFeatured = ({

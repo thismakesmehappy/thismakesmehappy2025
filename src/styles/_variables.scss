@@ -32,7 +32,7 @@ $green: #01875D;
 $teal: #108197;
 $pink: #E1186F;
 $red: #DC251D;
-
+// FFF3E8
 /* neutral */
 $neutral-50: #F2F4F3;
 $neutral-100: #E5EAEB;
@@ -315,6 +315,8 @@ $custom-colors-light: (
         "lime": $lime-300,
         "aqua": $aqua-300,
         "orange": $orange-300,
+        "dark": $neutral-600,
+        "light": $light,
 ) !default;
 
 
@@ -327,6 +329,8 @@ $custom-colors-faded: (
         "orange": $orange-100,
         "pink": $pink-100,
         "green": $green-100,
+        "dark": $neutral-800,
+        "light": $light,
 ) !default;
 
 $custom-colors-dark: (
@@ -336,6 +340,8 @@ $custom-colors-dark: (
         "lime": $lime-700,
         "aqua": $aqua-700,
         "orange": $orange-700,
+        "dark": $dark,
+        "light": $neutral-300,
 ) !default;
 
 $custom-colors-light-labeled: map-with-suffixed-keys($custom-colors-light, "light") !default;
@@ -487,3 +493,6 @@ $box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0
 $box-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
 
 $enable-negative-margins: true;
+
+$figure-caption-font-size: $small-font-size;
+$figure-caption-color: map-get($custom-colors-light, "dark");

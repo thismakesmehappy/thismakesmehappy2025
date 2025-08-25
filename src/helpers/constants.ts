@@ -28,12 +28,14 @@ export type AccentColorsLight =
     | "yellow-light"
     | "lime-light"
     | "aqua-light"
+    | "aqua-light"
 export type AccentColorsFaded =
     "purple-faded"
     | "coral-faded"
     | "yellow-faded"
     | "lime-faded"
     | "aqua-faded"
+    | "orange-faded"
 export type BrandColors = "primary" | "secondary" | "dark" | "light";
 export type BrandColorNames = "pink" | "green" | "navy" | "light";
 export type Status = "primary" | "success" | "info" | "warning" | "danger";
