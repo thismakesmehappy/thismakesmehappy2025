@@ -1,8 +1,8 @@
 import {Container, Navbar} from 'react-bootstrap';
 import {Link, useNavigate, useLocation} from 'react-router-dom';
-import {RandomMemoji} from "src/components/helpers/RandomMemoji.tsx";
-import {includeNavMenu, memojiPlacementFlag} from "src/helpers/featureFlags.ts";
-import NavMenu from "./NavMenu.tsx";
+import RandomMemoji from 'src/components/helpers/RandomMemoji.tsx';
+import {includeNavMenu, memojiPlacementFlag} from 'src/helpers/featureFlags.ts';
+import NavMenu from './NavMenu.tsx';
 
 const Navigation = () => {
     const navigate = useNavigate();

@@ -1,7 +1,7 @@
-import {Col, Row} from "react-bootstrap";
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
+import {Col, Row} from 'react-bootstrap';
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
 
-export const BusinessImpactHighlights = () => {
+const BusinessImpactHighlights = () => {
     return (
         <ProjectContainer backgroundColor="purple-faded" expand={true} className={"mb-4 callout-section"}>
             <h4>Business Impact Highlights</h4>
@@ -18,3 +18,5 @@ export const BusinessImpactHighlights = () => {
         </ProjectContainer>
     );
 };
+
+export default BusinessImpactHighlights;

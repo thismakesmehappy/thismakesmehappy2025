@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {ProjectContext} from 'src/hooks/useProjectHeader';
 import type {ProjectHeaderData} from 'src/hooks/useProjectHeader';
 
-export const ProjectProvider = ({children}: { children: React.ReactNode }) => {
+const ProjectProvider = ({children}: { children: React.ReactNode }) => {
     const [headerData, setHeaderData] = useState<ProjectHeaderData | null>(null);
 
     return (
@@ -11,3 +11,5 @@ export const ProjectProvider = ({children}: { children: React.ReactNode }) => {
         </ProjectContext.Provider>
     );
 };
+
+export default ProjectProvider;

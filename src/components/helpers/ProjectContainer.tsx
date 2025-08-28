@@ -1,5 +1,5 @@
-import React from "react";
-import type {AllColors} from "src/helpers/constants.ts";
+import React from 'react';
+import type {AllColors} from 'src/helpers/constants.ts';
 
 interface ProjectContainerProps {
     backgroundColor?: AllColors;

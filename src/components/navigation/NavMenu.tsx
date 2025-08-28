@@ -1,5 +1,5 @@
-import {Nav} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const NavMenu = (props: { onClick: (e: React.MouseEvent) => void, onClick1: () => void }) => {
     return <Nav className="custom-nav d-flex flex-row gap-4">

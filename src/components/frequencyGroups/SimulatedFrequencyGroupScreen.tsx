@@ -1,8 +1,8 @@
-import {Badge} from "react-bootstrap";
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
-import {useState} from "react";
+import {Badge} from 'react-bootstrap';
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
+import {useState} from 'react';
 
-export const SimulatedFrequencyGroupScreen = () => {
+const SimulatedFrequencyGroupScreen = () => {
     const [selectedTimeUnit, setSelectedTimeUnit] = useState(false);
     return (
         <ProjectContainer id="simulated-frequency-group" borderColor="purple-dark" borderWidth={1} padding={false}>
@@ -80,3 +80,5 @@ export const SimulatedFrequencyGroupScreen = () => {
         </ProjectContainer>
     );
 };
+
+export default SimulatedFrequencyGroupScreen;

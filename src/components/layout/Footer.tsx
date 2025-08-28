@@ -1,6 +1,6 @@
-import {memojiPlacementFlag} from "src/helpers/featureFlags.ts";
-import {RandomMemoji} from "src/components/helpers/RandomMemoji.tsx";
-import {useLocation} from "react-router-dom";
+import {memojiPlacementFlag} from 'src/helpers/featureFlags.ts';
+import RandomMemoji from 'src/components/helpers/RandomMemoji.tsx';
+import {useLocation} from 'react-router-dom';
 
 const Footer = () => {
     const location = useLocation();

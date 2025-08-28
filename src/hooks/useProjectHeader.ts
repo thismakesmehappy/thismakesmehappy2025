@@ -1,5 +1,5 @@
 import {createContext, useContext} from 'react';
-import type {AccentColors} from "src/helpers/constants.ts";
+import type {AccentColors} from 'src/helpers/constants.ts';
 
 export interface ProjectHeaderData {
     color?: AccentColors | "primary" | "secondary";
@@ -26,4 +26,6 @@ export const ProjectContext = createContext<ProjectContextType>({
     },
 });
 
-export const useProjectHeader = () => useContext(ProjectContext);
+const useProjectHeader = () => useContext(ProjectContext);
+
+export default useProjectHeader;

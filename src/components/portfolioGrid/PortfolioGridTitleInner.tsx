@@ -1,4 +1,4 @@
-import type {PortfolioGridTitleProps} from "./interfaces.ts";
+import type {PortfolioGridTitleProps} from './interfaces.ts';
 
 const PortfolioGridTitleInner = ({color, pre, name}: PortfolioGridTitleProps) => {
     return (

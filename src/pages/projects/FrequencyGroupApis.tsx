@@ -1,20 +1,20 @@
 import {Col, Container, Figure, FigureCaption, Row} from 'react-bootstrap';
-import portfolioGrid from "src/data/portfolioGrid.json";
-import KeyHighlights from "src/components/helpers/KeyHighlights.tsx";
-import KeyHighlightCallout from "src/components/helpers/KeyHighlightCallout.tsx";
-import KeyHighlight from "src/components/helpers/KeyHighlight.tsx";
+import portfolioGrid from 'src/data/portfolioGrid.json';
+import KeyHighlights from 'src/components/helpers/KeyHighlights.tsx';
+import KeyHighlightCallout from 'src/components/helpers/KeyHighlightCallout.tsx';
+import KeyHighlight from 'src/components/helpers/KeyHighlight.tsx';
 import "src/styles/_frequency-groups.scss"
-import {useEffect} from "react";
-import {useProjectHeader} from "src/hooks/useProjectHeader.ts";
-import {SimulatedFrequencyGroupScreen} from "src/components/frequencyGroups/SimulatedFrequencyGroupScreen.tsx";
-import {CappingBeforeAndAfter} from "src/components/frequencyGroups/CappingBeforeAndAfter.tsx";
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
-import {BusinessImpactHighlights} from "src/components/frequencyGroups/BusinessImpactHighlights.tsx";
-import UpdateAssociations from "src/components/frequencyGroups/UpdateAssociations.tsx";
-import type {AccentColors} from "src/helpers/constants.ts";
-import DuplicateAssociations from "src/components/frequencyGroups/DuplicateAssociations.tsx";
-import EngineeringFirst from "src/components/frequencyGroups/EngineeringFirst.tsx";
-import UserFirst from "src/components/frequencyGroups/UserFirst.tsx";
+import {useEffect} from 'react';
+import useProjectHeader from 'src/hooks/useProjectHeader.ts';
+import SimulatedFrequencyGroupScreen from 'src/components/frequencyGroups/SimulatedFrequencyGroupScreen.tsx';
+import CappingBeforeAndAfter from 'src/components/frequencyGroups/CappingBeforeAndAfter.tsx';
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
+import BusinessImpactHighlights from 'src/components/frequencyGroups/BusinessImpactHighlights.tsx';
+import UpdateAssociations from 'src/components/frequencyGroups/UpdateAssociations.tsx';
+import type {AccentColors} from 'src/helpers/constants.ts';
+import DuplicateAssociations from 'src/components/frequencyGroups/DuplicateAssociations.tsx';
+import EngineeringFirst from 'src/components/frequencyGroups/EngineeringFirst.tsx';
+import UserFirst from 'src/components/frequencyGroups/UserFirst.tsx';
 
 const FrequencyGroupApis = () => {
     const projectData = portfolioGrid.projects.featured.frequencyGroups;
@@ -294,7 +294,7 @@ VISUAL OPTIONS:
                 VISUAL OPTION: Pull-quote emphasizing “technical rigor × design-driven thinking”.
                 -->
 */}
-                <ProjectContainer backgroundColor={"purple-faded"} className={"callout-section"}>
+                <ProjectContainer backgroundColor={"purple-faded"} className={"callout-section fg"}>
                     <h2>Reflection: Hybrid Value</h2>
 
                     <p>This project demonstrates how I integrate <strong>technical rigor with design-driven thinking</strong>:

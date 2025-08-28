@@ -1,4 +1,4 @@
-export const homeListOfTerms = [
+const homeListOfTerms = [
     "Creative Leadership & Strategy",
     "Team Building & Mentorship",
     "Brand Development",
@@ -22,3 +22,5 @@ export const homeListOfTerms = [
     "Python",
     "API design and development",
 ];
+
+export default homeListOfTerms;

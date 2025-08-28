@@ -1,0 +1,49 @@
+@import "./variables";
+
+.callout-section .alumni {
+  .bi {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: map-get($custom-colors-dark, "yellow");
+  }
+}
+
+.figure-caption {
+  color: map-get($custom-colors-dark, "yellow");
+}
+
+#badges {
+  background-color: #07294D;
+
+
+  .badge1 {
+    transform: rotate(5deg);
+  }
+
+  .badge2 {
+    transform: rotate(-5deg);
+  }
+
+  .badge3 {
+    transform: rotate(5deg);
+  }
+
+  .badge4 {
+    transform: rotate(-8deg);
+  }
+
+  .badge5 {
+    transform: rotate(7deg);
+  }
+
+  .badge6 {
+    transform: rotate(-6deg);
+  }
+
+  .badge7 {
+    transform: rotate(7deg);
+  }
+
+
+}

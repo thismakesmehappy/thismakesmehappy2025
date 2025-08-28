@@ -1,7 +1,7 @@
-import {Col, Row} from "react-bootstrap";
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
+import {Col, Row} from 'react-bootstrap';
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
 
-export const CappingBeforeAndAfter = () => {
+const CappingBeforeAndAfter = () => {
     return (
         <ProjectContainer id="frequency-group-capping" borderColor={"purple-dark"} borderWidth={1}
                           className="mb-4 text-purple-dark">
@@ -128,3 +128,5 @@ export const CappingBeforeAndAfter = () => {
         </ProjectContainer>
     );
 };
+
+export default CappingBeforeAndAfter;

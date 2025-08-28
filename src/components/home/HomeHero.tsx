@@ -1,7 +1,7 @@
-import {Col, Container, Image} from "react-bootstrap";
-import {useState} from "react";
-import CallToAction from "src/components/helpers/CallToAction.tsx";
-import {asset} from "src/helpers/assetPath.ts";
+import {Col, Container, Image} from 'react-bootstrap';
+import {useState} from 'react';
+import CallToAction from 'src/components/helpers/CallToAction.tsx';
+import {asset} from 'src/helpers/assetPath.ts';
 
 const HomeHero = () => {
     const [isHovering, setIsHovering] = useState(false);

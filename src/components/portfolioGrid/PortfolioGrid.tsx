@@ -1,14 +1,14 @@
-import portfolioGrid from "src/data/portfolioGrid.json";
-import {type AccentColors, listOfAccentColors} from "src/helpers/constants.ts";
-import {hideProjects, showAdditionalProjects} from "src/helpers/featureFlags.ts";
-import PortfolioItemStandard from "./PortfolioItemStandard.tsx";
-import {Container, Row} from "react-bootstrap";
-import PortfolioItemFeatured from "./PortfolioItemFeatured.tsx";
-import TogglePlusMinus from "src/components/helpers/TogglePlusMinus.tsx";
-import {useState} from "react";
-import ButtonWrapper from "src/components/ui/ButtonWrapper.tsx";
+import portfolioGrid from 'src/data/portfolioGrid.json';
+import {type AccentColors, listOfAccentColors} from 'src/helpers/constants.ts';
+import {hideProjects, showAdditionalProjects} from 'src/helpers/featureFlags.ts';
+import PortfolioItemStandard from './PortfolioItemStandard.tsx';
+import {Container, Row} from 'react-bootstrap';
+import PortfolioItemFeatured from './PortfolioItemFeatured.tsx';
+import TogglePlusMinus from 'src/components/helpers/TogglePlusMinus.tsx';
+import {useState} from 'react';
+import ButtonWrapper from 'src/components/ui/ButtonWrapper.tsx';
 
-export const PortfolioGrid = () => {
+const PortfolioGrid = () => {
     const featuredProjects = Object.values(portfolioGrid.projects.featured);
     const standardProjects = Object.entries(portfolioGrid.projects.standard);
     const baseImageLocation = portfolioGrid.baseThumbnailDirectory;
@@ -71,3 +71,5 @@ export const PortfolioGrid = () => {
         </section>
     );
 };
+
+export default PortfolioGrid;

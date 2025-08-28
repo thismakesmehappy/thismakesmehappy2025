@@ -1,5 +1,5 @@
-import FeaturesWrapper from "src/components/colorScales/FeaturesWrapper.tsx";
-import {Badge} from "react-bootstrap";
+import FeaturesWrapper from 'src/components/colorScales/FeaturesWrapper.tsx';
+import {Badge} from 'react-bootstrap';
 
 const FeaturesDefineSteps = () => {
     return (

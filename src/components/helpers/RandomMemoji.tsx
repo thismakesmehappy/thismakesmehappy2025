@@ -1,6 +1,6 @@
-import {Image} from "react-bootstrap";
-import {listOfAccentColors, memojis} from "src/helpers/constants.ts";
-import {asset} from "src/helpers/assetPath.ts";
+import {Image} from 'react-bootstrap';
+import {listOfAccentColors, memojis} from 'src/helpers/constants.ts';
+import {asset} from 'src/helpers/assetPath.ts';
 
 interface RandomMemojiProps {
     id?: string,
@@ -9,12 +9,12 @@ interface RandomMemojiProps {
     backgroundColorVariant?: "light" | "dark" | "faded" | ""
 }
 
-export const RandomMemoji = ({
-                                 id,
-                                 className,
-                                 backgroundColor = false,
-                                 backgroundColorVariant = ""
-                             }: RandomMemojiProps) => {
+const RandomMemoji = ({
+                          id,
+                          className,
+                          backgroundColor = false,
+                          backgroundColorVariant = ""
+                      }: RandomMemojiProps) => {
     const memojiSelect = Math.floor(Math.random() * (memojis.length));
     const memoji = memojis[memojiSelect];
     const colorSelect = Math.floor(Math.random() * (listOfAccentColors.length));
@@ -30,3 +30,5 @@ export const RandomMemoji = ({
         </>
     );
 };
+
+export default RandomMemoji;

@@ -1,5 +1,5 @@
-import {Col, Image, Row} from "react-bootstrap";
-import type {PortfolioGridImageProps} from "./interfaces.ts";
+import {Col, Image, Row} from 'react-bootstrap';
+import type {PortfolioGridImageProps} from './interfaces.ts';
 
 const PortfolioGridImageInner = ({image, rotateRight, reducedThumbnail = true}: PortfolioGridImageProps) => {
     return (

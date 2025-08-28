@@ -1,5 +1,5 @@
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
-import {type ReactNode} from "react";
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
+import {type ReactNode} from 'react';
 
 interface FeaturesWrapperProps {
     children?: ReactNode;

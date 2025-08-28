@@ -1,15 +1,15 @@
-import portfolioGrid from "src/data/portfolioGrid.json";
-import {useProjectHeader} from "src/hooks/useProjectHeader.ts";
-import {useEffect} from "react";
-import type {AccentColors, AllColors} from "src/helpers/constants.ts";
-import {Col, Container, Figure, FigureCaption, Image, Row} from "react-bootstrap";
-import ProjectContainer from "src/components/helpers/ProjectContainer.tsx";
+import portfolioGrid from 'src/data/portfolioGrid.json';
+import useProjectHeader from 'src/hooks/useProjectHeader.ts';
+import {useEffect} from 'react';
+import type {AccentColors, AllColors} from 'src/helpers/constants.ts';
+import {Col, Container, Figure, FigureCaption, Image, Row} from 'react-bootstrap';
+import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
 import "src/styles/_color_scales.scss";
-import KeyHighlightsScales from "src/components/colorScales/KeyHighlightsScales.tsx";
-import FeaturesScales from "src/components/colorScales/FeaturesScales.tsx";
-import {asset} from "src/helpers/assetPath.ts";
+import KeyHighlightsScales from 'src/components/colorScales/KeyHighlightsScales.tsx';
+import FeaturesScales from 'src/components/colorScales/FeaturesScales.tsx';
+import {asset} from 'src/helpers/assetPath.ts';
 
-export const ColorScales = () => {
+const ColorScales = () => {
     const projectData = portfolioGrid.projects.featured.figmaPlugin;
     const color = projectData.accentColor as AccentColors;
     const colorFaded = color + "-faded" as AllColors;
@@ -58,8 +58,8 @@ export const ColorScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className="p-0" padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <video className={"w-100"} autoPlay={true} loop={true} controls={true}>
-                            <source src={asset("colorScales/scales_in_action.mp4")} />
-                            <source src={asset("colorScales/scales_in_action.mov")} />
+                            <source src={asset("colorScales/scales_in_action.mp4")} type="video/mp4" />
+                            <source src={asset("colorScales/scales_in_action.mov")} type="video/mov" />
                             <source src={asset("colorScales/scales_in_action.gif")} />
                         </video>
                     </ProjectContainer>
@@ -216,7 +216,7 @@ export const ColorScales = () => {
 
                 {/*\[Visual: Designer quotes confirming value] */}
 
-                <ProjectContainer backgroundColor={"aqua-faded"} className={"callout-section"}>
+                <ProjectContainer backgroundColor={"aqua-faded"} className={"callout-section scales"}>
                     <h2>Reflection: Cross-functional Product Design</h2>
 
 
@@ -255,3 +255,5 @@ export const ColorScales = () => {
 
 
 * */
+
+export default ColorScales;
