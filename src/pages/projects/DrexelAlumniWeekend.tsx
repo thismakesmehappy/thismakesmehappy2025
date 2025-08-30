@@ -40,7 +40,7 @@ const DrexelAlumniWeekend = () => {
             <Container className="py-5">
                 <ProjectContainer backgroundColor="yellow-faded" className={"mb-4"} padding={false}>
                     <Image src={asset("aw/aw_photo_step.jpg")} className={"img-fluid"}
-                           alt={"Visual explorations for the Glitch concept"} />
+                           alt={"Photo of a woman in front of a step and repeat featuring Alumni Weekend branding"} />
                 </ProjectContainer>
 
                 <KeyHighlights subtitle={"Key Facts"} xs={1} lg={5} color={"yellow"}>
@@ -280,7 +280,7 @@ VISUAL OPTIONS:
 
                 <p>Even small details reinforced the experience: from custom beer cups and tote bags, to mapped projections, and step-and-repeat backdrops. Whether alumni opened an invitation at home, navigated campus, or shared photos online, they encountered a unified brand.</p>
 
-                <Row md={2} className="mb-4 row-gap-4">
+                <Row xs={1} md={2} className="mb-4 row-gap-4">
                     <Col>
                         <ProjectContainer backgroundColor="yellow-faded" padding={false}>
                             <Image src={asset("aw/aw_swag_bag.png")} className={"img-fluid badge3"}

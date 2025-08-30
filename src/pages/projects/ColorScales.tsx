@@ -63,7 +63,18 @@ const ColorScales = () => {
                             <source src={asset("colorScales/scales_in_action.gif")} />
                         </video>
                     </ProjectContainer>
-                    <FigureCaption>Screen recording showcasing basic interactions for the plugin</FigureCaption>
+                    <FigureCaption>Screen recordings showcasing basic interactions for the plugin</FigureCaption>
+                </Figure>
+                <Figure>
+                    <ProjectContainer backgroundColor="aqua-faded" className="p-0" padding={false}
+                                      borderColor={"aqua-dark"} borderWidth={1}>
+                        <video className={"w-100"} autoPlay={true} loop={true} controls={true}>
+                            <source src={asset("colorScales/naming_options.mp4")} type="video/mp4" />
+                            <source src={asset("colorScales/naming_options.mov")} type="video/mov" />
+                            <source src={asset("colorScales/scales_in_action.gif")} />
+                        </video>
+                    </ProjectContainer>
+                    <FigureCaption>Screen recordings showing modal for naming options</FigureCaption>
                 </Figure>
                 <h2>Features</h2>
                 <FeaturesScales />

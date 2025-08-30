@@ -1,10 +1,7 @@
 @import "./variables";
 
-.callout-section .alumni {
+.alumni {
   .bi {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
     color: map-get($custom-colors-dark, "yellow");
   }
 }

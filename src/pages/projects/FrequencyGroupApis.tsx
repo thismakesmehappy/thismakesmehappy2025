@@ -294,7 +294,7 @@ VISUAL OPTIONS:
                 VISUAL OPTION: Pull-quote emphasizing “technical rigor × design-driven thinking”.
                 -->
 */}
-                <ProjectContainer backgroundColor={"purple-faded"} className={"callout-section fg"}>
+                <ProjectContainer backgroundColor={"purple-faded"} className={"callout-section fg-call"}>
                     <h2>Reflection: Hybrid Value</h2>
 
                     <p>This project demonstrates how I integrate <strong>technical rigor with design-driven thinking</strong>:

@@ -28,11 +28,8 @@
   color: $purple;
 }
 
-.callout-section .fg {
+.fg-call {
   .bi {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
     color: map-get($custom-colors-dark, "purple");
   }
 }
