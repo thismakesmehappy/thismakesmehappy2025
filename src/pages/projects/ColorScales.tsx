@@ -28,6 +28,7 @@ const ColorScales = () => {
             project: projectData.project,
             role: projectData.role,
             challenge: projectData.challenge,
+            impact: projectData.impact,
         });
 
         // Cleanup when component unmounts

@@ -32,6 +32,7 @@ const FrequencyGroupApis = () => {
             timeline: projectData.timeline,
             role: projectData.role,
             challenge: projectData.challenge,
+            impact: projectData.impact,
         });
 
         // Cleanup when component unmounts

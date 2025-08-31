@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "envelope",
+    "label": "email",
+    "link": "mailto:bernardo+portfolio@thismakesmehappy.co",
+    "blank": true
+  },
+  {
+    "icon": "linkedin",
+    "label": "linkedin",
+    "link": "https://www.linkedin.com/in/thismakesmehappy",
+    "blank": true
+  },
+  {
+    "icon": "github",
+    "label": "github",
+    "link": "https://github.com/thismakesmehappy",
+    "blank": true
+  },
+  {
+    "icon": "file-earmark-arrow-down",
+    "label": "résumé",
+    "link": "/resume/resume_bernardo_margulis.pdf",
+    "asset": true
+  }
+]

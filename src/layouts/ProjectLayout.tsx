@@ -5,9 +5,28 @@ import WallOfTerms from 'src/components/home/WallOfTerms.tsx';
 import ButtonWrapper from 'src/components/ui/ButtonWrapper.tsx';
 import PortfolioGrid from 'src/components/portfolioGrid/PortfolioGrid.tsx';
 import {asset} from 'src/helpers/assetPath.ts';
+import type {ReactNode} from "react";
+import parse from 'html-react-parser';
+import CallToAction from "src/components/helpers/CallToAction.tsx";
+
 
 const ProjectLayout = () => {
     const {headerData} = useProjectHeader();
+
+    const produceImpactSection = (impact: string | string[]): ReactNode => {
+        if (typeof impact === 'string') {
+            return <li><strong>Impact:</strong> {parse(impact)}</li>
+        }
+
+        return (
+            <li><strong>Impact:</strong>
+                <ul>
+                    {impact.map((line, index) => <li key={`impact-${index}`}>{parse(line)}</li>)}
+                </ul>
+
+            </li>
+        );
+    }
 
     return (
         <div className="project-layout">
@@ -27,12 +46,13 @@ const ProjectLayout = () => {
                             <Badge bg={`${headerData.color}-light`}
                                    className="text-dark">~{headerData.readingTime} minute read</Badge>}
                         {headerData.summary && <p className={"hero-body"}>{headerData.summary}</p>}
-                        {(headerData.role || headerData.timeline || headerData.challenge) &&
+                        {(headerData.role || headerData.timeline || headerData.challenge || headerData.impact) &&
                             <ul>
                                 {headerData.role && <li><strong>Role:</strong> {headerData.role}</li>}
                                 {headerData.timeline && <li><strong>Timeline:</strong> {headerData.timeline}</li>}
                                 {headerData.challenge &&
                                     <li><strong>Challenge:</strong> {headerData.challenge}</li>}
+                                {headerData.impact && produceImpactSection(headerData.impact)}
                             </ul>
                         }
                     </Container>

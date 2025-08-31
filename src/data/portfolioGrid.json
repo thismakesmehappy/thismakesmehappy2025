@@ -42,6 +42,13 @@
           "Workflow Integration",
           "Leadership Without Title"
         ],
+        "impact": [
+          "Enabled advertiser access to frequency groups, driving a <strong>6% lift in unique reach</strong>",
+          "<strong>Supported 300+ campaigns</strong> managed through frequency groups",
+          "<strong>Resolved critical product bugs</strong>: reassociation and duplicate associations",
+          "<strong>Took on senior-level responsibilities</strong>: product reviews and API contract definitions",
+          "<strong>Applied user-centered design principles</strong> to reframe backend engineering problems"
+        ],
         "wordCount": 667,
         "readingTime": 3,
         "show": true
@@ -87,6 +94,13 @@
           "Asset Generation",
           "Product Vision"
         ],
+        "impact": [
+          "<strong>Reduce by 98%</strong> color scale creation time (30 minutes → 30 seconds)",
+          "Enable designers to <strong>generate production-ready assets</strong> directly in Figma",
+          "<strong>Improve workflow consistency</strong> across design systems with customizable outputs",
+          "<strong>Utilized AI to accelerate plugin development</strong> by ~40–50%",
+          "<strong>Developed with React</strong>, NPM packages, Figma Document API, and Zustand"
+        ],
         "wordCount": 565,
         "readingTime": 2.5,
         "show": true
@@ -131,6 +145,14 @@
           "Continuous Improvement",
           "Event Experience",
           "Before-and-After Transformation"
+        ],
+        "impact": [
+          "<strong>Directed creative strategy</strong> for Drexel’s signature alumni event",
+          "<strong>Led a 10-person cross-functional team</strong> (visual, editorial, digital, operations)",
+          "<strong>Delivered 50+ branded touchpoints</strong> across print, digital, motion, experiential",
+          "<strong>Attracted 400+ attendees</strong> with a <strong>100% satisfaction</strong> rating",
+          "<strong>Created mentorship opportunities</strong> to expand skills in typography and motion",
+          "Streamlined workflows to <strong>boost output and efficiency</strong> on accelerated timelines"
         ],
         "wordCount": 774,
         "readingTime": 3,

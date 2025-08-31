@@ -2,6 +2,7 @@ import {createContext, useContext} from 'react';
 import type {AccentColors} from 'src/helpers/constants.ts';
 
 export interface ProjectHeaderData {
+    impact: string | string[] | undefined;
     color?: AccentColors | "primary" | "secondary";
     title: string;
     subtitle?: string;

@@ -1,6 +1,8 @@
 import {memojiPlacementFlag} from 'src/helpers/featureFlags.ts';
 import RandomMemoji from 'src/components/helpers/RandomMemoji.tsx';
-import {useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
+import callToAction from 'src/data/callToAction.json';
+import {asset} from "src/helpers/assetPath.ts";
 
 const Footer = () => {
     const location = useLocation();
@@ -15,7 +17,27 @@ const Footer = () => {
                     backgroundColor={true}
                     backgroundColorVariant={"light"}
                 />}
-            <p className="h4 mb-0 text-dark">&copy; 2025 Bernardo Margulis.</p>
+            <div></div>
+            <div className={"d-inline-block mx-auto"}>
+                <p className="h4 mb-0 text-dark">&copy; 2025 Bernardo Margulis.</p>
+                <div className={"mx-auto d-flex justify-content-between mt-2 text-dark"}>
+                    {
+                        callToAction.map(action => {
+                                const link = action.asset ? asset(action.link) : action.link;
+                                const target = action.blank ? {target: "_blank"} : {};
+                                return (
+                                    <div className="text-center font-display" key={`footer-icon-${action.label}`}>
+                                        <Link to={link} {...target} className={"text-dark"}>
+                                            <div><i className={`bi bi-${action.icon}`}></i></div>
+                                            <div>{action.label}</div>
+                                        </Link>
+                                    </div>
+                                )
+                            }
+                        )
+                    }
+                </div>
+            </div>
         </div>
     );
 };
