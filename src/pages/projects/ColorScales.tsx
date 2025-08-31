@@ -234,7 +234,7 @@ const ColorScales = () => {
 
                     <p>This project synthesizes my hybrid strengths:</p>
 
-                    <Row lg={4} sm={2} xs={1} className="text-center mb-4">
+                    <Row lg={4} sm={2} xs={1} className="text-center mb-4 row-gap-4">
                         <Col><i
                             className="bi bi-arrow-left-right"></i>Creative Problem-solving by reframing repetitive work into workflow automation
                         </Col>

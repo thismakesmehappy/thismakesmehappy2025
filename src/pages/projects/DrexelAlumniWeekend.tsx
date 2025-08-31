@@ -155,12 +155,11 @@ VISUAL OPTIONS:
                 </ProjectContainer>
                 <h2>Challenge and Strategic Context</h2>
 
-                <p>Alumni Weekend 2022 posed an opportunity to re-engage alumni after two years away from on-campus events. The creative challenge was to spark excitement and belonging, and to motivate alumni to return in person. Events ranged from intimate, 20-person reunions to a 400+ person, campus-wide celebration </p>
+                <p>Alumni Weekend 2022 posed an opportunity to re-engage alumni after two years away from on-campus events. The creative challenge was to spark excitement and belonging, and to motivate alumni to return in person.</p>
+                <p>Events ranged from intimate, 20-person reunions to a 400+ person, campus-wide celebration </p>
 
                 <p>This required a <strong>brand system designed like a product </strong>: adaptable across user contexts, consistent in message, and efficient to execute.
                 </p>
-
-                <p>Alumni Relations organized the event, while my Marketing and Communications team provided strategy, creative, and execution.</p>
 
                 <Row className="mb-4 row-gap-4">
                     <Col md={6}>
@@ -197,7 +196,7 @@ VISUAL OPTIONS:
 
                 <h2>Creative System</h2>
 
-                <p>We selected the concept <strong>“Live and In Person”</strong> drawing from vintage sticker graphics to evoke nostalgia and excitement. The theme balanced acknowledgment of alumni absence with anticipation for the irreplaceable experience of being together again.
+                <p>We built <strong>“Live and In Person”</strong> drawing from vintage sticker graphics to evoke nostalgia and excitement. The theme acknowledged missing our alumni while building anticipation for being together again.
                 </p>
                 <ul className={"d-md-none"}>
                     <li><strong>Messaging:</strong> bold, nostalgic language to spark excitement</li>
@@ -213,7 +212,7 @@ VISUAL OPTIONS:
                 </ul>
                 <ProjectContainer backgroundColor="yellow-faded"
                                   className={'d-none d-md-block mb-4 callout-section alumni text-center'}>
-                    <Row md={2}>
+                    <Row md={2} className={"row-gap-4"}>
                         <Col>
                             <i
                                 className="bi bi-megaphone"></i>
@@ -277,9 +276,18 @@ VISUAL OPTIONS:
 
                 <h2>Cross-Functional Integration</h2>
 
-                <p>Systematic collaboration ensured consistency across every medium. Within Marcomm, we iterated visuals, copy, digital strategy, and operations. With Alumni, we cross-pollinated programming and messaging.</p>
+                <p>Systematic collaboration ensured consistency across every medium.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Within Marcomm:</strong> we iterated visuals, copy, digital strategy, and operations.
+                    </li>
+                    <li><strong>With Alumni:</strong> we cross-pollinated programming and messaging.
+                    </li>
+                </ul>
 
-                <p>Even small details reinforced the experience: from custom beer cups and tote bags, to mapped projections, and step-and-repeat backdrops. Whether alumni opened an invitation at home, navigated campus, or shared photos online, they encountered a unified brand.</p>
+                <p>Even small details reinforced the experience. <strong>Whether alumni opened an invitation at home, drank from a customized beer cup, navigated campus signage, or took a selfie in front of a step-and-repeat, they encountered a unified brand.</strong>
+                </p>
 
                 <Row xs={1} md={2} className="mb-4 row-gap-4">
                     <Col>
@@ -333,7 +341,7 @@ VISUAL OPTIONS:
                 </Row>
                 <h2>Technical Leadership and Team Development</h2>
 
-                <p>Efficient workflows created opportunities to scale my team’s skills:</p>
+                <p>Having efficient workflows allowed me to find opportunities to build my team’s skills:</p>
 
                 <ul>
                     <li>Paired senior and junior designers in a <strong>peer mentorship loop</strong>, boosting confidence and expanding my creative capacity
@@ -411,28 +419,28 @@ VISUAL OPTIONS:
                                        alt={"Visual explorations for the Live and in Person concept"} />
                             </ProjectContainer>
                         </Col>
-                        <Col xs={6} md={3}>
+                        <Col>
                             <ProjectContainer backgroundColor="yellow-faded" padding={false}
                                               borderColor={"yellow"} borderWidth={1}>
                                 <Image src={asset("aw/aw_deck_04.png")} className={"img-fluid"}
                                        alt={"Page from a presentation deck highlighting marketing goals"} />
                             </ProjectContainer>
                         </Col>
-                        <Col xs={6} md={3}>
+                        <Col>
                             <ProjectContainer backgroundColor="yellow-faded" padding={false}
                                               borderColor={"yellow"} borderWidth={1}>
                                 <Image src={asset("aw/aw_deck_09.png")} className={"img-fluid"}
                                        alt={"Page from a presentation deck highlighting key art for Glitch"} />
                             </ProjectContainer>
                         </Col>
-                        <Col xs={6} md={3}>
+                        <Col>
                             <ProjectContainer backgroundColor="yellow-faded" padding={false}
                                               borderColor={"yellow"} borderWidth={1}>
                                 <Image src={asset("aw/aw_deck_25.png")} className={"img-fluid"}
                                        alt={"Page from a presentation deck highlighting key art for Live and in Person"} />
                             </ProjectContainer>
                         </Col>
-                        <Col xs={6} md={3}>
+                        <Col>
                             <ProjectContainer backgroundColor="yellow-faded" padding={false}
                                               borderColor={"yellow"} borderWidth={1}>
                                 <Image src={asset("aw/aw_deck_35.png")} className={"img-fluid"}
@@ -442,7 +450,7 @@ VISUAL OPTIONS:
                     </Row>
 
                 </Figure>
-                <p> For 2022, I accelerated this shift, starting four months earlier than usual. This <strong>expanded discovery phase</strong> allowed us to prototype and validate early, with deeper collaboration and alignment, and ultimately more deliverables with fewer resources.
+                <p> For 2022, I accelerated the process, starting four months earlier than usual. This <strong>expanded discovery phase</strong> allowed us to prototype and validate early, with deeper collaboration and alignment, and ultimately more deliverables with fewer resources.
                 </p>
 
 
@@ -507,7 +515,7 @@ VISUAL OPTIONS:
 
                     <p>This project demonstrates how I combine <strong>creative direction, systems thinking, and visual craft</strong> to deliver institutional and team impact:
                     </p>
-                    <Row lg={4} sm={2} xs={1} className="text-center mb-4">
+                    <Row lg={4} sm={2} xs={1} className="text-center mb-4 row-gap-4">
                         <Col><i
                             className="bi bi-bullseye"></i>Align creative systems with institutional goals
                         </Col>

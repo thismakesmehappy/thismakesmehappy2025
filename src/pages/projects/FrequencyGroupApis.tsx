@@ -300,7 +300,7 @@ VISUAL OPTIONS:
 
                     <p>This project demonstrates how I integrate <strong>technical rigor with design-driven thinking</strong>:
                     </p>
-                    <Row lg={4} sm={2} xs={1} className="text-center mb-4">
+                    <Row lg={4} sm={2} xs={1} className="text-center mb-4 row-gap-4">
                         <Col><i
                             className="bi bi-arrow-left-right"></i>Delivered stable, scalable production APIs at Amazon DSP
                         </Col>
