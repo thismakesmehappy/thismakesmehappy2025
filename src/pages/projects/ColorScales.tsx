@@ -60,7 +60,6 @@ const ColorScales = () => {
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <video className={"w-100"} autoPlay={true} loop={true} controls={true}>
                             <source src={asset("colorScales/scales_in_action.mp4")} type="video/mp4" />
-                            <source src={asset("colorScales/scales_in_action.mov")} type="video/mov" />
                             <source src={asset("colorScales/scales_in_action.gif")} />
                         </video>
                     </ProjectContainer>
@@ -71,7 +70,6 @@ const ColorScales = () => {
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <video className={"w-100"} autoPlay={true} loop={true} controls={true}>
                             <source src={asset("colorScales/naming_options.mp4")} type="video/mp4" />
-                            <source src={asset("colorScales/naming_options.mov")} type="video/mov" />
                             <source src={asset("colorScales/scales_in_action.gif")} />
                         </video>
                     </ProjectContainer>

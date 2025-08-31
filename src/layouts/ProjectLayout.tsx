@@ -7,7 +7,6 @@ import PortfolioGrid from 'src/components/portfolioGrid/PortfolioGrid.tsx';
 import {asset} from 'src/helpers/assetPath.ts';
 import type {ReactNode} from "react";
 import parse from 'html-react-parser';
-import CallToAction from "src/components/helpers/CallToAction.tsx";
 
 
 const ProjectLayout = () => {
