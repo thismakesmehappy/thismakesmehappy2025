@@ -27,6 +27,8 @@ dist-ssr
 test-server
 
 
-naming_options.mov
-scales_in_action.mov
-scales_in_action.gif
+# Large colorScales media files
+public/colorScales/naming_options.mov
+public/colorScales/scales_in_action.mov
+public/colorScales/naming_options.gif
+public/colorScales/scales_in_action.gif
