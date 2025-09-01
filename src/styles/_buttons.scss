@@ -2,10 +2,10 @@
 
 .btn {
   font-family: $font-family-sans-serif;
-  text-transform: uppercase !important;
-  font-weight: normal !important;
+  text-transform: uppercase;
+  font-weight: normal;
   font-size: $font-size-sm *.875;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.1em;
   border-radius: $border-radius-sm;
   padding: $spacer * .375 $spacer * .875;
   margin: $spacer * .125;
@@ -31,36 +31,36 @@
 }
 
 .btn-primary {
-  background-color: $pink-500 !important;
+  background-color: $pink-500;
   color: $light;
 }
 
 .btn-primary:hover {
-  background-color: $pink-600 !important;
+  background-color: $pink-600;
   color: $light;
 }
 
 .btn-secondary {
-  background-color: $pink-50 !important;
+  background-color: $pink-50;
   color: $pink-500;
 }
 
 .btn-secondary:hover {
-  background-color: $pink-100 !important;
+  background-color: $pink-100;
   color: $pink-500;
 }
 
 .btn-tertiary, .link, .btn-tertiary:active, .link:active, .btn-tertiary:focus, .link:focus, .btn-tertiary:active {
   color: $pink-500;
   text-decoration: underline;
-  text-underline-offset: $spacer * .25 !important;
+  text-underline-offset: $spacer * .25;
   text-underline-style: double;
-  text-decoration-thickness: $spacer * .25 !important;
+  text-decoration-thickness: $spacer * .25;
 }
 
 .btn-tertiary:hover, .link:hover {
-  color: $pink-600 !important;
-  text-underline-offset: $spacer * .5 !important;
+  color: $pink-600;
+  text-underline-offset: $spacer * .5;
 }
 
 $link-transition: color .15s ease-in-out,
