@@ -20,11 +20,11 @@
 
 ### **2. Color System Cleanup**
 
-- ⏳ **TODO**: Audit color usage - map all color applications
-- ⏳ **TODO**: Fix hardcoded colors in `src/styles/_buttons.scss` lines 32-45
-- ⏳ **TODO**: Replace magic color values with semantic variables
-- ⏳ **TODO**: Ensure consistent color class usage (`bg-coral` vs inline styles)
-- ⏳ **TODO**: Create color usage documentation
+- ✅ **DONE**: Audit color usage - map all color applications
+- ✅ **DONE**: Remove unused components with hardcoded gradients (ProjectHeader.tsx, ProjectTemplate.tsx)
+- ✅ **DONE**: Add clarifying comments to one-time use colors (_alumni-weekend.scss)
+- ✅ **DONE**: Verify consistent color class usage (bg-*, text-* classes used throughout)
+- ✅ **DONE**: Confirm variables in _variables.scss serve as single source of truth
 
 ### **3. Typography Hierarchy**
 

@@ -59,18 +59,6 @@ const FeaturesAssets = () => {
                 </div>
             </div>
         </FeaturesWrapper>
-
-        // $purple: #CD64EB;
-        // $orange: #FF9728;
-        // $coral: #FF5F56;
-        // $blue: #1F40DB;
-        // $yellow: #FFD920;
-        // $aqua: #38D1CB;
-        // $lime: #A9CE28;
-        // $green: #01875D;
-        // $teal: #108197;
-        // $pink: #E1186F;
-        // $red: #DC251D;
     );
 };
 
