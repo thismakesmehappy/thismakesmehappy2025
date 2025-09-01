@@ -18,7 +18,6 @@ interface KeyHighlightsProps {
 }
 
 const KeyHighlights = ({
-                           subtitle,
                            xs = 2,
                            sm,
                            md = 3,
@@ -32,7 +31,6 @@ const KeyHighlights = ({
                        }: KeyHighlightsProps) => {
     return (
         <section className={`highlights mb-4 ${className}`}>
-            {subtitle && <h2>{subtitle}</h2>}
             <ProjectContainer borderColor={color} expand={true} borderWidth={4} className={`highlights gap-${gap}`}>
                 <Row xs={xs} sm={sm} md={md} lg={lg} xl={xl} className={`gy-${gapY}`}>
                     {children}

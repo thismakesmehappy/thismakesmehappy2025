@@ -10,7 +10,8 @@ import FeaturesAssets from 'src/components/colorScales/FeaturesAssets.tsx';
 
 const FeaturesScales = () => {
     return (
-        <div>
+        <>
+            <h2>Features</h2>
             <Row md={4} xs={2}>
                 <Col>
                     <FeaturesColorScales />
@@ -45,7 +46,7 @@ const FeaturesScales = () => {
                     <p>Generate Figma assets (variables, styles, swatches) or export CSS/SCSS tokens</p>
                 </Col>
             </Row>
-        </div>
+        </>
     );
 };
 

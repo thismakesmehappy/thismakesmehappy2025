@@ -11,18 +11,17 @@ const ProjectIndex = () => {
         setHeaderData({
             title: "Projects",
             color: "orange",
-            wordCloud: homeListOfTerms
+            wordCloud: homeListOfTerms,
+            impact: undefined // Required field for interface
         });
 
         return () => setHeaderData(null);
     }, [setHeaderData]);
 
-    // Combine featured and standard projects
-
-
     return (
         <>
-            <PortfolioGrid /></>
+            <PortfolioGrid />
+        </>
     );
 };
 
