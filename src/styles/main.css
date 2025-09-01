@@ -17011,10 +17011,10 @@ img.rotate-left, img.rotate-right {
 /* red */
 .btn {
   font-family: "Dela Gothic One", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  text-transform: uppercase !important;
-  font-weight: normal !important;
+  text-transform: uppercase;
+  font-weight: normal;
   font-size: 0.875rem;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.1em;
   border-radius: 0.5rem;
   padding: 0.375rem 0.875rem;
   margin: 0.125rem;
@@ -17038,36 +17038,36 @@ img.rotate-left, img.rotate-right {
   }
 }
 .btn-primary {
-  background-color: #E1186F !important;
+  background-color: #E1186F;
   color: #FEFFFC;
 }
 
 .btn-primary:hover {
-  background-color: #B51B68 !important;
+  background-color: #B51B68;
   color: #FEFFFC;
 }
 
 .btn-secondary {
-  background-color: #FBE8EE !important;
+  background-color: #FBE8EE;
   color: #E1186F;
 }
 
 .btn-secondary:hover {
-  background-color: #F8D1E0 !important;
+  background-color: #F8D1E0;
   color: #E1186F;
 }
 
 .btn-tertiary, .link, .btn-tertiary:active, .link:active, .btn-tertiary:focus, .link:focus, .btn-tertiary:active {
   color: #E1186F;
   text-decoration: underline;
-  text-underline-offset: 0.25rem !important;
+  text-underline-offset: 0.25rem;
   text-underline-style: double;
-  text-decoration-thickness: 0.25rem !important;
+  text-decoration-thickness: 0.25rem;
 }
 
 .btn-tertiary:hover, .link:hover {
-  color: #B51B68 !important;
-  text-underline-offset: 0.5rem !important;
+  color: #B51B68;
+  text-underline-offset: 0.5rem;
 }
 
 .link {

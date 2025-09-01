@@ -56,9 +56,11 @@
     - **Cleaned up**: text-transform, font-weight, letter-spacing, background-color declarations
     - **Benefits**: Proper CSS cascade, better maintainability, follows best practices
     - **No visual changes**: Buttons maintain same appearance and functionality
-- ⏳ **TODO**: Standardize SCSS imports
-    - Ensure all component SCSS files import variables consistently
-    - Fix `src/styles/_frequency-groups.scss` import pattern
+- ✅ **DONE**: Standardize SCSS imports
+    - **Standardized quote style**: All imports use double quotes (`@import "variables";`)
+    - **Fixed path inconsistencies**: Removed `./` prefix from relative paths
+    - **Updated files**: `_portfolio_grid.scss`, `_highlights.scss`, `_alumni-weekend.scss`
+    - **Benefits**: Consistent code style, easier maintenance, better readability
 - ⏳ **TODO**: Optimize Bootstrap imports
     - Audit `src/styles/main.scss` for unused components
     - Remove unused Bootstrap modules to reduce bundle size
