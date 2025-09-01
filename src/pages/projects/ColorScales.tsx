@@ -19,6 +19,7 @@ import DiscoveryScales from "src/components/colorScales/DiscoveryScales.tsx";
 import AIScales from "src/components/colorScales/AIScales.tsx";
 import ReflectionScales from "src/components/colorScales/ReflectionScales.tsx";
 import ProblemFigureScales from "src/components/colorScales/ProblemFigureScales.tsx";
+import {SPACING} from "src/helpers/spacingConstants.ts";
 
 const ColorScales = () => {
     const projectData = portfolioGrid.projects.featured.figmaPlugin;
@@ -46,7 +47,7 @@ const ColorScales = () => {
 
     return (
         <Article id="color-scales-page">
-            <Container className="py-5">
+            <Container className={SPACING.CONTAINER}>
                 <HeroScales />
                 <Section>
                     <KeyHighlightsScales />

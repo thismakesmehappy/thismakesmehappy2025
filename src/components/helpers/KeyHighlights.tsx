@@ -2,6 +2,7 @@ import {Row} from 'react-bootstrap';
 import type {AccentColors, AccentColorsDark, AccentColorsLight} from 'src/helpers/constants.ts';
 import React from 'react';
 import ProjectContainer from './ProjectContainer.tsx';
+import {SPACING} from 'src/helpers/spacingConstants.ts';
 
 interface KeyHighlightsProps {
     subtitle?: string;
@@ -30,8 +31,8 @@ const KeyHighlights = ({
                            className,
                        }: KeyHighlightsProps) => {
     return (
-        <section className={`highlights mb-4 ${className}`}>
-            <ProjectContainer borderColor={color} expand={true} borderWidth={4} className={`highlights gap-${gap}`}>
+        <section className={`highlights ${SPACING.SECTION} ${className}`}>
+            <ProjectContainer borderColor={color} expand={false} borderWidth={4} className={`highlights gap-${gap}`}>
                 <Row xs={xs} sm={sm} md={md} lg={lg} xl={xl} className={`gy-${gapY}`}>
                     {children}
                 </Row>

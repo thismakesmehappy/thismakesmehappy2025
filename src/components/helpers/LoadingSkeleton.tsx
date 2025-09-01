@@ -1,4 +1,5 @@
 import {Container, Placeholder} from 'react-bootstrap';
+import {SPACING} from 'src/helpers/spacingConstants.ts';
 
 interface LoadingSkeletonProps {
     type?: 'project' | 'page' | 'component';
@@ -7,14 +8,14 @@ interface LoadingSkeletonProps {
 const LoadingSkeleton = ({ type = 'project' }: LoadingSkeletonProps) => {
     if (type === 'project') {
         return (
-            <Container className="py-5">
+            <Container className={SPACING.CONTAINER}>
                 {/* Hero placeholder */}
-                <Placeholder as="div" animation="glow" className="mb-4">
+                <Placeholder as="div" animation="glow" className={SPACING.SECTION}>
                     <Placeholder xs={12} style={{ height: '300px' }} className="rounded" />
                 </Placeholder>
 
                 {/* Key highlights placeholder */}
-                <div className="mb-5">
+                <div className={SPACING.SECTION}>
                     <Placeholder as="h2" animation="glow">
                         <Placeholder xs={4} />
                     </Placeholder>
@@ -41,7 +42,7 @@ const LoadingSkeleton = ({ type = 'project' }: LoadingSkeletonProps) => {
                 </div>
 
                 {/* Content sections placeholder */}
-                <div className="mb-5">
+                <div className={SPACING.SECTION}>
                     <Placeholder as="h3" animation="glow">
                         <Placeholder xs={6} />
                     </Placeholder>
@@ -53,7 +54,7 @@ const LoadingSkeleton = ({ type = 'project' }: LoadingSkeletonProps) => {
                 </div>
 
                 {/* Image placeholder */}
-                <Placeholder as="div" animation="glow" className="mb-4">
+                <Placeholder as="div" animation="glow" className={SPACING.SECTION}>
                     <Placeholder xs={12} style={{ height: '200px' }} className="rounded" />
                 </Placeholder>
             </Container>
@@ -62,7 +63,7 @@ const LoadingSkeleton = ({ type = 'project' }: LoadingSkeletonProps) => {
 
     // Simpler placeholder for other types
     return (
-        <Container className="py-3">
+        <Container className={SPACING.CONTAINER}>
             <Placeholder as="div" animation="glow">
                 <Placeholder xs={12} style={{ height: '150px' }} />
             </Placeholder>

@@ -62,7 +62,7 @@ const DrexelAlumniWeekend = () => {
                     <BadgesAnimAW />
                 </Section>
                 <Section>
-                    <SectionContent className="mb-5">
+                    <SectionContent className="mb-4">
                         <ChallengeAW />
                     </SectionContent>
                     <ImagesScreenAW />
