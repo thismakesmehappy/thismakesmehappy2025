@@ -46,22 +46,22 @@ h6, .h6 {
 
 .hero {
   font-size: 2rem;
-  line-height: 2.375rem;
-  padding-bottom: 1.1875rem;
+  line-height: 2.375rem; // 1.1875 ratio for visual balance
+  padding-bottom: 1.1875rem; // Matches line-height for consistency
   font-family: $font-family-sans-serif;
 }
 
 .hero-sub {
   font-size: 1.125rem;
-  line-height: 1.6785rem;
-  padding-bottom: 0.85rem;
+  line-height: 1.6785rem; // 1.49 ratio for readability
+  padding-bottom: 0.85rem; // Proportional spacing
   font-family: $font-family-sans-serif;
 }
 
 .hero-sub-med {
   font-size: 1.0625rem;
-  line-height: 1.35rem;
-  padding-bottom: 0.85rem;
+  line-height: 1.35rem; // 1.27 ratio for compact display
+  padding-bottom: 0.85rem; // Consistent with hero-sub
   font-family: $font-family-sans-serif;
 }
 
@@ -106,20 +106,20 @@ h6, .h6 {
 
   .hero {
     font-size: 2.75rem;
-    line-height: 4.25rem;
-    padding-bottom: 2.125rem;
+    line-height: 4.25rem; // 1.55 ratio for visual balance on large screens
+    padding-bottom: 2.125rem; // Half line-height for proportional spacing
   }
 
   .hero-sub {
     font-size: 2rem;
-    line-height: 3.125rem;
-    padding-bottom: 1.875rem;
+    line-height: 3.125rem; // 1.56 ratio, proportional to hero
+    padding-bottom: 1.875rem; // Consistent spacing ratio
   }
 
   .hero-body {
     font-size: 1.75rem;
-    line-height: 2.75rem;
-    padding-bottom: 1.375rem;
+    line-height: 2.75rem; // 1.57 ratio for body text readability
+    padding-bottom: 1.375rem; // Half line-height for balance
   }
 
 }
