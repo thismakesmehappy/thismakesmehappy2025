@@ -1,7 +1,7 @@
 import {Row} from 'react-bootstrap';
 import type {AccentColors, AccentColorsDark, AccentColorsLight} from 'src/helpers/constants.ts';
 import React from 'react';
-import ProjectContainer from './ProjectContainer.tsx';
+import ProjectContainer from './ProjectContainer';
 import {SPACING} from 'src/helpers/spacingConstants.ts';
 
 interface KeyHighlightsProps {

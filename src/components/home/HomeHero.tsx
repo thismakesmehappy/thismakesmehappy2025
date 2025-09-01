@@ -1,6 +1,6 @@
 import {Col, Container, Image} from 'react-bootstrap';
 import {useState} from 'react';
-import CallToAction from 'src/components/helpers/CallToAction.tsx';
+import CallToAction from  'src/components/helpers/CallToAction';
 import {asset} from 'src/helpers/assetPath.ts';
 
 const HomeHero = () => {

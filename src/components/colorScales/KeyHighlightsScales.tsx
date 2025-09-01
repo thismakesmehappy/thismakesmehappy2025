@@ -1,6 +1,6 @@
-import KeyHighlight from 'src/components/helpers/KeyHighlight.tsx';
-import KeyHighlightCallout from 'src/components/helpers/KeyHighlightCallout.tsx';
-import KeyHighlights from 'src/components/helpers/KeyHighlights.tsx';
+import KeyHighlight from  'src/components/helpers/KeyHighlight';
+import KeyHighlightCallout from  'src/components/helpers/KeyHighlightCallout';
+import KeyHighlights from  'src/components/helpers/KeyHighlights';
 
 const KeyHighlightsScales = () => {
     return (

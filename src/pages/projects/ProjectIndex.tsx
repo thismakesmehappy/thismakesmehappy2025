@@ -1,7 +1,7 @@
 // pages/ProjectIndex.tsx
 import React from 'react';
 import useProjectHeader from 'src/hooks/useProjectHeader.ts';
-import PortfolioGrid from 'src/components/portfolioGrid/PortfolioGrid.tsx';
+import PortfolioGrid from  'src/components/portfolioGrid/PortfolioGrid';
 import homeListOfTerms from 'src/data/homeListOfTerms.ts';
 
 const ProjectIndex = () => {

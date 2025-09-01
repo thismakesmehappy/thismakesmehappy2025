@@ -11,7 +11,7 @@ interface ProjectContainerProps {
     expand?: boolean;
     id?: string;
     padding?: boolean;
-    style?: any;
+    style?: React.CSSProperties;
 }
 
 const ProjectContainer = ({

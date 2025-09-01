@@ -1,4 +1,4 @@
-import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
+import AnimatedButton from  'src/components/ui/AnimatedButton';
 import {asset} from 'src/helpers/assetPath.ts';
 import {SPACING} from 'src/helpers/spacingConstants.ts';
 import callToAction from 'src/data/callToAction.json'

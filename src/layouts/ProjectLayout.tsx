@@ -1,9 +1,9 @@
 import {Container, Badge} from 'react-bootstrap';
 import {Outlet} from 'react-router-dom';
 import useProjectHeader from 'src/hooks/useProjectHeader.ts';
-import WallOfTerms from 'src/components/home/WallOfTerms.tsx';
-import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
-import PortfolioGrid from 'src/components/portfolioGrid/PortfolioGrid.tsx';
+import WallOfTerms from  'src/components/home/WallOfTerms';
+import AnimatedButton from  'src/components/ui/AnimatedButton';
+import PortfolioGrid from  'src/components/portfolioGrid/PortfolioGrid';
 import {asset} from 'src/helpers/assetPath.ts';
 import type {ReactNode} from "react";
 import parse from 'html-react-parser';

@@ -1,12 +1,12 @@
 import {Col, Row} from 'react-bootstrap';
-import FeaturesColorScales from 'src/components/colorScales/FeaturesColorScales.tsx';
-import FeaturesEndpoints from 'src/components/colorScales/FeaturesEndpoints.tsx';
-import FeaturesNeutral from 'src/components/colorScales/FeaturesNeutral.tsx';
-import FeaturesSelect from 'src/components/colorScales/FeaturesSelect.tsx';
-import FeaturesDefineSteps from 'src/components/colorScales/FeaturesDefineSteps.tsx';
-import FeaturesNamingConvention from 'src/components/colorScales/FeaturesNamingConvention.tsx';
-import FeaturesPreview from 'src/components/colorScales/FeaturesPreview.tsx';
-import FeaturesAssets from 'src/components/colorScales/FeaturesAssets.tsx';
+import FeaturesColorScales from  'src/components/colorScales/FeaturesColorScales';
+import FeaturesEndpoints from  'src/components/colorScales/FeaturesEndpoints';
+import FeaturesNeutral from  'src/components/colorScales/FeaturesNeutral';
+import FeaturesSelect from  'src/components/colorScales/FeaturesSelect';
+import FeaturesDefineSteps from  'src/components/colorScales/FeaturesDefineSteps';
+import FeaturesNamingConvention from  'src/components/colorScales/FeaturesNamingConvention';
+import FeaturesPreview from  'src/components/colorScales/FeaturesPreview';
+import FeaturesAssets from  'src/components/colorScales/FeaturesAssets';
 
 const FeaturesScales = () => {
     return (

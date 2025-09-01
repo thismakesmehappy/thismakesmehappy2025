@@ -1,8 +1,8 @@
 import {Col, Container, Row} from 'react-bootstrap';
-import CallToAction from 'src/components/helpers/CallToAction.tsx';
-import KeyHighlights from 'src/components/helpers/KeyHighlights.tsx';
-import KeyHighlight from 'src/components/helpers/KeyHighlight.tsx';
-import KeyHighlightCallout from 'src/components/helpers/KeyHighlightCallout.tsx';
+import CallToAction from  'src/components/helpers/CallToAction';
+import KeyHighlights from  'src/components/helpers/KeyHighlights';
+import KeyHighlight from  'src/components/helpers/KeyHighlight';
+import KeyHighlightCallout from  'src/components/helpers/KeyHighlightCallout';
 
 const Highlights = () => {
     return (

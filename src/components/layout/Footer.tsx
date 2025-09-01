@@ -1,5 +1,5 @@
 import {memojiPlacementFlag} from 'src/helpers/featureFlags.ts';
-import RandomMemoji from 'src/components/helpers/RandomMemoji.tsx';
+import RandomMemoji from  'src/components/helpers/RandomMemoji';
 import {Link, useLocation} from 'react-router-dom';
 import callToAction from 'src/data/callToAction.json';
 import {asset} from "src/helpers/assetPath.ts";

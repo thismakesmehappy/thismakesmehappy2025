@@ -1,5 +1,5 @@
 import {Image} from 'react-bootstrap';
-import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
+import ProjectContainer from  'src/components/helpers/ProjectContainer';
 import {asset} from "src/helpers/assetPath.ts";
 
 const HeroAW = () => {

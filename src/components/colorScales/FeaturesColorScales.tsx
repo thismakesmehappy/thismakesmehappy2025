@@ -1,4 +1,4 @@
-import FeaturesWrapper from 'src/components/colorScales/FeaturesWrapper.tsx';
+import FeaturesWrapper from  'src/components/colorScales/FeaturesWrapper';
 
 const FeaturesColorScales = () => {
     return (

@@ -1,5 +1,5 @@
 import {Figure, FigureCaption, Image} from 'react-bootstrap';
-import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
+import ProjectContainer from 'src/components/helpers/ProjectContainer';
 import {asset} from "src/helpers/assetPath.ts";
 
 const ExplorationFigureAW = () => {
@@ -7,10 +7,10 @@ const ExplorationFigureAW = () => {
         <Figure>
             <FigureCaption>When the team resisted the idea of treating events as a branding problem, I focused on showcasing the impact of a consistent visual style</FigureCaption>
             <ProjectContainer backgroundColor="yellow-faded" padding={false} className={"mb-4"}>
-                <Image 
-                    src={asset("aw/aw18_exploration.png")} 
+                <Image
+                    src={asset("aw/aw18_exploration.png")}
                     className={"img-fluid"}
-                    alt={"Visual exploration showing consistent Alumni Weekend branding approach"} 
+                    alt={"Visual exploration showing consistent Alumni Weekend branding approach"}
                 />
             </ProjectContainer>
         </Figure>

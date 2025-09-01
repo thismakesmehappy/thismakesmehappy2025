@@ -3,16 +3,17 @@ import {lazy, Suspense} from 'react';
 import Navigation from 'src/components/navigation/Navigation';
 import Home from 'src/pages/Home';
 import ProjectLayout from 'src/layouts/ProjectLayout';
-import Footer from 'src/components/layout/Footer.tsx';
-import ProjectProvider from 'src/context/ProjectContext.tsx';
-import ProjectIndex from 'src/pages/projects/ProjectIndex.tsx';
-import ScrollToTop from 'src/components/helpers/ScrollToTop.tsx';
-import LoadingSkeleton from 'src/components/helpers/LoadingSkeleton.tsx';
+import Footer from 'src/components/layout/Footer';
+import ProjectProvider from 'src/context/ProjectContext';
+import ScrollToTop from 'src/components/helpers/ScrollToTop';
+import LoadingSkeleton from 'src/components/helpers/LoadingSkeleton';
+import ProjectIndex from "src/pages/projects/ProjectIndex.tsx";
+
 
 // Lazy load project pages for better performance
 const FrequencyGroupApis = lazy(() => import('src/pages/projects/FrequencyGroupApis'));
-const ColorScales = lazy(() => import('src/pages/projects/ColorScales.tsx'));
-const DrexelAlumniWeekend = lazy(() => import('src/pages/projects/DrexelAlumniWeekend.tsx'));
+const ColorScales = lazy(() => import('src/pages/projects/ColorScales'));
+const DrexelAlumniWeekend = lazy(() => import('src/pages/projects/DrexelAlumniWeekend'));
 
 // Get the base path from Vite's base configuration
 const basename = import.meta.env.BASE_URL;

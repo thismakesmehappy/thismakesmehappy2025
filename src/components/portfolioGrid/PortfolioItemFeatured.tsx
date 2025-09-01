@@ -1,7 +1,7 @@
 import {Col} from 'react-bootstrap';
 import {type PortfolioGridItemsColsProps, spacingBottom} from './interfaces.ts';
-import PortfolioGridImageInner from './PortfolioGridImageInner.tsx';
-import PortfolioGridTitleInner from './PortfolioGridTitleInner.tsx';
+import PortfolioGridImageInner from './PortfolioGridImageInner';
+import PortfolioGridTitleInner from './PortfolioGridTitleInner';
 import {Link} from 'react-router-dom';
 import {asset} from 'src/helpers/assetPath.ts';
 

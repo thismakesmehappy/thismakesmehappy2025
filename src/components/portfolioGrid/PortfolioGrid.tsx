@@ -1,12 +1,12 @@
 import portfolioGrid from 'src/data/portfolioGrid.json';
 import {type AccentColors, listOfAccentColors} from 'src/helpers/constants.ts';
 import {hideProjects, showAdditionalProjects} from 'src/helpers/featureFlags.ts';
-import PortfolioItemStandard from './PortfolioItemStandard.tsx';
+import PortfolioItemStandard from './PortfolioItemStandard';
 import {Container, Row} from 'react-bootstrap';
-import PortfolioItemFeatured from './PortfolioItemFeatured.tsx';
-import TogglePlusMinus from 'src/components/helpers/TogglePlusMinus.tsx';
+import PortfolioItemFeatured from './PortfolioItemFeatured';
+import TogglePlusMinus from  'src/components/helpers/TogglePlusMinus';
 import {useState} from 'react';
-import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
+import AnimatedButton from  'src/components/ui/AnimatedButton';
 
 const PortfolioGrid = () => {
     const featuredProjects = Object.values(portfolioGrid.projects.featured);
