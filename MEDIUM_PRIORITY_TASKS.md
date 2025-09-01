@@ -61,9 +61,11 @@
     - **Fixed path inconsistencies**: Removed `./` prefix from relative paths
     - **Updated files**: `_portfolio_grid.scss`, `_highlights.scss`, `_alumni-weekend.scss`
     - **Benefits**: Consistent code style, easier maintenance, better readability
-- ⏳ **TODO**: Optimize Bootstrap imports
-    - Audit `src/styles/main.scss` for unused components
-    - Remove unused Bootstrap modules to reduce bundle size
+- ✅ **DONE**: Optimize Bootstrap imports
+    - **Removed 15 unused components**: tables, forms, cards, modals, tooltips, etc.
+    - **Kept only used components**: buttons, nav, navbar, badge, placeholders
+    - **27% CSS bundle reduction**: 421.87kB → 308.02kB (113.85kB savings)
+    - **Performance improvement**: 14.08kB less gzipped CSS to download
 
 ## 📋 **Implementation Order**
 
