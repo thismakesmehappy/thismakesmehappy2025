@@ -2,12 +2,12 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import type {ButtonProps} from 'react-bootstrap/Button';
 
-interface ButtonWrapperProps extends ButtonProps {
+interface AnimatedButtonProps extends ButtonProps {
   className?: string;
   wrapperClassName?: string;
 }
 
-const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
+const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   children,
     className,
   ...buttonProps
@@ -21,4 +21,4 @@ const ButtonWrapper: React.FC<ButtonWrapperProps> = ({
   );
 };
 
-export default ButtonWrapper;
+export default AnimatedButton;

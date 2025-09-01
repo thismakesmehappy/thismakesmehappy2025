@@ -2,7 +2,7 @@ import {Container, Badge} from 'react-bootstrap';
 import {Outlet} from 'react-router-dom';
 import useProjectHeader from 'src/hooks/useProjectHeader.ts';
 import WallOfTerms from 'src/components/home/WallOfTerms.tsx';
-import ButtonWrapper from 'src/components/ui/ButtonWrapper.tsx';
+import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
 import PortfolioGrid from 'src/components/portfolioGrid/PortfolioGrid.tsx';
 import {asset} from 'src/helpers/assetPath.ts';
 import type {ReactNode} from "react";
@@ -33,8 +33,8 @@ const ProjectLayout = () => {
                 <section className={`gradient-${headerData.color} hero-section`}
                          id="frequency-group-hero-section">
                     <Container>
-                        <ButtonWrapper href={asset("/")} variant={"link"}><i className={"bi bi-arrow-left"}></i> Home
-                        </ButtonWrapper>
+                        <AnimatedButton href={asset("/")} variant={"link"}><i className={"bi bi-arrow-left"}></i> Home
+                        </AnimatedButton>
                         {headerData.title && <h1 className={"hero mb-0 pb-0"}>{headerData.title}</h1>}
                         {headerData.subtitle &&
                             <p className={'hero-sub text-secondary mb-0 pb-0'}>{headerData.subtitle}</p>}

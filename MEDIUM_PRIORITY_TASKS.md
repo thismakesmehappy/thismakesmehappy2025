@@ -38,10 +38,12 @@
 
 ### **4. Component Patterns**
 
-- ⏳ **TODO**: Button component standardization
-    - Decide: Keep ButtonWrapper or use direct Button components
-    - Fix mixed usage in `src/components/helpers/CallToAction.tsx`
-    - Update all button implementations consistently
+- ✅ **DONE**: Button component standardization
+    - **Renamed**: `ButtonWrapper` → `AnimatedButton` for clarity
+    - **AnimatedButton**: For interactive buttons with hover animations (CallToAction, PortfolioGrid)
+    - **Button**: For simple, static buttons (ProjectHeader, navigation)
+    - **Animation preserved**: Maintains padding/margin animation system in `_buttons.scss`
+    - **Usage is now explicit and consistent**
 - ⏳ **TODO**: State management patterns
     - Standardize useState naming conventions
     - Fix complex scroll logic in `src/components/navigation/Navigation.tsx`

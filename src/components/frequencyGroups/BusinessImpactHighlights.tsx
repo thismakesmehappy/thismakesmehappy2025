@@ -3,7 +3,7 @@ import ProjectContainer from 'src/components/helpers/ProjectContainer.tsx';
 
 const BusinessImpactHighlights = () => {
     return (
-        <ProjectContainer backgroundColor="purple-faded" expand={true} className={"mb-4 callout-section fg-call"}>
+        <ProjectContainer backgroundColor="purple-faded" expand={false} className={"mb-4 callout-section fg-call"}>
             <h4>Business Impact Highlights</h4>
             <p>The API extended access to Frequency Groups, availing the following Frequency Groups benefits to advertisers:</p>
             <Row md={3} xs={1} className="text-center">

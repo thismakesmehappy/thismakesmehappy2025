@@ -1,4 +1,4 @@
-import ButtonWrapper from 'src/components/ui/ButtonWrapper.tsx';
+import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
 import {asset} from 'src/helpers/assetPath.ts';
 import {SPACING} from 'src/helpers/spacingConstants.ts';
 import callToAction from 'src/data/callToAction.json'
@@ -10,13 +10,13 @@ const CallToAction = () => {
                     const link = action.asset ? asset(action.link) : action.link;
                     const target = action.blank ? {target: "_blank"} : {};
                     return (
-                        <ButtonWrapper href={link} variant="primary"
+                        <AnimatedButton href={link} variant="primary"
                                        className={SPACING.BUTTON_RESPONSIVE}
                                        {...target}
                                        key={`call-to-action-${action.label}`}
                         >
                             <i className={`bi bi-${action.icon}`}></i> {action.label}
-                        </ButtonWrapper>
+                        </AnimatedButton>
                     )
                 }
             )

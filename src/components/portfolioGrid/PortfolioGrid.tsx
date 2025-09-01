@@ -6,7 +6,7 @@ import {Container, Row} from 'react-bootstrap';
 import PortfolioItemFeatured from './PortfolioItemFeatured.tsx';
 import TogglePlusMinus from 'src/components/helpers/TogglePlusMinus.tsx';
 import {useState} from 'react';
-import ButtonWrapper from 'src/components/ui/ButtonWrapper.tsx';
+import AnimatedButton from 'src/components/ui/AnimatedButton.tsx';
 
 const PortfolioGrid = () => {
     const featuredProjects = Object.values(portfolioGrid.projects.featured);
@@ -46,11 +46,11 @@ const PortfolioGrid = () => {
                     })}
                 </Row>
                 {showAdditionalProjects &&
-                    <ButtonWrapper className="mb-4" onClick={toggleExpandAdditional}
+                    <AnimatedButton className="mb-4" onClick={toggleExpandAdditional}
                                    variant="link">{expandAdditional ? "Show" : "Hide"} Additional Projects <TogglePlusMinus
                         plus={expandAdditional}
                     />
-                    </ButtonWrapper>}
+                    </AnimatedButton>}
                 <Row className={`additional-projects ${expandAdditional ? 'closed' : 'opened'}`}>
                     {standardProjects.map(([_, project], index) => {
                         const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as AccentColors;
