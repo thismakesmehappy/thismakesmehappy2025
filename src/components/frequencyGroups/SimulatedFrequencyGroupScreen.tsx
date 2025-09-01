@@ -1,5 +1,5 @@
-import {Badge} from 'react-bootstrap';
-import ProjectContainer from  'src/components/helpers/ProjectContainer';
+import {Badge, Col, Row} from 'react-bootstrap';
+import ProjectContainer from 'src/components/helpers/ProjectContainer';
 import {useState} from 'react';
 
 const SimulatedFrequencyGroupScreen = () => {
@@ -42,30 +42,34 @@ const SimulatedFrequencyGroupScreen = () => {
                         <div className="pb-3 mb-3 border-bottom border-2 border-purple-dark">
                             <label htmlFor="frequencyGroupName" className="me-2 form-label fw-bold">Name</label>
                             <input type={"text"} id="frequencyGroupName" placeholder="Test"
-                                   className="text-purple-dark bg-purple-faded border-0 form-control" />
+                                   tabIndex={-1}
+                                   className="text-purple-dark bg-purple-faded border-0 form-control w-100" />
                         </div>
                         <div>
                             <label htmlFor="frequencyGroupFrequency"
                                    className="me-2 form-label fw-bold">Frequency</label>
-                            <div className="row align-items-end">
-                                <div className="col col-4">
+                            <Row xs={3} className="align-items-end g-2">
+                                <Col>
                                     <label htmlFor="frequencyGroupFrequency">Show no more than</label>
                                     <input type={"number"} min={1} id="frequencyGroupFrequency" placeholder="1"
-                                           className="text-purple-dark bg-purple-faded border-0 form-control" />
-                                </div>
-                                <div className="col col-4">
+                                           tabIndex={-1}
+                                           className="text-purple-dark bg-purple-faded border-0 form-control w-100" />
+                                </Col>
+                                <Col>
                                     <label htmlFor="frequencyGroupTaimeUnits">times per</label>
                                     <input type={"number"} min={1} id="frequencyGroupTaimeUnits" placeholder="1"
-                                           className="text-purple-dark bg-purple-faded border-0 form-control" />
-                                </div>
-                                <div className="col col-4">
-                                    <select id="frequencyGroupTimeType" className={"form-select bg-purple-faded"}>
+                                           tabIndex={-1}
+                                           className="text-purple-dark bg-purple-faded border-0 form-control w-100" />
+                                </Col>
+                                <Col>
+                                    <select id="frequencyGroupTimeType" className={"form-select bg-purple-faded w-100"}
+                                            tabIndex={-1}>
                                         {!selectedTimeUnit && <option>Select time unit</option>}
                                         <option onSelect={() => setSelectedTimeUnit(true)}>Day</option>
                                         <option onSelect={() => setSelectedTimeUnit(true)}>Hour</option>
                                     </select>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
 
                         </div>
                     </div>

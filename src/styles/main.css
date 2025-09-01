@@ -13159,10 +13159,16 @@ h6, .h6 {
 /* teal */
 /* pink */
 /* red */
-img.rotate-left, img.rotate-right {
-  transition: all 0.1s ease-in-out;
+@media (prefers-reduced-motion: no-preference) {
+  img.rotate-left, img.rotate-right {
+    transition: all 0.1s ease-in-out;
+  }
 }
-
+@media (prefers-reduced-motion: reduce) {
+  img.rotate-left, img.rotate-right {
+    transition: none;
+  }
+}
 .grid-caption {
   font-family: "Dela Gothic One", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: #01875D;
@@ -13194,20 +13200,26 @@ img.rotate-left, img.rotate-right {
   transition: all 0.1s ease;
 }
 
-.portfolio-grid-container:hover img.rotate-right {
+.portfolio-grid-container:hover img.rotate-right, .portfolio-grid-container:focus-visible img.rotate-right {
   transform: rotate(3deg);
 }
-.portfolio-grid-container:hover img.rotate-left {
+.portfolio-grid-container:hover img.rotate-left, .portfolio-grid-container:focus-visible img.rotate-left {
   transform: rotate(-3deg);
 }
-.portfolio-grid-container:hover .grid-caption {
+.portfolio-grid-container:hover .grid-caption, .portfolio-grid-container:focus-visible .grid-caption {
   padding-bottom: 0;
 }
-.portfolio-grid-container:hover .grid-caption .title {
+.portfolio-grid-container:hover .grid-caption .title, .portfolio-grid-container:focus-visible .grid-caption .title {
   padding-bottom: 0;
 }
-.portfolio-grid-container:hover .grid-caption .title .rule-bottom {
+.portfolio-grid-container:hover .grid-caption .title .rule-bottom, .portfolio-grid-container:focus-visible .grid-caption .title .rule-bottom {
   padding: 0 0 0.625rem 0;
+}
+
+.portfolio-grid-container:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: #01875D;
+  text-decoration-style: double;
 }
 
 .grid-caption.purple .title .rule-bottom {
@@ -13507,19 +13519,48 @@ video {
    - Add page-specific styles
 */
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: #04294D;
-  color: #FEFFFC;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 1000;
-  font-size: 0.875rem;
+  position: absolute !important;
+  top: -40px !important;
+  left: 6px !important;
+  background: #1a1a2e !important;
+  color: #ffffff !important;
+  padding: 8px 12px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  z-index: 9999 !important;
+  font-size: 0.875rem !important;
 }
-.skip-link:focus {
-  top: 6px;
+.skip-link:focus-visible {
+  top: 6px !important;
+  outline: 2px solid #ffffff !important;
+}
+
+*:focus-visible {
+  outline: 0 solid #E1186F;
+  outline-offset: 2px;
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.link:focus-visible,
+a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(4, 41, 77, 0.5) !important;
+  outline: none !important;
+}
+
+.footer-link:focus-visible {
+  color: #04294D !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

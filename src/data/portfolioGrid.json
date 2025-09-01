@@ -9,6 +9,7 @@
         "short": "Designing APIs for Frequency Groups at Amazon",
         "summary": "I spent 18 months as a dedicated developer on Amazon’s Frequency Groups API. I approached the problem by applying design principles to backend engineering to deliver production APIs serving millions of requests.",
         "image": "grid_frequency_group_api.png",
+        "alt": "Thumbnail for frequency groups API case study",
         "linkTo": "/projects/frequency-group-apis",
         "tags": [
           "engineering",
@@ -60,6 +61,7 @@
         "short": "Color Scales, a Figma plugin to automate design workflow",
         "summary": "Building color scales can be tedious and error prone. This Figma plugin automates the process, reducing a 30-minute manual workflow to 30 seconds.",
         "image": "grid_scales.png",
+        "alt": "thumbnail for Color Scales case study",
         "linkTo": "/projects/color-scales",
         "tags": [
           "engineering",
@@ -113,6 +115,7 @@
         "summary": "I led the creative strategy the creative strategy for Drexel’s first major post-pandemic event—empowering my team and uniting alumni through bold design and streamlined systems.",
         "image": "grid_alumni_weekend.png",
         "linkTo": "/projects/drexel-alumni-weekend",
+        "alt": "Thumbnail for Alumni Weekend case study",
         "tags": [
           "design",
           "creative direction",

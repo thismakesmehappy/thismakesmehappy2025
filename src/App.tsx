@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {lazy, Suspense} from 'react';
+import {lazy, Suspense, useState, useEffect} from 'react';
 import Navigation from 'src/components/navigation/Navigation';
 import Home from 'src/pages/Home';
 import ProjectLayout from 'src/layouts/ProjectLayout';
@@ -19,11 +19,26 @@ const DrexelAlumniWeekend = lazy(() => import('src/pages/projects/DrexelAlumniWe
 const basename = import.meta.env.BASE_URL;
 
 function App() {
+    const [isAtTop, setIsAtTop] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsAtTop(window.scrollY === 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <Router basename={basename}>
             <ScrollToTop />
             <div className="App">
-                <a href="#main-content" className="skip-link">Skip to main content</a>
+                <a href="#main-content" 
+                   className="skip-link" 
+                   tabIndex={isAtTop ? 0 : -1}>
+                   Skip to main content
+                </a>
                 <Navigation />
                 <main id="main-content">
                     <Routes>

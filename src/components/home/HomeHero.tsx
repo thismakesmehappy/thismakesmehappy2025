@@ -1,23 +1,19 @@
 import {Col, Container, Image} from 'react-bootstrap';
-import {useState} from 'react';
 import CallToAction from 'src/components/helpers/CallToAction';
 import {asset} from 'src/helpers/assetPath.ts';
 
 const HomeHero = () => {
-    const [isHovering, setIsHovering] = useState(false);
-
     return (
         <section className="contact-hero gradient-lime hero-section" id="home-hero-section">
             <Container>
                 <div className={"d-block d-md-flex gx-6"}>
                     <div id={"headshot"}>
                         <Image
-                            src={isHovering ? asset("about/bernardo_square_wink.png") : asset("about/bernardo_square.png")}
+                            src={asset("about/bernardo_square.png")}
                             className={"img rounded-circle me-3"}
                             id="headshot"
                             fluid={true}
-                            onMouseEnter={() => setIsHovering(true)}
-                            onMouseLeave={() => setIsHovering(false)}
+                            alt="Bernardo Carvalho"
                         />
                     </div>
                     <div id={"about-hero"}>
@@ -32,12 +28,13 @@ const HomeHero = () => {
                     <p>
                         I've designed brand and events at <Image
                         src={asset('homepage/nickelodeon_splat.png')}
-                        className="inline-image inline-image-height" /> Nickelodeon, worked with clients and agencies through my design practice, led the creative team for <Image
-                        src={asset('homepage/logo_dragon_7548.png')}
+                        className="inline-image inline-image-height"
+                        alt="" /> Nickelodeon, worked with clients and agencies through my design practice, led the creative team for <Image
+                        src={asset('homepage/logo_dragon.png')} alt=""
                         className="inline-image inline-image-height" /> Drexel University Institutional Advancement, shipped production code for <Image
-                        src={asset('homepage/amazon_smile.png')}
+                        src={asset('homepage/amazon_smile.png')} alt=""
                         className="inline-image inline-image-width" /> Amazon, and provided creative leadership during the <Image
-                        src={asset('homepage/seal_penn_med.png')}
+                        src={asset('homepage/seal_penn_med.png')} alt=""
                         className="inline-image inline-image-height" /> Penn Medicine Doylestown Health merger.
                     </p>
                     <CallToAction />

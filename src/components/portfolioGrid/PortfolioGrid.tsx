@@ -4,9 +4,9 @@ import {hideProjects, showAdditionalProjects} from 'src/helpers/featureFlags.ts'
 import PortfolioItemStandard from './PortfolioItemStandard';
 import {Container, Row} from 'react-bootstrap';
 import PortfolioItemFeatured from './PortfolioItemFeatured';
-import TogglePlusMinus from  'src/components/helpers/TogglePlusMinus';
+import TogglePlusMinus from 'src/components/helpers/TogglePlusMinus';
 import {useState} from 'react';
-import AnimatedButton from  'src/components/ui/AnimatedButton';
+import AnimatedButton from 'src/components/ui/AnimatedButton';
 
 const PortfolioGrid = () => {
     const featuredProjects = Object.values(portfolioGrid.projects.featured);
@@ -41,17 +41,24 @@ const PortfolioGrid = () => {
                                                    reducedThumbnail={true}
                                                    link={project.linkTo}
                                                    tags={project.tags}
+                                                   alt={project.alt}
                             />
                         );
                     })}
                 </Row>
                 {showAdditionalProjects &&
                     <AnimatedButton className="mb-4" onClick={toggleExpandAdditional}
-                                   variant="link">{expandAdditional ? "Show" : "Hide"} Additional Projects <TogglePlusMinus
+                                    variant="link"
+                                    tabIndex={showAdditionalProjects ? 0 : -1}
+                                    aria-expanded={!expandAdditional}
+                                    aria-controls="additional-projects"
+                                    aria-label={`${expandAdditional ? "Show" : "Hide"} additional portfolio projects`}>
+                        {expandAdditional ? "Show" : "Hide"} Additional Projects <TogglePlusMinus
                         plus={expandAdditional}
                     />
                     </AnimatedButton>}
-                <Row className={`additional-projects ${expandAdditional ? 'closed' : 'opened'}`}>
+                <Row className={`additional-projects ${expandAdditional ? 'closed' : 'opened'}`}
+                     id="additional-projects">
                     {standardProjects.map(([_, project], index) => {
                         const color = listOfAccentColors[(index + numberOfFeaturedProjects) % numberOfColors] as AccentColors;
                         return <PortfolioItemStandard
@@ -64,6 +71,7 @@ const PortfolioGrid = () => {
                             link={project.linkTo}
                             reducedThumbnail={false}
                             tags={project.tags}
+                            isVisible={!expandAdditional}
                         />
                     })}
                 </Row>

@@ -14,6 +14,7 @@ export interface PortfolioGridImageProps {
     className?: string;
     rotateRight?: boolean;
     reducedThumbnail?: boolean;
+    alt?: string;
 }
 
 export interface PortfolioGridItemProps extends PortfolioGridTitleProps, PortfolioGridImageProps {
@@ -28,6 +29,7 @@ export interface PortfolioGridItemsColsProps extends PortfolioGridTitleProps, Po
     xxl?: number;
     link?: string;
     tags?: string[];
+    alt?: string;
 }
 
 export interface PortfolioGridItemFeaturedProps extends PortfolioGridItemProps {

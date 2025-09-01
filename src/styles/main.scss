@@ -166,18 +166,51 @@ video {
 
 // Skip link for accessibility
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: $navy;
-  color: $light;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 1000;
-  font-size: 0.875rem;
-  
-  &:focus {
-    top: 6px;
+  position: absolute !important;
+  top: -40px !important;
+  left: 6px !important;
+  background: #1a1a2e !important;
+  color: #ffffff !important;
+  padding: 8px 12px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  z-index: 9999 !important;
+  font-size: 0.875rem !important;
+
+  &:focus-visible {
+    top: 6px !important;
+    outline: 2px solid #ffffff !important;
+  }
+}
+
+// Enhanced focus indicators for accessibility
+*:focus-visible {
+  outline: 0 solid $primary;
+  outline-offset: 2px;
+}
+
+// Custom focus for buttons and links
+.btn:focus-visible,
+.nav-link:focus-visible,
+.link:focus-visible,
+a:focus-visible {
+  box-shadow: 0 0 0 3px rgba($dark, 0.5) !important;
+  outline: none !important;
+}
+
+.footer-link:focus-visible {
+  color: $dark !important;
+}
+
+
+// Respect user motion preferences globally
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

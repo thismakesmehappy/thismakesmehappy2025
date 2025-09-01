@@ -1,7 +1,16 @@
 @import "variables";
 
-img.rotate-left, img.rotate-right {
-  transition: all 0.1s ease-in-out;
+// Respect user motion preferences
+@media (prefers-reduced-motion: no-preference) {
+  img.rotate-left, img.rotate-right {
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img.rotate-left, img.rotate-right {
+    transition: none;
+  }
 }
 
 .grid-caption {
@@ -40,8 +49,9 @@ img.rotate-left, img.rotate-right {
   }
 }
 
-.portfolio-grid-container:hover {
-  img.rotate-right {
+.portfolio-grid-container:hover, .portfolio-grid-container:focus-visible, {
+  img.rotate-right,
+  {
     transform: rotate(3deg);
   }
 
@@ -60,6 +70,12 @@ img.rotate-left, img.rotate-right {
       }
     }
   }
+}
+
+.portfolio-grid-container:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: $green;
+  text-decoration-style: double;
 }
 
 @each $color-name, $color-value in $custom-colors {

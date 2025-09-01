@@ -25,7 +25,7 @@ const RandomMemoji = ({
         <>
             <div id={id} className={className}>
                 <Image src={asset(`me/${memoji}`)}
-                       className={`rounded-circle ${bgColor}`} />
+                       className={`rounded-circle ${bgColor}`} alt="" />
             </div>
         </>
     );

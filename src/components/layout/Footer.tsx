@@ -1,5 +1,5 @@
 import {memojiPlacementFlag} from 'src/helpers/featureFlags.ts';
-import RandomMemoji from  'src/components/helpers/RandomMemoji';
+import RandomMemoji from 'src/components/helpers/RandomMemoji';
 import {Link, useLocation} from 'react-router-dom';
 import callToAction from 'src/data/callToAction.json';
 import {asset} from "src/helpers/assetPath.ts";
@@ -27,7 +27,7 @@ const Footer = () => {
                                 const target = action.blank ? {target: "_blank"} : {};
                                 return (
                                     <div className="text-center font-display" key={`footer-icon-${action.label}`}>
-                                        <Link to={link} {...target} className={"text-dark"}>
+                                        <Link to={link} {...target} className={"text-pink footer-link"} tabIndex={0}>
                                             <div><i className={`bi bi-${action.icon}`}></i></div>
                                             <div>{action.label}</div>
                                         </Link>

@@ -19,10 +19,11 @@ const PortfolioItemStandard = ({
                                    xxl,
                                    link,
                                    reducedThumbnail = false,
-                               }: PortfolioGridItemsColsProps) => {
+                                   isVisible = true,
+                               }: PortfolioGridItemsColsProps & { isVisible?: boolean }) => {
     return (
         <Col xs={xs} sm={sm} md={md} lg={lg} xl={xl} xxl={xxl} className={spacingBottom}>
-            <div className="portfolio-grid-container">
+            <div className="portfolio-grid-container" tabIndex={isVisible ? 0 : -1}>
                 <Link to={`${link}`}>
                     <Row className={"g-3 d-flex align-items-center"}>
                         <Col xs={12} sm={5} md={6}>
