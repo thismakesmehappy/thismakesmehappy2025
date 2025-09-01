@@ -7,7 +7,7 @@ const ImagesScreenAW = () => {
         <Row className="mb-4 row-gap-4">
             <Col md={6}>
                 <ProjectContainer backgroundColor="yellow-faded" padding={false}>
-                    <Image src={asset("aw/aw_social_flat.png")} className={"img-fluid badge3"}
+                    <Image src={asset("aw/aw_social_flat.png")} className={"badge3"} fluid={true}
                            alt={"Branded social media story"} />
                 </ProjectContainer>
             </Col>
@@ -32,7 +32,7 @@ const ImagesScreenAW = () => {
             </Col>
             <Col>
                 <ProjectContainer backgroundColor="yellow-faded" padding={false}>
-                    <Image src={asset("aw/aw_web.png")} className={"img-fluid badge3"}
+                    <Image src={asset("aw/aw_web.png")} fluid={true}
                            alt={"Branded web banner"} />
                 </ProjectContainer>
             </Col>

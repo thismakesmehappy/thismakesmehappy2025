@@ -9,7 +9,7 @@ const CollaborationFigureAW = () => {
             <ProjectContainer backgroundColor="yellow-faded" padding={false} className={"mb-4"}>
                 <Image
                     src={asset("aw/drexel_dt_group.jpg")}
-                    className={"img-fluid"}
+                    fluid={true}
                     alt={"Team collaboration session showing group working together"}
                 />
             </ProjectContainer>

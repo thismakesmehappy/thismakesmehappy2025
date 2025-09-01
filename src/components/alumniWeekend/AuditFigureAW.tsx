@@ -10,7 +10,7 @@ const AuditFigureAW = () => {
                               borderWidth={1} className={"mb-4"}>
                 <Image
                     src={asset("aw/aw18_audit.png")}
-                    className={"img-fluid"}
+                    fluid={true}
                     alt={"Audit showing inconsistent Alumni Weekend designs from 2016-2017"}
                 />
             </ProjectContainer>

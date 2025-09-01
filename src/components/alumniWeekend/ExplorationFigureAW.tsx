@@ -9,7 +9,7 @@ const ExplorationFigureAW = () => {
             <ProjectContainer backgroundColor="yellow-faded" padding={false} className={"mb-4"}>
                 <Image
                     src={asset("aw/aw18_exploration.png")}
-                    className={"img-fluid"}
+                    fluid={true}
                     alt={"Visual exploration showing consistent Alumni Weekend branding approach"}
                 />
             </ProjectContainer>

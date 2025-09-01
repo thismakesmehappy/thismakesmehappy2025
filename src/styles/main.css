@@ -13506,5 +13506,20 @@ video {
    - Add your custom component stylesheets
    - Add page-specific styles
 */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #04294D;
+  color: #FEFFFC;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  font-size: 0.875rem;
+}
+.skip-link:focus {
+  top: 6px;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 import {Col, Container, Image} from 'react-bootstrap';
 import {useState} from 'react';
-import CallToAction from  'src/components/helpers/CallToAction';
+import CallToAction from 'src/components/helpers/CallToAction';
 import {asset} from 'src/helpers/assetPath.ts';
 
 const HomeHero = () => {
@@ -13,8 +13,9 @@ const HomeHero = () => {
                     <div id={"headshot"}>
                         <Image
                             src={isHovering ? asset("about/bernardo_square_wink.png") : asset("about/bernardo_square.png")}
-                            className={"img-fluid img rounded-circle me-3"}
+                            className={"img rounded-circle me-3"}
                             id="headshot"
+                            fluid={true}
                             onMouseEnter={() => setIsHovering(true)}
                             onMouseLeave={() => setIsHovering(false)}
                         />

@@ -7,7 +7,8 @@ const PortfolioGridImageInner = ({image, rotateRight, reducedThumbnail = true}: 
             <Col xs={reducedThumbnail ? 8 : 12} md={12}>
                 <Image
                     src={image}
-                    className={`grid-image img-fluid ${rotateRight ? "rotate-right" : "rotate-left"}`} />
+                    fluid={true}
+                    className={`grid-image ${rotateRight ? "rotate-right" : "rotate-left"}`} />
             </Col>
         </Row>
     );

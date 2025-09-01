@@ -10,7 +10,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/sketches_notability/scalesSketchPage5.png")}
-                               className={"img-fluid"}
+                               fluid={true}
                                alt={"Screen grab of a list of user stories written by hand"} />
                     </ProjectContainer>
                 </Col>
@@ -18,7 +18,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/sketches_notability/scalesSketchPage6.png")}
-                               className={"img-fluid"}
+                               fluid={true}
                                alt={"Screen grab of a list of user stories written by hand with an initial sketch"} />
                     </ProjectContainer>
                 </Col>
@@ -26,7 +26,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/sketches_notability/scalesSketchPage2.png")}
-                               className={"img-fluid"}
+                               fluid={true}
                                alt={"Hand-drawn sketches showcasing screen explorations"} />
                     </ProjectContainer>
                 </Col>
@@ -34,7 +34,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/sketches_notability/scalesSketchPage7.png")}
-                               className={"img-fluid"}
+                               fluid={true}
                                alt={"Hand-drawn sketches showcasing component explorations"} />
                     </ProjectContainer>
                 </Col>
@@ -42,7 +42,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/scales_figma_sketch_v1.png")}
-                               className={"img-fluid"}
+                               fluid={true}
                                alt={"Early Figma sketch showing layouts and components"} />
                     </ProjectContainer>
                 </Col>
@@ -50,7 +50,7 @@ const DiscoveryFiguresScales = () => {
                     <ProjectContainer backgroundColor="aqua-faded" className={"w-100"} padding={false}
                                       borderColor={"aqua-dark"} borderWidth={1}>
                         <Image src={asset("colorScales/scales_figma_sketch_v2.png")}
-                               className={"img-fluid"} alt={"A more advanced Figma prototype"} />
+                               fluid={true} alt={"A more advanced Figma prototype"} />
                     </ProjectContainer>
                 </Col>
             </Row>

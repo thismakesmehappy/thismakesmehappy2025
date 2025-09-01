@@ -11,7 +11,7 @@ const ConceptFiguresAW = () => {
                     <ProjectContainer backgroundColor="yellow-faded" padding={false}>
                         <Image
                             src={asset("aw/aw_moodboard_glitch.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Mood board for the Glitch concept"}
                         />
                     </ProjectContainer>
@@ -21,7 +21,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_exploration_glitch.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Visual explorations for the Glitch concept"}
                         />
                     </ProjectContainer>
@@ -31,7 +31,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_moodboard_bbbb.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Mood board for the Live and in Person concept"}
                         />
                     </ProjectContainer>
@@ -41,7 +41,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_exploration_bbbb.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Visual explorations for the Live and in Person concept"}
                         />
                     </ProjectContainer>
@@ -51,7 +51,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_deck_04.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Page from a presentation deck highlighting marketing goals"}
                         />
                     </ProjectContainer>
@@ -61,7 +61,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_deck_09.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Page from a presentation deck highlighting key art for Glitch"}
                         />
                     </ProjectContainer>
@@ -71,7 +71,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_deck_25.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Page from a presentation deck highlighting key art for Live and in Person"}
                         />
                     </ProjectContainer>
@@ -81,7 +81,7 @@ const ConceptFiguresAW = () => {
                                       borderColor={"yellow"} borderWidth={1}>
                         <Image
                             src={asset("aw/aw_deck_35.png")}
-                            className={"img-fluid"}
+                            fluid={true}
                             alt={"Page from a presentation deck highlighting a closing slide"}
                         />
                     </ProjectContainer>
